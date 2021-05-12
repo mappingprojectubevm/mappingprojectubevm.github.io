@@ -3,5 +3,6 @@ h1 {
 }
 img.banner {
     border-radius: 10px;
+    background-size: cover
 }
 ;
