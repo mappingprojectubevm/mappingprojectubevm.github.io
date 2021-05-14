@@ -6,16 +6,11 @@ body {
 header {
     text-align: center;
 }
-img.banner {
-    width: 100%;
+#banner {
+    width: 100vw;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
-    background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
  }
 ;
