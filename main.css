@@ -6,11 +6,19 @@ body {
 header {
     text-align: center;
 }
-#banner {
-    width: 100vw;
+.banner {
+    width: 100%;
     height: auto;
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: block;
  }
+
+h1 {
+    color:#593202;
+}
+ 
+h2 {
+    color: #8C7669;
+}
 ;
