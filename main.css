@@ -10,7 +10,8 @@ h2 {
 }
 h3 {
     color:#593202;
-    /* text-size ?*/
+    text-align: center;
+    /* text-size + font ändern*/
 
 }
 
@@ -35,41 +36,71 @@ body {
     display: block;
  }
 
- /* IDs festlegen bestimmter elemente */
+ /* Classes festlegen von der Menüleiste! */
  /* Rechts auf der Seite */
-#right {
-    text-align: right;
+.right {
+    margin-right: 3.0em;
+    text-align: center;
     float: right;
-    width: 220px
+    width: 365px;
+    background-color: orange; /*ist nur zur übersicht grad */
+    height: 2em; /*hier noch einstellen, dass der text in der mitte des kästchens ist und auch schrift usw. */
 }
 /* Links auf der Seite */
-#left {
-    text-align: left;
+.left {
+    margin-left: 3.0em; /*abstand zum seitenrand*/
+    text-align: center;
     float: left;
-    width: 220px; /*damit kann man die Seite in Spalten teilen, wenn man hier die spaltengröße eingibt! */
+    width: 350px; /*damit kann man die Seite in Spalten teilen, wenn man hier die spaltengröße eingibt! */
+    background-color: yellow;
+    height: 2em;
 }
 /* Zentriert in der seite */
-#center {
+.center {
     text-align: center;
-    float: center;
-    margin-left: 220px; /* die zahlen nehmen die wir bei links u rechts haben */
-    margin-right: 220px;
+    float:left;
+    margin: auto;
+    width: 430px; /*jetz ists mittig */
+    background-color: red;
+    height: 2em;
+
+}
+/* Fotoboxen */
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; /*elemente haben gleiche Abstände um sich herum */
+}
+
+.boxperson {
+    float: 500em;
+    margin: 1.0em;
+    border: solid 1px rgb(0, 0, 0); /*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
+    padding: 3em 3.5em;
+    vertical-align: auto;
     
+}
+/* Einrücken von Seitenrand! */
+.mr-5 {
+    margin-right: 5em;
+}
+.ml-5 {
+    margin-left: 5em;
+
 }
 /* text im blocksatz:
 p {
     text-align: justify;
 } */
 
-/* Abstand setzen zu elementen mit dem tag */
-.mr-3 {
-    margin-right: 0.3em;
-}
 
-.ml-3 {
-    margin-left: 0.3em;
-}
+/* klasse für text im menu */
+/* .menu {
 
+} */
+
+
+/* Auf andere Screens anpassen  */
 
 /* @media screen and (max-width:900px) {
     main {
