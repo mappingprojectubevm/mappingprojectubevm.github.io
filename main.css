@@ -14,14 +14,13 @@ header {
     display: block;
  }
 
-.right {
+#right {
     text-align: right;
 }
-.left {
+#left {
     text-align: left;
 }
-
-.center {
+#center {
     text-align: center;
 }
 
