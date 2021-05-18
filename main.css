@@ -16,11 +16,19 @@ body {
     text-align: right
 }
 #left {
-    text-align: left
+    text-align: left;
+    float: left;
+    width: 220px;
+
 }
 #center {
-    text-align: center
+    text-align: center;
+    
 }
+/* text im blocksatz:
+p {
+    text-align: justify;
+} */
 
 h1 {
     color:#593202;
