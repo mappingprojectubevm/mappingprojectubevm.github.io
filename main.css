@@ -51,6 +51,9 @@ body {
 /* Zentriert in der seite */
 #center {
     text-align: center;
+    float: center;
+    margin-left: 220px; /* die zahlen nehmen die wir bei links u rechts haben */
+    margin-right: 220px;
     
 }
 /* text im blocksatz:
