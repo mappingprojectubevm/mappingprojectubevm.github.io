@@ -23,6 +23,7 @@ section p {
     font-size: large;
     font-style: normal;
     color: #C7CCD6;
+    font: blocksatz;
     padding-bottom: 20px;
     padding-right: 40px;
     padding-left: 40px;
@@ -47,7 +48,7 @@ body {
     /*banner und website auf full scrren */
     margin: auto;
     font-family: 'Open Sans', sans-serif;
-    background-color: whitesmoke;
+    background-color:#304456;
 }
 
 /* Bannerfoto */
