@@ -6,18 +6,32 @@ h1 {
 }
  
 h2 {
+    padding-top: 20px;
     color: #8C7669;
+    text-align: center;
 }
+
 h3 {
     color:#593202;
     text-align: center;
     /* text-size + font ändern*/
 }
+
+section p {
+    text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-size: large; 
+    font-style: normal;
+    color: #C7CCD6;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
 /*definition Abschnitte */
 section {
     width: 100%;
     height: auto;
-    background-color: whitesmoke;
+    background-color:#304456;
 }
 
 /* Footer */
@@ -84,8 +98,8 @@ body {
     float: 500em;
     margin: 1.0em;
     border: solid 1px grey; /*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
-    padding: 3em 3.5em;
-    background-color: whitesmoke;
+    padding: 3em 3.5em; /*em??*/
+    background-color:#C7CCD6;
     vertical-align: auto;    
 }
 
@@ -102,10 +116,10 @@ figcaption {
 
 /* Einrücken von Seitenrand! */
 .mr-5 {
-    margin-right: 5em;
+    margin-right: 3em;
 }
 .ml-5 {
-    margin-left: 5em;
+    margin-left: 3em;
 
 }
 /* text im blocksatz:
