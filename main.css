@@ -41,7 +41,7 @@ body {
 .right {
     margin-right: 3.0em;
     text-align: center;
-  
+    float: right;  
     width: 365px;
     background-color:coral; /*ist nur zur übersicht grad */
     height: 2em; /*hier noch einstellen, dass der text in der mitte des kästchens ist und auch schrift usw. */
@@ -50,7 +50,7 @@ body {
 .left {
     margin-left: 3.0em; /*abstand zum seitenrand*/
     text-align: center;
-
+    float: left;
     width: 350px; /*damit kann man die Seite in Spalten teilen, wenn man hier die spaltengröße eingibt! */
     background-color:burlywood;
     height: 2em;
@@ -58,7 +58,7 @@ body {
 /* Zentriert in der seite */
 .center {
     text-align: center;
-
+    float: center;
     margin: auto;
     width: 430px; /*jetz ists mittig */
     background-color:darkseagreen;
