@@ -12,7 +12,12 @@ h3 {
     color:#593202;
     text-align: center;
     /* text-size + font ändern*/
-
+}
+/*definition Abschnitte */
+section {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
 }
 
 /* Footer */
@@ -23,7 +28,7 @@ color: black
 
 /* Body */
 body {
-    max-width: 1280px;
+    max-width: 100%; /*banner und website auf full scrren */
     margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
@@ -87,6 +92,7 @@ body {
     border-radius: 50%;
     text-align: center;
 }
+/* Beschriftung Banner mit Quelle*/
 figcaption {
     background-color:gray;
     color: #fff;
