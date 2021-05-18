@@ -58,7 +58,7 @@ body {
 /* Zentriert in der seite */
 .center {
     text-align: center;
-    float: center;
+    float: left;
     margin: auto;
     width: 430px; /*jetz ists mittig */
     background-color:darkseagreen;
@@ -79,13 +79,21 @@ body {
     margin: 1.0em;
     border: solid 1px rgb(0, 0, 0); /*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
     padding: 3em 3.5em;
+    background-color:grey;
     vertical-align: auto;    
 }
 
 .imageround {
-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
 }
-
+figcaption {
+    background-color:gray;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: right;
+}
 /* Allgemeines */
 
 /* Einrücken von Seitenrand! */
