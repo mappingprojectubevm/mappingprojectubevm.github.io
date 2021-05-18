@@ -1,3 +1,26 @@
+/* Formatierung nach Elementen  */
+/* Überschriften */
+h1 {
+    color:#593202;
+    text-align: center;
+}
+ 
+h2 {
+    color: #8C7669;
+}
+h3 {
+    color:#593202;
+    /* text-size ?*/
+
+}
+
+/* Footer */
+footer {
+/* noch machen: einstellungen für das aussehen der Links am Fußende */
+color: black
+}
+
+/* Body */
 body {
     max-width: 1280px;
     margin: auto;
@@ -12,15 +35,20 @@ body {
     display: block;
  }
 
+ /* IDs festlegen bestimmter elemente */
+ /* Rechts auf der Seite */
 #right {
-    text-align: right
+    text-align: right;
+    float: right;
+    width: 220px
 }
+/* Links auf der Seite */
 #left {
     text-align: left;
     float: left;
-    width: 220px;
-
+    width: 220px; /*damit kann man die Seite in Spalten teilen, wenn man hier die spaltengröße eingibt! */
 }
+/* Zentriert in der seite */
 #center {
     text-align: center;
     
@@ -30,19 +58,15 @@ p {
     text-align: justify;
 } */
 
-h1 {
-    color:#593202;
-    text-align: center;
-}
- 
-h2 {
-    color: #8C7669;
+/* Abstand setzen zu elementen mit dem tag */
+.mr-3 {
+    margin-right: 0.3em;
 }
 
-footer {
-/* einsellungen für das aussehen der Links am Fußende */
-color: black
+.ml-3 {
+    margin-left: 0.3em;
 }
+
 
 /* @media screen and (max-width:900px) {
     main {
