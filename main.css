@@ -31,6 +31,7 @@ body {
     max-width: 100%; /*banner und website auf full scrren */
     margin: auto;
     font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
 }
 /* Bannerfoto */
 .banner {
@@ -84,14 +85,11 @@ body {
     margin: 1.0em;
     border: solid 1px grey; /*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
     padding: 3em 3.5em;
-    background-color:grey;
+    background-color: whitesmoke;
     vertical-align: auto;    
 }
 
-.imageround {
-    border-radius: 50%;
-    text-align: center;
-}
+
 /* Beschriftung Banner mit Quelle*/
 figcaption {
     background-color:gray;
