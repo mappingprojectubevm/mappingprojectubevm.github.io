@@ -97,6 +97,9 @@ body {
 
 }
 
+.imageround {
+    border-radius: 50%;
+}
 
 /* Fotoboxen */
 .flex {
