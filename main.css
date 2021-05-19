@@ -114,13 +114,19 @@ a:visited {
 .boxperson {
     float: 500em;
     margin: 1.0em;
-    border: solid 1px #2f3a2e;
+    /*border: solid 1px #2f3a2e;
     /*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
     padding: 3em 3.5em;
     /*em??*/
     background-color: #576b59;
     vertical-align: auto;
 
+}
+
+.danke {
+    display: flex;
+    border-radius: 10%;
+    margin: auto;
 }
 
 
