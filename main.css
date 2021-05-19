@@ -46,7 +46,7 @@ section {
     margin: 1.0em;
     text-transform: uppercase;
     position: inherit;
-    float: hoziontal;
+    float: left;
     border: solid 1px #2f3a2e; /*Rahmen  --> Farbe noch ändern*/
     padding: 1em 4em;/*größe der box*/
     background-color: #576b59;/*gleiceh farben wie bei den fotoboxen einstellen!!*/
@@ -149,7 +149,7 @@ a:visited {
 }
 
 
-/* Auf andere Screens anpassen  */
+/* Auf andere Screens anpassen -- titelbild geht und text auhc - rest noch anpassen !!*/
 
 @media screen and (max-width:900px) {
     main {
