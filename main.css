@@ -57,7 +57,6 @@ section {
 }
 
 footer {
-    /* noch machen: einstellungen für das aussehen der Links am Fußende */
     margin: 1.5em;
     color: #1f410b
 }
@@ -84,7 +83,7 @@ body {
 /* Beschriftung Banner mit Quelle*/
 figcaption {
     background-color: #d6d4d4;
-    color: #fff;
+    color: #576b59;
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: right;
@@ -99,13 +98,10 @@ header div {
     vertical-align: auto;
     flex-wrap: nowrap;
     justify-content: space-around;
-    background-color: #d6d4d4;
-    /*gleiche wie bei banner quelle */
-
-
+    background-color: #d6d4d4; /*gleiche wie bei banner quelle */
 }
 
-/*Farbe für seiten links */
+/*Farbe für Links zu den anderen Seiten*/
 a:link,
 a:visited {
     color: #533627;/*damit linkfarbe gleich bleibt auch beim anklicken */
@@ -118,11 +114,6 @@ a:visited {
     font-size: 20px;
 }
 
-/* Formatierung text im menü */
-/* .menu {
-
-} */
-
 
 /* Fotoboxen */
 .imageround {
@@ -131,10 +122,8 @@ a:visited {
 
 .flex {
     display: flex;
-    flex-wrap: nowrap;
-    /*alle sind in einer zeile */
-    justify-content: space-around;
-    /*elemente haben gleiche Abstände um sich herum */
+    flex-wrap: nowrap; /*alle sind in einer zeile */
+    justify-content: space-around; /*elemente haben gleiche Abstände um sich herum */
 }
 
 .boxperson {
