@@ -74,7 +74,7 @@ figcaption {
 }
 
 /* Formatierung Menüleiste!*/
-header div, footer div {
+header div, footer div { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
     display: flex;
     float: 400em;
     margin-top: 1em;
