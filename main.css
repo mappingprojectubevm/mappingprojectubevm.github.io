@@ -23,7 +23,7 @@ p { /* wenn hier nicht section steht übernimmt es das auch für den text der an
     font-size: large;
     font-style: normal;
     color:whitesmoke;
-    font: blocksatz;
+    font: blocksatz; /* wäre das das geliche wie text-align:center ? */
     padding-bottom: 20px;
     padding-right: 60px;
     padding-left: 60px;
@@ -36,25 +36,25 @@ section {
     background-color: #7c7878;
 }
 
-.linkcolor {
-    display: flex;
-    float: 500em;
-    margin-bottom: 0.5em;
-    vertical-align: middle;
-    flex-wrap: wrap;  
-    justify-content: space-around;
-    color: #533627;
-    float: 500em;
-    margin: 1.0em;
-    border: solid 1px #4a4e53;/*Rahmen  --> Farbe noch ändern*/
-    padding: 1em 1.5em;/*em??*/
-    background-color:#646b74; /*gleiceh farben wie bei den fotoboxen einstellen!!*/
-    vertical-align: auto;
-}
 /* Footer */
+.linkcolor {
+    flex-wrap: nowrap;  
+    color: #533627;
+    font-weight: bold;
+    float:inline-start;
+    margin: 1.0em;
+    text-transform: uppercase;
+    position:inherit; 
+    float: hoziontal;
+    border: solid 1px #2f3a2e;/*Rahmen  --> Farbe noch ändern*/
+    padding: 1em 4em; /*größe der box*/
+    background-color:#576b59; /*gleiceh farben wie bei den fotoboxen einstellen!!*/
+
+}
+
 footer {
     /* noch machen: einstellungen für das aussehen der Links am Fußende */
-    
+    margin: 1.5em;
     color: #1f410b 
 }
 
@@ -94,7 +94,17 @@ header div {
         vertical-align: auto;
         flex-wrap: nowrap;  
         justify-content: space-around;
-        color: #533627
+        background-color: #d6d4d4; /*gleiche wie bei banner quelle */
+
+
+}
+
+a:link,
+a:visited #textmenu {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #533627;
+    background-color: #d6d4d4;
 }
 
 /* Formatierung text im menü */
@@ -117,14 +127,12 @@ header div {
 .boxperson {
     float: 500em;
     margin: 1.0em;
-    border: solid 1px #4a4e53;/*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
+    border: solid 1px #2f3a2e;/*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
     padding: 3em 3.5em;/*em??*/
-    background-color:#646b74;
+    background-color:#576b59;
     vertical-align: auto;
 
 }
-
-
 
 
 /* Allgemeines */
