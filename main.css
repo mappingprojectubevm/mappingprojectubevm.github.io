@@ -17,13 +17,15 @@ h3 {
     /* text-size + font ändern*/
 }
 
-p { /* wenn hier nicht section steht übernimmt es das auch für den text der anderen seite, das ist fast angenehmer, muss mans nur einmal einstellen */
+p {
+    /* wenn hier nicht section steht übernimmt es das auch für den text der anderen seite, das ist fast angenehmer, muss mans nur einmal einstellen */
     text-align: justify;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: large;
     font-style: normal;
-    color:whitesmoke;
-    font: blocksatz; /* wäre das das geliche wie text-align:center ? */
+    color: whitesmoke;
+    font: blocksatz;
+    /* wäre das das geliche wie text-align:center ? */
     padding-bottom: 20px;
     padding-right: 60px;
     padding-left: 60px;
@@ -38,24 +40,26 @@ section {
 
 /* Footer */
 .linkcolor {
-    flex-wrap: nowrap;  
-    color: #533627;
+    flex-wrap: nowrap;
     font-weight: bold;
-    float:inline-start;
+    float: inline-start;
     margin: 1.0em;
     text-transform: uppercase;
-    position:inherit; 
+    position: inherit;
     float: hoziontal;
-    border: solid 1px #2f3a2e;/*Rahmen  --> Farbe noch ändern*/
-    padding: 1em 4em; /*größe der box*/
-    background-color:#576b59; /*gleiceh farben wie bei den fotoboxen einstellen!!*/
+    border: solid 1px #2f3a2e;
+    /*Rahmen  --> Farbe noch ändern*/
+    padding: 1em 4em;
+    /*größe der box*/
+    background-color: #576b59;
+    /*gleiceh farben wie bei den fotoboxen einstellen!!*/
 
 }
 
 footer {
     /* noch machen: einstellungen für das aussehen der Links am Fußende */
     margin: 1.5em;
-    color: #1f410b 
+    color: #1f410b
 }
 
 /* Body */
@@ -88,23 +92,30 @@ figcaption {
 
 /* Formatierung Menüleiste!*/
 header div {
-        display: flex;
-        float: 400em;
-        margin-top: 0.5em;
-        vertical-align: auto;
-        flex-wrap: nowrap;  
-        justify-content: space-around;
-        background-color: #d6d4d4; /*gleiche wie bei banner quelle */
+    display: flex;
+    float: 400em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    vertical-align: auto;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #d6d4d4;
+    /*gleiche wie bei banner quelle */
 
 
 }
 
+/*Farbe für seiten links */
 a:link,
-a:visited #textmenu {
+a:visited {
+    color: #533627;/*damit linkfarbe gleich bleibt auch beim anklicken */
+}
+
+#textmenu {
     font-weight: bold;
     text-transform: uppercase;
-    color: #533627;
     background-color: #d6d4d4;
+    font-size: 20px;
 }
 
 /* Formatierung text im menü */
@@ -120,16 +131,20 @@ a:visited #textmenu {
 
 .flex {
     display: flex;
-    flex-wrap: nowrap; /*alle sind in einer zeile */
-    justify-content: space-around; /*elemente haben gleiche Abstände um sich herum */
+    flex-wrap: nowrap;
+    /*alle sind in einer zeile */
+    justify-content: space-around;
+    /*elemente haben gleiche Abstände um sich herum */
 }
 
 .boxperson {
     float: 500em;
     margin: 1.0em;
-    border: solid 1px #2f3a2e;/*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
-    padding: 3em 3.5em;/*em??*/
-    background-color:#576b59;
+    border: solid 1px #2f3a2e;
+    /*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
+    padding: 3em 3.5em;
+    /*em??*/
+    background-color: #576b59;
     vertical-align: auto;
 
 }
@@ -153,6 +168,7 @@ a:visited #textmenu {
     main {
         max-width: 90%;
     }
+
     .boxperson {
         width: 100%;
     }
