@@ -1,18 +1,18 @@
 /* Formatierung nach Elementen  */
 /* Überschriften */
 h1 {
-    color: #593202;
+    color: #1f410b;
     text-align: center;
 }
 
 h2 {
     padding-top: 20px;
-    color: #8C7669;
+    color: #533627;
     text-align: center;
 }
 
 h3 {
-    color: #593202;
+    color: #1f410b;
     text-align: center;
     /* text-size + font ändern*/
 }
@@ -36,12 +36,27 @@ section {
     background-color: #7c7878;
 }
 
-
-
+.linkcolor {
+    display: flex;
+    position: ;
+    float: 500em;
+    margin-bottom: 0.5em;
+    vertical-align: middle;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    color: #533627;
+    float: 500em;
+    margin: 1.0em;
+    border: solid 1px #4a4e53;/*Rahmen  --> Farbe noch ändern*/
+    padding: 1em 1.5em;/*em??*/
+    background-color:#646b74; /*gleiceh farben wie bei den fotoboxen einstellen!!*/
+    vertical-align: auto;
+}
 /* Footer */
 footer {
     /* noch machen: einstellungen für das aussehen der Links am Fußende */
-    color: black
+    
+    color: #1f410b 
 }
 
 /* Body */
@@ -62,14 +77,25 @@ body {
     display: block;
 }
 
+
+/* Beschriftung Banner mit Quelle*/
+figcaption {
+    background-color: #7c7878;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: right;
+}
+
 /* Formatierung Menüleiste!*/
 header div {
         display: flex;
         float: 400em;
         margin-top: 0.5em;
         vertical-align: auto;
-        flex-wrap: wrap;  
+        flex-wrap: nowrap;  
         justify-content: space-around;
+        color: #533627
 }
 
 /* Formatierung text im menü */
@@ -92,21 +118,14 @@ header div {
 .boxperson {
     float: 500em;
     margin: 1.0em;
-    border: solid 1px grey;/*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
+    border: solid 1px #4a4e53;/*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
     padding: 3em 3.5em;/*em??*/
-    background-color:#4b5b70;
+    background-color:#646b74;
     vertical-align: auto;
+
 }
 
 
-/* Beschriftung Banner mit Quelle*/
-figcaption {
-    background-color: gray;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: right;
-}
 
 
 /* Allgemeines */
