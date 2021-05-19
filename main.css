@@ -38,24 +38,11 @@ section {
     background-color: #7c7878;
 }
 
-/* Footer */
-.linkcolor {
-    flex-wrap: nowrap;
-    font-weight: bold;
-    float: inline-start;
-    margin: 1.0em;
-    text-transform: uppercase;
-    position: inherit;
-    float: left;
-    border: solid 1px #2f3a2e; /*Rahmen  --> Farbe noch ändern*/
-    padding: 1em 4em;/*größe der box*/
-    background-color: #576b59;/*gleiceh farben wie bei den fotoboxen einstellen!!*/
-
-}
 
 footer {
-    margin: 3em;
+    margin: auto;
     color: #1f410b;
+    text-align: center;
 }
 
 /* Body */
@@ -87,7 +74,7 @@ figcaption {
 }
 
 /* Formatierung Menüleiste!*/
-header div {
+header div, footer div {
     display: flex;
     float: 400em;
     margin-top: 1em;
