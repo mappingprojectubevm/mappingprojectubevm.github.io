@@ -15,3 +15,10 @@ L.marker([46.7599, 10.2104]).addTo(map)
     .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
     .openPopup();
 
+
+// //Minimap
+var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"), {
+    toggleDisplay: true, //minimap ein und ausklappbar
+    minimized: false //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
+}).addTo(map);
+
