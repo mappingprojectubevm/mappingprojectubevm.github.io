@@ -161,8 +161,15 @@ a:visited {
 }
 
 
-/* KARTENRAHMEN */
-#maps {
+/* REGION KARTE */
+#overviewmap {
+    height: 500px;
+    width: 70%;
+    margin: auto;
+    border: 1px solid #2f3a2e;}
+
+/* ERGEBNISSE KARTE */
+#map {
     height: 500px;
     width: 70%;
     margin: auto;
