@@ -1,15 +1,31 @@
-// https://leafletjs.com/
-
-const map = L.map('overviewmap', {
-    center: [46.7599, 10.2104],
-    zoom: 10, //muss overviewmap heißen, weil das div element dazu im index html so definiert. ergebniskarte heißt map!
-    fullscreenControl: true,//Fullscreen plugin
-}) 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
 //Hier könnte man noch verschiedene kartengrundlagen einabuen wie im beispiel. und den layer fürs BR wenn wir in finden/Bekommen
+// Kartenhintergründe der basemap.at definieren, provider ist leaflet : http://leaflet-extras.github.io/leaflet-providers/preview/index.html 
+let baselayers = {
+    standard: L.tileLayer.provider("OpenStreetMap.CH"),
+    topographie: L.tileLayer.provider("OpenTopoMap"),
+    imagery: L.tileLayer.provider("Esri.WorldImagery"),
+    // terrain: L.tileLayer.provider("BasemapAT.terrain"),
+    // surface: L.tileLayer.provider("BasemapAT.surface"),
+    // highdpi: L.tileLayer.provider("BasemapAT.highdpi"),
+};
+    
+let map = L.map('overviewmap', { //muss overviewmap heißen, weil das div element dazu im index html so definiert. ergebniskarte heißt map!
+    center: [46.7699, 10.2405], //welcher kartenausschnitt u darunter welcher zoom
+    zoom: 10, 
+    fullscreenControl: true,//Fullscreen plugin
+    layers: [baselayers.standard]
+}) 
+
+// Kartenhintergründe und Overlays zur Layer-Control hinzufügen
+let layerControl = L.control.layers({
+    "Open Street": baselayers.standard,
+    "Topographie": baselayers.topographie,
+    "Imagery": baselayers.imagery,
+}
+// { //Klammer erneut innerhalb der runden klammer öffnen, damit es eine visuelle abtrennung gibt, wo man dann andre sachen einblenden kann. 
+//     // "Zonierung des Biosphärenreservates": , layer fehlt
+// }
+).addTo(map);
 
 // hash
 L.hash(map);

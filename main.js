@@ -1,6 +1,6 @@
 // https://leafletjs.com/
 const map = L.map('map', {//map heißen, weil das div element dazu im index html so definiert. ergebniskarte heißt map!
-    center: [46.7599, 10.2104],
+    center: [46.7699, 10.2405],
     zoom: 10, 
     fullscreenControl: true,//Fullscreen plugin
 }) 

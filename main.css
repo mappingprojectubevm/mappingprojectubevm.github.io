@@ -166,7 +166,9 @@ a:visited {
     height: 500px;
     width: 70%;
     margin: auto;
-    border: 1px solid #2f3a2e;}
+    border: 1px solid #2f3a2e;
+}
+    
 
 /* ERGEBNISSE KARTE */
 #map {
