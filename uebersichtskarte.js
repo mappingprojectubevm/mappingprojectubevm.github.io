@@ -11,6 +11,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 //Hier könnte man noch verschiedene kartengrundlagen einabuen wie im beispiel. und den layer fürs BR wenn wir in finden/Bekommen
 
+// hash
+L.hash(map);
+
 // //Minimap
 var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"), {
     toggleDisplay: true, //minimap ein und ausklappbar
