@@ -1,14 +1,11 @@
-//Hier könnte man noch verschiedene kartengrundlagen einabuen wie im beispiel. und den layer fürs BR wenn wir in finden/Bekommen
-// Kartenhintergründe der basemap.at definieren, provider ist leaflet : http://leaflet-extras.github.io/leaflet-providers/preview/index.html 
+// Kartenhintergründe definieren, provider ist leaflet : http://leaflet-extras.github.io/leaflet-providers/preview/index.html 
 let baselayers = {
     standard: L.tileLayer.provider("OpenStreetMap.CH"),
     topographie: L.tileLayer.provider("OpenTopoMap"),
     imagery: L.tileLayer.provider("Esri.WorldImagery"),
-    // terrain: L.tileLayer.provider("BasemapAT.terrain"),
-    // surface: L.tileLayer.provider("BasemapAT.surface"),
-    // highdpi: L.tileLayer.provider("BasemapAT.highdpi"),
 };
-    
+
+//variable erstellen, und einstellungen für die Map hinzufügen:
 let map = L.map('overviewmap', { //muss overviewmap heißen, weil das div element dazu im index html so definiert. ergebniskarte heißt map!
     center: [46.7699, 10.2405], //welcher kartenausschnitt u darunter welcher zoom
     zoom: 10, 
@@ -16,7 +13,7 @@ let map = L.map('overviewmap', { //muss overviewmap heißen, weil das div elemen
     layers: [baselayers.standard]
 }) 
 
-// Kartenhintergründe und Overlays zur Layer-Control hinzufügen
+// Kartenhintergründe und Overlays zur Layer-Control hinzufügen - die farbe des kastens ist noch blöd
 let layerControl = L.control.layers({
     "Open Street": baselayers.standard,
     "Topographie": baselayers.topographie,
@@ -27,10 +24,11 @@ let layerControl = L.control.layers({
 // }
 ).addTo(map);
 
-// hash
+
+// Plugin hash
 L.hash(map);
 
-// //Minimap
+// Plugin Minimap
 var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"), {
     toggleDisplay: true, //minimap ein und ausklappbar
     minimized: false //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
