@@ -15,9 +15,9 @@ let map = L.map('overviewmap', { //muss overviewmap heißen, weil das div elemen
 
 // Kartenhintergründe und Overlays zur Layer-Control hinzufügen -namen der karten, bzw. andre karten könnte man noch ausstauschen
 let layerControl = L.control.layers({
-    "Open Street": baselayers.standard,
+    "Standard": baselayers.standard,
     "Topographie": baselayers.topographie,
-    "Imagery": baselayers.imagery,
+    "Bildkarte": baselayers.imagery,
 }
 // { //Klammer erneut innerhalb der runden klammer öffnen, damit es eine visuelle abtrennung gibt, wo man dann andre sachen einblenden kann. 
 //     // "Zonierung des Biosphärenreservates": , layer fehlt
