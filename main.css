@@ -35,7 +35,7 @@ p {
 section {
     width: 100%;
     height: auto;
-    background-color: #7c7878;
+    /* background-color: #7c7878; auskommentiert, weil sonst überlagert das teile der karte bzw. die layercontrol!*/ 
 }
 
 
@@ -167,7 +167,6 @@ a:visited {
     width: 70%;
     margin: auto;
     border: 1px solid #2f3a2e;
-    background: transparent;
 }
     
 

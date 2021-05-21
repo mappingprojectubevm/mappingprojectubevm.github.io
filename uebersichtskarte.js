@@ -13,7 +13,7 @@ let map = L.map('overviewmap', { //muss overviewmap heißen, weil das div elemen
     layers: [baselayers.standard]
 }) 
 
-// Kartenhintergründe und Overlays zur Layer-Control hinzufügen - die farbe des kastens ist noch blöd
+// Kartenhintergründe und Overlays zur Layer-Control hinzufügen -namen der karten, bzw. andre karten könnte man noch ausstauschen
 let layerControl = L.control.layers({
     "Open Street": baselayers.standard,
     "Topographie": baselayers.topographie,
