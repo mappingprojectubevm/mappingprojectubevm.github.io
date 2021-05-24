@@ -24,11 +24,10 @@ p {
     font-size: large;
     font-style: normal;
     color: whitesmoke;
-    font: blocksatz;
-    /* wäre das das geliche wie text-align:center ? */
     padding-bottom: 20px;
     padding-right: 60px;
     padding-left: 60px;
+
 }
 
 /*definition Abschnitte */
@@ -47,8 +46,7 @@ footer {
 
 /* Body */
 body {
-    max-width: 100%;
-    /*banner und website auf full scrren */
+    max-width: 100%; /*banner und website auf full screen */
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     background-color: #7c7878;
@@ -76,11 +74,11 @@ figcaption {
 /* Formatierung Menüleiste!*/
 header div, footer div { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
     display: flex;
-    float: 400em;
+    /*float: 400em; */
     margin-top: 1em;
     margin-bottom: 1em;
     vertical-align: auto;
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap;*/
     background-color: #576b59;    /*gleiche wie bei banner quelle */
     justify-content: space-around;
  
@@ -111,13 +109,12 @@ a:visited {
     justify-content: space-around; /*elemente haben gleiche Abstände um sich herum */
 }
 
+
 .boxperson {
-    float: 500em;
+    /*float: 500em;*/
     margin: 1.0em;
-    /*border: solid 1px #2f3a2e;
-    /*Rahmen für die Box in denen Fotos sind --> Farbe noch ändern*/
+    /*Rahmen für die Box in denen Fotos sind könnte man mit border einstellen border: solid 1px #2f3a2e */
     padding: 3em 3.5em;
-    /*em??*/
     background-color: #576b59;
     vertical-align: auto;
 
@@ -125,8 +122,8 @@ a:visited {
 
 .danke {
     display: flex;
-    border-radius: 50%;
-    margin: auto;
+    border-radius: 50%; /*bild wird "rund"*/
+    margin: auto; /*bild wird mit display u margin zentriert */
 }
 
 
@@ -153,22 +150,6 @@ a:visited {
         width: 100%;
     }
 }
-/*Bildschirmeinstellung für Handy
-@media screen and (max-width: 320px) {
-    main {
-        width: 100vw;
-    }
-    .boxperson {
-        width: 100%
-    }
-
-@media screen and (max-width: 1280px) {
-    header img .banner {
-        width: 100vw;
-    }
-}*/
-
-
 /* REGION KARTE */
 #overviewmap {
     height: 500px;
@@ -177,10 +158,14 @@ a:visited {
     border: 1px solid #2f3a2e;
 }
     
-
 /* ERGEBNISSE KARTE */ /*könnte man e noc hvergrößern ??*/
 #map {
     height: 500px;
     width: 70%;
     margin: auto;
     border: 1px solid #2f3a2e;}
+    
+
+
+/*Bildschirmeinstellung für Handy */
+
