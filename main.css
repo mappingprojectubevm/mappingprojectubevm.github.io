@@ -180,13 +180,18 @@ a:visited {
         flex-wrap: wrap;
 
     }
+    body p {
+        padding-left: 10mm;
+        padding-right: 10mm;
+    }
 }
 @media screen and (max-width: 1280px) {
     .danke, header img .banner {
         width: 100vw;
-    }
+    /* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
 }
-/* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
+}
+
 
 /*Menu*/
 @media screen and (max-width:900px) {
