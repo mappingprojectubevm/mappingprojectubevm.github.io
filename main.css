@@ -31,7 +31,7 @@ p {
 
 }
 
-/*definition Abschnitte */
+/*definition Abschnitte braucht es das eig noch ??*/
 section {
     width: 100%;
     height: auto;
@@ -139,18 +139,6 @@ a:visited {
     margin-left: 3em;
 }
 
-
-/* Auf andere Screens anpassen -- titelbild geht und text auhc - rest noch anpassen !!*/
-
-@media screen and (max-width:900px) {
-    main {
-        max-width: 90%;
-    }
-
-    .boxperson {
-        width: 100%;
-    }
-}
 /* REGION KARTE */
 #overviewmap {
     height: 700px;
@@ -165,7 +153,6 @@ a:visited {
     width: 70%;
     margin: auto;
     border: 1px solid #2f3a2e;}
-    
 
 
 /*Bildschirmeinstellung für kleinere Bildschirme */
@@ -181,6 +168,7 @@ a:visited {
     /*Fotoboxen und Menu */
    .boxperson {
         flex-wrap: wrap;
+        width: 100%;
 
     }
     #textmenu {
