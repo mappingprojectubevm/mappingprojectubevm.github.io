@@ -19,7 +19,7 @@ h3 {
 
 p {
     /* wenn hier nicht section steht übernimmt es das auch für den text der anderen seite, das ist fast angenehmer, muss mans nur einmal einstellen */
-    text-align: justify;
+    text-align: justify; /*font: blocksatz hat nicht funktioniert, so gehts */
     font-family: 'Roboto Condensed', sans-serif;
     font-size: large;
     font-style: normal;
@@ -168,4 +168,37 @@ a:visited {
 
 
 /*Bildschirmeinstellung für Handy */
+@media screen and (max-width:900px) {
+
+    .danke {
+        width: 100%;
+    };
+    header img .banner {
+        width: 100vw;
+    };
+   .boxperson {
+        flex-wrap: wrap;
+
+    }
+}
+@media screen and (max-width: 1280px) {
+    .danke, header img .banner {
+        width: 100vw;
+    }
+}
+/* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
+
+/*Menu*/
+@media screen and (max-width:900px) {
+    #textmenu {
+        flex-wrap:wrap;
+        text-align:center;
+        width: 100%;
+    }
+    .flex {
+        flex-wrap:wrap;
+        margin: auto;
+        width: 90%;
+    }
+}
 
