@@ -167,38 +167,21 @@ a:visited {
     
 
 
-/*Bildschirmeinstellung für Handy */
+/*Bildschirmeinstellung für kleinere Bildschirme */
 @media screen and (max-width:900px) {
-
+    /*bilder*/
     .danke {
         width: 100%;
     };
     header img .banner {
         width: 100vw;
     };
+
+    /*Fotoboxen und Menu */
    .boxperson {
         flex-wrap: wrap;
 
     }
-    body p {
-        padding-left: 10mm;
-        padding-right: 10mm;
-    }
-    #map, #overviewmap {
-       width: 90%;
-       margin: center;
-    }
-}
-@media screen and (max-width: 1280px) {
-    .danke, header img .banner {
-        width: 100vw;
-    /* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
-}
-}
-
-
-/*Menu & Fotoboxes*/
-@media screen and (max-width:900px) {
     #textmenu {
         flex-wrap:wrap;
         text-align:center;
@@ -209,5 +192,21 @@ a:visited {
         margin: auto;
         width: 90%;
     }
+    /*text*/
+    /* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
+    body p {
+        padding-left: 10mm;
+        padding-right: 10mm;
+    }
+    /*Karten */
+    #map, #overviewmap {
+       width: 90%;
+       margin: center;
+    }
 }
 
+@media screen and (max-width: 1280px) {
+    .danke, header img .banner {
+        width: 100vw;
+    }
+}
