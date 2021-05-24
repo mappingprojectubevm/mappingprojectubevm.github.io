@@ -153,7 +153,7 @@ a:visited {
 }
 /* REGION KARTE */
 #overviewmap {
-    height: 500px;
+    height: 700px;
     width: 70%;
     margin: auto;
     border: 1px solid #2f3a2e;
@@ -161,7 +161,7 @@ a:visited {
     
 /* ERGEBNISSE KARTE */ /*könnte man e noc hvergrößern ??*/
 #map {
-    height: 500px;
+    height: 700px;
     width: 70%;
     margin: auto;
     border: 1px solid #2f3a2e;}
