@@ -27,7 +27,7 @@ p {
     padding-bottom: 20px;
     padding-right: 60px;
     padding-left: 60px;
-    hyphens: auto; /*automatische Silbentrennung*/
+    hyphens: auto; /*automatische Silbentrennung, mit komischen trennungen.*/
 
 }
 
@@ -198,6 +198,7 @@ a:visited {
     body p {
         padding-left: 10mm;
         padding-right: 10mm;
+
     }
     /*Karten */
     #map, #overviewmap {
