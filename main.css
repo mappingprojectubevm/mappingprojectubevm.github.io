@@ -19,7 +19,7 @@ h3 {
 
 p {
     /* wenn hier nicht section steht übernimmt es das auch für den text der anderen seite, das ist fast angenehmer, muss mans nur einmal einstellen */
-    text-align: justify;
+    text-align: justify; /*font: blocksatz hat nicht funktioniert, so gehts */
     font-family: 'Roboto Condensed', sans-serif;
     font-size: large;
     font-style: normal;
@@ -27,6 +27,7 @@ p {
     padding-bottom: 20px;
     padding-right: 60px;
     padding-left: 60px;
+    hyphens: auto; /*automatische Silbentrennung, mit komischen trennungen.*/
 
 }
 
@@ -152,7 +153,7 @@ a:visited {
 }
 /* REGION KARTE */
 #overviewmap {
-    height: 500px;
+    height: 700px;
     width: 70%;
     margin: auto;
     border: 1px solid #2f3a2e;
@@ -160,12 +161,54 @@ a:visited {
     
 /* ERGEBNISSE KARTE */ /*könnte man e noc hvergrößern ??*/
 #map {
-    height: 500px;
+    height: 700px;
     width: 70%;
     margin: auto;
     border: 1px solid #2f3a2e;}
     
 
 
-/*Bildschirmeinstellung für Handy */
+/*Bildschirmeinstellung für kleinere Bildschirme */
+@media screen and (max-width:900px) {
+    /*bilder*/
+    .danke {
+        width: 100%;
+    };
+    header img .banner {
+        width: 100vw;
+    };
 
+    /*Fotoboxen und Menu */
+   .boxperson {
+        flex-wrap: wrap;
+
+    }
+    #textmenu {
+        flex-wrap:wrap;
+        text-align:center;
+        width: 100%;
+    }
+    .flex {
+        flex-wrap:wrap;
+        margin: auto;
+        width: 90%;
+    }
+    /*text*/
+    /* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
+    body p {
+        padding-left: 10mm;
+        padding-right: 10mm;
+
+    }
+    /*Karten */
+    #map, #overviewmap {
+       width: 90%;
+       margin: center;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    header img .banner {
+        width: 100vw;
+    }
+}
