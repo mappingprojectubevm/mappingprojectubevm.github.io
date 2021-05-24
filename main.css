@@ -184,6 +184,10 @@ a:visited {
         padding-left: 10mm;
         padding-right: 10mm;
     }
+    #map, #overviewmap {
+       width: 90%;
+       margin: center;
+    }
 }
 @media screen and (max-width: 1280px) {
     .danke, header img .banner {
