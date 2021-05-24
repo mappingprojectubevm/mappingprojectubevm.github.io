@@ -197,7 +197,7 @@ a:visited {
 }
 
 
-/*Menu*/
+/*Menu & Fotoboxes*/
 @media screen and (max-width:900px) {
     #textmenu {
         flex-wrap:wrap;
