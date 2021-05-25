@@ -220,7 +220,7 @@ ul a:visited { color: whitesmoke;}
     text-align: center;
     padding-left: 50%; cursor: pointer;
     padding-right: 50%;
-   display: block;
+    display: inline-block;
  
 }
 
@@ -235,12 +235,12 @@ ul a:visited { color: whitesmoke;}
     position: absolute;
     background-color: #533627; /*#b7c4b8 */
     min-width: 10px;
-    z-index: 20;
-    overflow: auto;
+    /*z-index: 20; */
+   /* overflow: auto; */
 }
 /*mousover für das dropdown*/
 .dropdown-content a:hover {background-color: white;}
-.dropdown:hover .dropdown-content {display: block;}
+ /*.dropdown:hover .dropdown-content {display: block;} */
 .dropdown:hover .dropbtn {background-color: grey;}
 
 .show {display:block;}
