@@ -16,8 +16,8 @@ h3 {
     text-align: center;
     /* text-size + font ändern*/
 }
-
-p {
+h4 { padding-left: 60px; color: #533627; font-size: 16pt;}
+p, ul{
     /* wenn hier nicht section steht übernimmt es das auch für den text der anderen seite, das ist fast angenehmer, muss mans nur einmal einstellen */
     text-align: left; /*font: blocksatz hat nicht funktioniert, so gehts */
     font-family: 'Roboto Condensed', sans-serif;
@@ -30,7 +30,7 @@ p {
     hyphens: auto; /*automatische Silbentrennung, mit komischen trennungen.*/
 
 }
-
+ul { padding-left: 80px; }
 /*definition Abschnitte braucht es das eig noch ??*/
 section {
     width: 100%;
@@ -201,6 +201,8 @@ a:visited {
     }
 }
 /* Dropdown für die Literatur*/
+
+/*Dropdown für Quellenverzeichnis */
 .dropbtn {
     max-width: 100%;
     background-color:#576b59; /* Farbe wie footer*/
