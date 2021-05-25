@@ -114,7 +114,6 @@ ul a:visited { color: whitesmoke;}
     justify-content: space-around; /*elemente haben gleiche Abstände um sich herum */
 }
 
-
 .boxperson {
     /*float: 500em;*/
     margin: 1.0em;
@@ -239,7 +238,7 @@ ul a:visited { color: whitesmoke;}
    
 }
 /*mousover für das dropdown*/
-.dropdown-content a:hover {background-color: white;}
+.dropdown-content a:hover {font-style: gray;} /*styles der schrift oben bei a:visited usw verändern! */
  /*.dropdown:hover .dropdown-content {display: block;} */
 .dropdown:hover .dropbtn {background-color: grey;}
 
