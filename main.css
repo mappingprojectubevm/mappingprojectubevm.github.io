@@ -205,19 +205,22 @@ ul a:visited { color: whitesmoke;}
     }
 }
 
-/*Dropdown für Quellenverzeichnis */
+
+
+/*Dropdown Button für Quellenverzeichnis */
 .dropbtn {
     max-width: 100%;
     background-color:#576b59; /* Farbe wie footer*/
     color: white;
- padding-top: 10px;
- padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
     border: 1px solid;
     border-color: grey;
     text-align: center;
-    padding-left: 50%;
+    padding-left: 50%; cursor: pointer;
     padding-right: 50%;
+   
  
 }
 
@@ -226,14 +229,18 @@ ul a:visited { color: whitesmoke;}
     margin-left: 3em;
     margin-right: 3em;
 }
+/*INhalt innerhalb des  Dropdown */ 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #533627; /*#b7c4b8 */
     min-width: 10px;
     z-index: 20;
+    overflow: auto;
 }
 /*mousover für das dropdown*/
 .dropdown-content a:hover {background-color: white;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: grey;}
+
+.show {display:block;}
