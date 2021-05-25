@@ -1,6 +1,6 @@
 // Kartenhintergründe definieren, provider ist leaflet : http://leaflet-extras.github.io/leaflet-providers/preview/index.html     http://leaflet-extras.github.io/leaflet-providers/preview/
 let baselayers = {
-    standard: L.tileLayer.provider("OpenStreetMap.CH"),
+    standard: L.tileLayer.provider("OpenStreetMap.Mapnik"),
     topographie: L.tileLayer.provider("OpenTopoMap"),
     imagery: L.tileLayer.provider("Esri.WorldImagery"),
 };
