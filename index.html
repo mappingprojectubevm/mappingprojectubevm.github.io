@@ -42,7 +42,12 @@
         <div class=background1>
             <!-- klasse kommt nirgedns for warum ist das da?-->
             <h2>Über uns</h2>
-            <p>Wir sind Studierende des Masterstudiengangs “Globaler Wandel – regionale Nachhaltigkeit” am Institut der Geographie an der Leopold-Franzens-Universität Innsbruck. In unserem Studium beschäftigen wir uns Raumentwicklung und Regionalforschung, wobei wir uns insbesondere mit dem Thema Biosphärenreservate auseinandergesetzt haben. Dabei bestand das Angebot in drei verschiedenen Biosphären-Regionen zu forschen: die Schwäbische Alb (Deutschland), das Große Walsertal (Österreich) und Engiadina Bassa – Val Müstair (Schweiz). </p>
+            <p>Wir sind Studierende des Masterstudiengangs “Globaler Wandel – regionale Nachhaltigkeit” am Institut der
+                Geographie an der Leopold-Franzens-Universität Innsbruck. In unserem Studium beschäftigen wir uns
+                Raumentwicklung und Regionalforschung, wobei wir uns insbesondere mit dem Thema Biosphärenreservate
+                auseinandergesetzt haben. Dabei bestand das Angebot in drei verschiedenen Biosphären-Regionen zu
+                forschen: die Schwäbische Alb (Deutschland), das Große Walsertal (Österreich) und Engiadina Bassa – Val
+                Müstair (Schweiz). </p>
 
 
             <!-- Fotos vom Team -->
@@ -77,9 +82,15 @@
     <!-- Section 2 -->
     <section>
         <h2>Unser Projekt</h2>
-        <p>Unsere Forschungsgruppe entschied sich für das „UNESCO Biosphärenreservat Engiadina Bassa Val Müstair“ und befasste sich damit, welche Partizipationsstrukturen für die Bevölkerung vorliegen, um an den Projekten des Biosphärenreservates teilzuhaben. Zudem stellten wir uns die Fragen, inwieweit sich dies auf das Nachhaltigkeitsverständnis der Bevölkerung und auf die Haltung zu möglichen Ausweitungen des Biosphärenreservates auswirkt.    
-        <br>
-        Leider konnte die Forschung aufgrund der Covid-19-Krise nicht vor Ort umgesetzt werden. Im Zuge unseres Projektes führten wir digitale Interviews mit verschiedenen Akteuren in der Region durch und erstellten mit den Interviewten eine Karte, in der unsere Ergebnisse dargestellt werden. </p>
+        <p>Unsere Forschungsgruppe entschied sich für das „UNESCO Biosphärenreservat Engiadina Bassa Val Müstair“ und
+            befasste sich damit, welche Partizipationsstrukturen für die Bevölkerung vorliegen, um an den Projekten des
+            Biosphärenreservates teilzuhaben. Zudem stellten wir uns die Fragen, inwieweit sich dies auf das
+            Nachhaltigkeitsverständnis der Bevölkerung und auf die Haltung zu möglichen Ausweitungen des
+            Biosphärenreservates auswirkt.
+            <br>
+            Leider konnte die Forschung aufgrund der Covid-19-Krise nicht vor Ort umgesetzt werden. Im Zuge unseres
+            Projektes führten wir digitale Interviews mit verschiedenen Akteuren in der Region durch und erstellten mit
+            den Interviewten eine Karte, in der unsere Ergebnisse dargestellt werden. </p>
     </section>
 
     <br>
@@ -88,61 +99,56 @@
     <section>
         <!-- <h2>Danke</h2> -->
         <img class="danke" src="images/dankeohnehintergrd.png">
-        <p> Wir bedanken uns für die Unterstützung bei unseren Dozenten, 
+        <p> Wir bedanken uns für die Unterstützung bei unseren Dozenten,
             für den spannenden Austausch bei all unseren
-            Interviewpartner*innen und 
+            Interviewpartner*innen und
             für die gute Zusammenarbeit und Diskussionen bei unseren Kommiliton*innen.</p>
     </section>
     <script>
         let dropBtn = document.querySelector('.dropbtn');
         let dropdownContent = document.querySelector('.dropdown-content');
-        dropdownBtn.addEventListener('click',()=>{
-           if(dropdownContent.style.display===""){
-            dropdownContent.style.display="block";
-           } else {
-            dropdownContent.style.display="";
-           }
-        })
-        </script>
-    <section>
-    <div class="dropdown"> <!--Link zum Tutorial: http://www.w3bai.com/de/howto/tryit.php?filename=tryhow_css_dropdown_navbar_click-->
-        <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Quellenangaben</a>
-        <div class="dropdown-content" id="myDropdown" >
-            <p> <!--Diese Quellen kommen in die Seite ders Region-->
-                <ul>
-                    <li>Das deutsche MAB-Nationalkomitee (2017): Positionspapier desdeutschen MAP-Nationalkomitees zur Zonierung in UNESCO-Biosphärenreservaten in Deutschland. Online unter: https://www.bfn.de/fileadmin/BfN/internationalernaturschutz/Dokumente/MAB/Positionspapier_Kernzonen_2017_bf.pdf (letzter Zugriff am 25.05.2021)
-               </li><li>Filli, Flurin & Angelika Abderhalden (2020) Der Weg vom Réserve de Biosphère Parc Suisse zum UNESCO Biosphärenreservat Engiadina Val Müstair: eine basisdemokratische Herausforderung. In: Borsdorf, Axel; Jungmeier, Michael; Braun, Valerie; Heinrich, Kati (Hrsg.): Biosphäre 4.0. UNESCO Biosphere Reserves als Modellregionen einer nachhaltigen Entwicklung. Springer Verlag. 255-264. DOI: 10.1007/978-3-662-60707-7
-                </li>
-                <li>Managementplan - Der Schweizerische Nationalpark im Engadin (2016): https://www.nationalpark.ch/de/about/ueber-uns/unesco-biosfera-engiadina-val-muestair/managementplan/ 
-            </li></ul></p>
-
-        </div>
-    </div>
-    <script> //mit de mscript kann man innerhalb der html ein js shreiben. wurde hier gemacht zur übersichtlichkeit!!
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(e) {
-          if (!e.target.matches('.dropbtn')) {
-        
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            for (var d = 0; d < dropdowns.length; d++) {
-              var openDropdown = dropdowns[d];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
+        dropdownBtn.addEventListener('click', () => {
+            if (dropdownContent.style.display === "") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "";
             }
-          }
-        }
+        })
+    </script>
+    <section>
+        <div class="dropdown">
+            <!--Link zum Tutorial: http://www.w3bai.com/de/howto/tryit.php?filename=tryhow_css_dropdown_navbar_click-->
+            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Quellenangaben</a>
+            <div class="dropdown-content" id="myDropdown">
+                <p>
+                    <!--Diese Quellen kommen in die Seite ders Region-->
+                    <ul>
+                        <li>Das deutsche MAB-Nationalkomitee (2017): Positionspapier desdeutschen MAP-Nationalkomitees
+                            zur Zonierung in UNESCO-Biosphärenreservaten in Deutschland. Online unter:
+                            https://www.bfn.de/fileadmin/BfN/internationalernaturschutz/Dokumente/MAB/Positionspapier_Kernzonen_2017_bf.pdf
+                            (letzter Zugriff am 25.05.2021)
+                        </li>
+                        <li>Der Schweizerische Nationalpark (2016): Managementplan. Online unter:
+                            https://www.nationalpark.ch/de/about/ueber-uns/unesco-biosfera-engiadina-val-muestair/managementplan/ (letzter Zugriff am 25.05.2021)
+                        </li>
+                        <li>Filli, Flurin & Angelika Abderhalden (2020) Der Weg vom Réserve de Biosphère Parc Suisse zum
+                            UNESCO Biosphärenreservat Engiadina Val Müstair: eine basisdemokratische Herausforderung.
+                            In: Borsdorf, Axel; Jungmeier, Michael; Braun, Valerie; Heinrich, Kati (Hrsg.): Biosphäre
+                            4.0. UNESCO Biosphere Reserves als Modellregionen einer nachhaltigen Entwicklung. Springer
+                            Verlag. 255-264. DOI: 10.1007/978-3-662-60707-7
+                        </li>
+                    </ul>
+                </p>
+
+            </div>
+        </div>
+        <script>
+
         </script>
     </section>
 
     <footer>
-        
+
         <hr>
         Hier geht es weiter zu:
         <div id="textmenu">
@@ -150,7 +156,7 @@
             <div><a href="karte.html">Ergebnisse und Karte</a></div>
         </div>
 
-        
+
     </footer>
 </body>
 

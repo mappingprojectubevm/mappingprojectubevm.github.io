@@ -1,18 +1,18 @@
 // https://leafletjs.com/
-const map = L.map('map', {//map heißen, weil das div element dazu im index html so definiert. ergebniskarte heißt map!
-    center: [46.7699, 10.2405],
-    zoom: 10, 
-    fullscreenControl: true,//Fullscreen plugin
-}) 
+const map = L.map('map', { //map heißen, weil das div element dazu im index html so definiert. ergebniskarte heißt map!
+  center: [46.7699, 10.2405],
+  zoom: 10,
+  fullscreenControl: true, //Fullscreen plugin
+})
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 //Hier könnte man noch verschiedene kartengrundlagen einabuen wie im beispiel. und ev den layer fürs BR wenn wir in finden/Bekommen
 // Beispielmarker für Popups: koordinaten und text ändern :) die koordinaten könnten zb mithilfe des hash plugins herausgelesen werden! :)
 L.marker([46.7599, 10.2104]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-    .openPopup();
+  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+  .openPopup();
 
 
 
@@ -29,11 +29,31 @@ var hash = new L.Hash(map); //Var hash steht hier nur weil man eine neue Var ers
 
 // //Minimap
 var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"), {
-    toggleDisplay: true, //minimap ein und ausklappbar
-    minimized: true //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
+  toggleDisplay: true, //minimap ein und ausklappbar
+  minimized: true //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
 }).addTo(map);
 
 
 //Legende: https://github.com/ptma/Leaflet.Legend 
 
 
+/* DROPDOWN FÜR LEGENDE
+When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
