@@ -205,7 +205,6 @@ ul a:visited { color: whitesmoke;}
 }
 
 
-
 /*Dropdown Button für Quellenverzeichnis */
 .dropbtn {
     max-width: 100%;
@@ -220,21 +219,20 @@ ul a:visited { color: whitesmoke;}
     padding-left: 50%; cursor: pointer;
     padding-right: 50%;
     /*display: inline-block;*/
- 
 }
-
 .dropdown {
     position: relative;
     margin-left: 3em;
     margin-right: 3em;
 }
-/*INhalt innerhalb des  Dropdown */ 
+/*Inhalt innerhalb des  Dropdown */ 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #533627; /*#b7c4b8 */
     min-width: 10px;
     z-index: 20;
+   /*overflow: auto; */
    
 }
 /*mousover für das dropdown*/
