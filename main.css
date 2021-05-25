@@ -86,11 +86,15 @@ header div, footer div { /*achtung wenn wir was fürs menü ändern dann müssen
 
 }
 
-/*Farbe für Links zu den anderen Seiten*/
+/*Farbe für Links zu den anderen Seiten & Quellen*/
 a:link,
 a:visited {
     color: #b7c4b8;/*damit linkfarbe gleich bleibt auch beim anklicken */
 }
+p a:link,
+p a:visited
+ul a:link,
+ul a:visited { color: whitesmoke;}
 
 #textmenu {
     font-weight: bold;
@@ -200,7 +204,6 @@ a:visited {
         width: 100vw;
     }
 }
-
 /*Dropdown für Quellenverzeichnis */
 .dropbtn {
     background-color: black;
