@@ -169,7 +169,7 @@ ul a:visited { color: whitesmoke;}
     };
 
     /*Fotoboxen und Menu */
-   .boxperson {
+    .boxperson {
         flex-wrap: wrap;
         width: 100%;
 
@@ -196,6 +196,13 @@ ul a:visited { color: whitesmoke;}
        width: 90%;
        margin: center;
     }
+    /*Dropdownmenu */
+    .dropdown-content, .dropdown, .dropbtn {
+        width: 90%;
+        margin: center;
+        flex-wrap:wrap;
+    }
+
 }
 
 @media screen and (max-width: 1280px) {
@@ -207,23 +214,27 @@ ul a:visited { color: whitesmoke;}
 
 /*Dropdown Button für Quellenverzeichnis */
 .dropbtn {
-    max-width: 100%;
     background-color:#576b59; /* Farbe wie footer*/
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
     border: 1px solid;
-    border-color: grey;
-    text-align: center;
-    padding-left: 50%; cursor: pointer;
-    padding-right: 50%;
-    /*display: inline-block;*/
+    border-color: grey;    
+    font-size: 20px;
+    text-align: center; /*text zentriert */
+    padding-top: 10px; /*größe der box */
+    padding-bottom: 10px;
+    padding-right: 50px; /*größe der box auf den seiten */
+    padding-left: 50px;
+    display: block; /*damit dehnt es sich zum rand*/
+
+    max-width: 100%;/*Box soll sich bis zum margin dehnen */
+    /* margin-left: 5em; /*entfernung zum rand, wird zu der unteren entfernung dazugenommen, muss nicht */
+     /* margin-right: 5em; */
 }
 .dropdown {
-    position: relative;
-    margin-left: 3em;
-    margin-right: 3em;
+    position:relative; /*damit der dropdown mittig kommt*/
+    display:inline-flexbox; /*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
+    margin-left: 5em; /*entfernung der box u des kontents vom rand */
+    margin-right: 5em;
+    
 }
 /*Inhalt innerhalb des  Dropdown */ 
 .dropdown-content {
@@ -231,13 +242,10 @@ ul a:visited { color: whitesmoke;}
     position: absolute;
     background-color: #533627; /*#b7c4b8 */
     min-width: 10px;
-    z-index: 20;
-   /*overflow: auto; */
-   
+    z-index: 20;   
 }
 /*mousover für das dropdown*/
 .dropdown-content a:hover {font-style: gray;} /*styles der schrift oben bei a:visited usw verändern! */
- /*.dropdown:hover .dropdown-content {display: block;} */
+/* .dropdown:hover .dropdown-content {display: block;}  --> nur wenn nicht klicken will*/
 .dropdown:hover .dropbtn {background-color: grey;}
-
-.show {display:block;}
+.show {display:block;} /*Verknüpfung zum JS, damit funktioniert ide Funktion mti dem Klicken */
