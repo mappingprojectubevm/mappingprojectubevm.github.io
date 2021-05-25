@@ -93,7 +93,17 @@
             Interviewpartner*innen und 
             für die gute Zusammenarbeit und Diskussionen bei unseren Kommiliton*innen.</p>
     </section>
-
+    <script>
+        let dropBtn = document.querySelector('.dropbtn');
+        let dropdownContent = document.querySelector('.dropdown-content');
+        dropdownBtn.addEventListener('click',()=>{
+           if(dropdownContent.style.display===""){
+            dropdownContent.style.display="block";
+           } else {
+            dropdownContent.style.display="";
+           }
+        })
+        </script>
     <section>
     <div class="dropdown">
         <button class="dropbtn">Quellenangaben</button>
