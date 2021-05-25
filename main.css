@@ -229,7 +229,7 @@ ul a:visited { color: whitesmoke;}
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #533627;
+    background-color: #533627; /*#b7c4b8 */
     min-width: 10px;
     z-index: 20;
 }
