@@ -24,3 +24,6 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
     minimized: true //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
 }).addTo(map);
 
+
+//Legende: https://github.com/ptma/Leaflet.Legend 
+
