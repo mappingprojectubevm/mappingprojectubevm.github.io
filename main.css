@@ -229,8 +229,6 @@ a:link { color: whitesmoke;}
     padding-bottom: 10px;
     display: block; /*damit dehnt es sich zum rand*/
     max-width: 100%;/*Box soll sich bis zum margin dehnen */
-    /* margin-left: 5em; /*entfernung zum rand, wird zu der unteren entfernung dazugenommen, muss nicht */
-     /* margin-right: 5em; */
 }
 .dropdown {
     position:relative; /*damit der dropdown mittig kommt*/
