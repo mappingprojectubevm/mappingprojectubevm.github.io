@@ -200,25 +200,35 @@ a:visited {
         width: 100vw;
     }
 }
-
+/* Dropdown für die Literatur*/
 .dropbtn {
-    background-color: black;
+    max-width: 100%;
+    background-color:#576b59; /* Farbe wie footer*/
     color: white;
-    padding: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
     font-size: 20px;
-    border: none;
+    border: 1px solid;
+    border-color: grey;
+    text-align: center;
+    padding-left: 50%;
+    padding-right: 50%;
+    
 }
+
 .dropdown {
     position: relative;
-    display: inline-block;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: lightgrey;
-    min-width: 100px;
-    z-index: 1;
+    background-color: #533627;
+    min-width: 10px;
+    z-index: 20;
 }
+/*mousover für das dropdown*/
 .dropdown-content a:hover {background-color: white;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: grey;}
