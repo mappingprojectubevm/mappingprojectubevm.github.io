@@ -197,10 +197,13 @@ ul a:visited { color: whitesmoke;}
        margin: center;
     }
     /*Dropdownmenu */
-    .dropdown-content, .dropdown, .dropbtn {
+    .dropdown-content, .dropdown {
+        width: 100%;
+    } .dropbtn {
         width: 90%;
-        margin: center;
-        flex-wrap:wrap;
+        padding-left: 10mm;
+        padding-right: 10mm;
+        
     }
 
 }
@@ -221,8 +224,7 @@ ul a:visited { color: whitesmoke;}
     text-align: center; /*text zentriert */
     padding-top: 10px; /*größe der box */
     padding-bottom: 10px;
-    padding-right: 50px; /*größe der box auf den seiten */
-    padding-left: 50px;
+
     display: block; /*damit dehnt es sich zum rand*/
 
     max-width: 100%;/*Box soll sich bis zum margin dehnen */
