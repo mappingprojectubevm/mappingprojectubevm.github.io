@@ -220,7 +220,7 @@ ul a:visited { color: whitesmoke;}
     text-align: center;
     padding-left: 50%; cursor: pointer;
     padding-right: 50%;
-   
+   display: block;
  
 }
 
