@@ -191,7 +191,7 @@ a:link { color: whitesmoke;}
     }
     /*text*/
     /* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
-    body p {
+    h4, body p {
         padding-left: 10mm;
         padding-right: 10mm;
 
