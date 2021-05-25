@@ -18,12 +18,14 @@ let layerControl = L.control.layers({
     "Standard": baselayers.standard,
     "Topographie": baselayers.topographie,
     "Bildkarte": baselayers.imagery,
+},
+{
+  "Interviews": overlays.Comments,
 }
 // { //Klammer erneut innerhalb der runden klammer öffnen, damit es eine visuelle abtrennung gibt, wo man dann andre sachen einblenden kann. 
 //     // "Zonierung des Biosphärenreservates": , layer fehlt
 // }
 ).addTo(map);
-
 
 // Plugin hash
 L.hash(map);
@@ -57,3 +59,27 @@ function myFunction() {
       }
     }
   }
+
+  
+/* icons einfügen 
+
+
+
+let drawComment = (geojsonData) => {
+  L.geoJson(geojsonData, {
+      onEachFeature: (feature, layer) => {
+          layer.bindPopup(`<strong>${feature.properties.NAME}</strong>
+          <hr>
+          Comment: ${feature.properties.NAME}`)
+      },
+      pointToLayer: (geoJsonPoint, latlng) => {
+          return L.marker(latlng, {
+              icon: L.icon({
+                  iconUrl: 'icons/comment-map-icon.png',
+                  iconSize: [38, 38]
+              })
+          })
+      },
+      attribution: '<a href= "https://"> Stadt Wien</a>,<a href= "">Map Icons Collection<a/>'
+  }).addTo(overlays.sightSeeing);
+}*/
