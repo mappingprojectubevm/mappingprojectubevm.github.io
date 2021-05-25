@@ -92,7 +92,7 @@ a:visited {
     color: #b7c4b8;/*damit linkfarbe gleich bleibt auch beim anklicken */
 }
 p a:link,
-p a:visited
+p a:visited,
 ul a:link,
 ul a:visited { color: whitesmoke;}
 
