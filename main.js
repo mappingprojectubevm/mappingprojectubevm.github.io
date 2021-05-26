@@ -37,7 +37,9 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 //Legende: https://github.com/ptma/Leaflet.Legend 
 
 
-/* DROPDOWN FÜR LEGENDE
+
+
+/* DROPDOWN FÜR QUELLE
 When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
