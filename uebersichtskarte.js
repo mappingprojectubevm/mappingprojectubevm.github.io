@@ -38,7 +38,7 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 
 
 
-/* DROPDOWN FÜR LEGENDE
+/* DROPDOWN FÜR Quellenangaben
 When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
