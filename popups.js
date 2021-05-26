@@ -54,5 +54,14 @@ const COMMENTS = [{
     lat: 46.7599,
     lng: 10.2114,
     id:"Vorteil", 
+}, {
+    nr: 9,
+    ort: "Siedlungsgebiet Unterengadin",
+    txt: "Das Unterengadin könnte vom BR profitieren ",
+    lat: 46.7599,
+    lng: 10.2014,
+    id:"Vorteil", 
 },
+
+//es fehlen momentan die punkte ab dem brauen im unteren teil des bildes
 ]
