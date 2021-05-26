@@ -14,7 +14,7 @@ const COMMENTS = [{
     id:"Nachteil", 
 },  {
     nr: 3,
-    ort: "Gebiet Valsot", //unsre kartengrundlage zeigt den ort valsot nicht, das ist vlt ein problem.
+    ort: "Gebiet Valsot", //unsre kartengrundlage zeigt den ort valsot nicht, das ist ein bisschen blöd, finde aber keine andre
     txt: "Dort wo noch kein BR ist könnte noch eine Entwicklung stattfinden",
     lat: 46.8736,
     lng: 10.4431,
