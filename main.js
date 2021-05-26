@@ -8,13 +8,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-//Hier könnte man noch verschiedene kartengrundlagen einabuen wie im beispiel. und ev den layer fürs BR wenn wir in finden/Bekommen
+
 // Beispielmarker für Popups: koordinaten und text ändern :) die koordinaten könnten zb mithilfe des hash plugins herausgelesen werden! :)
 L.marker([46.7599, 10.2104]).addTo(map)
   .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-  .openPopup();
-
-
+  //.openPopup();
 
 //Icon für Vorteile (ist ein Plus) (https://fontawesome.com/icons/plus-circle?style=regular)  <i class="far fa-plus-square"></i>
 //Icon für Nachteile https://fontawesome.com/icons/minus-square?style=regular <i class="far fa-minus-square"></i>
