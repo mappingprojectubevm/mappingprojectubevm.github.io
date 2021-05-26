@@ -9,7 +9,7 @@ const COMMENTS = [{
     nr: 2, //nur zur Übersicht, brauchen wir eig nicht zrum einbinden
     ort: "Schigebiet Scuol",
     txt: "Schigebiete sehen Einschränkungen touristische Angebote in der Natur zu machen, wenn die Schigebiete sich mit diesem Leitbild nicht identifizieren können",
-    lat: 46.8171, //muss man wahrscheinlich noch anpassen
+    lat: 46.8171, //muss man wahrscheinlich noch überall anpassen nach dem implementieren
     lng: 10.2873,
     id:"Nachteil", 
 },  {
