@@ -201,13 +201,22 @@ a:link { color: whitesmoke;}
        width: 90%;
        margin: center;
     }
-    /*Dropdownmenu noch anpassen !!*/
-    .dropdown-content, .dropdown {
-        width: 100%;
 
-    } .dropbtn {
-        width: 100%;     
+    /*Dropdownmenu*/
+    .dropbtn {
+        display:block; /*Quellenbox mittig */
+        position: relative;
     }
+    .dropdown-content {
+        left:0; /*damti es nicht mehr über den bildschirmrand hinausgeht. */
+        right:0;
+    }
+    /*LINK NOCH ANPASSE NIN QUELLE */
+    #myDropdown a:link,
+    #myDropdown a:visited { 
+    left:0;
+    right:0;
+}
 
 }
 
