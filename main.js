@@ -36,18 +36,14 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 
 
 console.log(COMMENTS) //Schauen ob die erknüpfung funktioniert und etwas geloged wird
-
-for (let entry of COMMENTS){ //muss noch umgebaut werden und marker entsprechend id gesetzt werden   
-  let marker = L.marker([entry.lat, entry.lng]); 
-  marker.bindPopup(`
+for (let entry of COMMENTS){ //marker müssen noch an id angepasst werden.    
+  //console.log(entry);
+  let mrk = L.marker([entry.lat, entry.lng]).addTo(map);
+  mrk.bindPopup(`
       <h5> ${entry.ort}:</h5>
       <p class="popup">"${entry.txt}"></p> 
-      `).addTo(map);
-
-
-
-
-
+      `);
+}
 
 
 
