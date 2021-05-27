@@ -19,9 +19,8 @@ let layerControl = L.control.layers({
     "Topographie": baselayers.topographie,
     "Bildkarte": baselayers.imagery,
 },
-{
-  "Interviews": overlays.Comments,
-}
+//{"Interviews": overlays.Comments,} //ausgeklammert, weil die karte damit nicht mehr ging, weil dieser layer nicht existiert
+
 // { //Klammer erneut innerhalb der runden klammer öffnen, damit es eine visuelle abtrennung gibt, wo man dann andre sachen einblenden kann. 
 //     // "Zonierung des Biosphärenreservates": , layer fehlt
 // }
@@ -39,7 +38,7 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 
 
 
-/* DROPDOWN FÜR LEGENDE
+/* DROPDOWN FÜR Quellenangaben
 When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
