@@ -264,8 +264,7 @@ a:link { color: #b7c4b8;}
     position: relative;
     text-align: center;
     color: white;
-
-  }
+   }
   
   /* Bottom left text
   .bottom-left {
@@ -302,6 +301,8 @@ a:link { color: #b7c4b8;}
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color: #b7c4b8;
-         
+    color:black;
+    text-shadow:white;
+    font-weight: bold;
+                  
   }
