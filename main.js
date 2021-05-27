@@ -35,6 +35,36 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 //Legende: https://github.com/ptma/Leaflet.Legend 
 
 
+console.log(COMMENTS) //Schauen ob die erknüpfung funktioniert und etwas geloged wird
+
+for (let entry of COMMENTS){ //muss noch umgebaut werden und marker entsprechend id gesetzt werden   
+  let marker = L.marker([entry.lat, entry.lng]); 
+  marker.bindPopup(`
+      <h5> ${entry.ort}:</h5>
+      <p class="popup">"${entry.txt}"></p> 
+      `).addTo(map);
+}
+
+//BSP
+var myIcon = L.divIcon({className: 'my-div-icon'});
+// you can set .my-div-icon styles in CSS
+
+L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* DROPDOWN FÜR QUELLE
@@ -57,3 +87,7 @@ window.onclick = function (e) {
     }
   }
 }
+
+
+
+
