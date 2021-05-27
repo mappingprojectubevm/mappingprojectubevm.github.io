@@ -10,8 +10,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 // Beispielmarker für Popups: koordinaten und text ändern :) die koordinaten könnten zb mithilfe des hash plugins herausgelesen werden! :)
-L.marker([46.7599, 10.2104]).addTo(map)
-  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+//L.marker([46.7599, 10.2104]).addTo(map)
+//  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
   //.openPopup();
 
 //Icon für Vorteile (ist ein Plus) (https://fontawesome.com/icons/plus-circle?style=regular)  <i class="far fa-plus-square"></i>
