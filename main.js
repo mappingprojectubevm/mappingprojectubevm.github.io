@@ -41,7 +41,7 @@ for (let entry of COMMENTS){ //marker müssen noch an id angepasst werden.
   let mrk = L.marker([entry.lat, entry.lng]).addTo(map);
   mrk.bindPopup(`
       <h5> ${entry.ort}:</h5>
-      <p class="popup">"${entry.txt}"></p> 
+      <p class="popup">"${entry.txt}"</p> 
       `);
 }
 
