@@ -259,7 +259,7 @@ a:link { color: #b7c4b8;}
 .show {display:block;} /*Verknüpfung zum JS, damit funktioniert ide Funktion mti dem Klicken */
 
 
-/* Container holding the image and the text */
+/* Container für den Text und das Bild */
 .container {
     position: relative;
     text-align: center;
@@ -302,6 +302,6 @@ a:link { color: #b7c4b8;}
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color: #1f410b;
+    color: #b7c4b8;
          
   }
