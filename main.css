@@ -161,6 +161,17 @@ a:link { color: #b7c4b8;}
     margin: auto;
     border: 1px solid #2f3a2e;}
 
+/*POPUPS KARTE design muss noch angepasst werden*/ 
+.popup {
+    font-size: 10pt;
+    color:#1f410b;
+    
+}
+/*titel popups*/
+h5 {
+    font-size: 12pt;
+}
+
 
 /*Bildschirmeinstellung für kleinere Bildschirme */
 @media screen and (max-width:900px) {
