@@ -16,10 +16,18 @@ h3 {
     text-align: center;
     /* text-size + font ändern*/
 }
-h4 { padding-left: 60px; color: #533627; font-size: 16pt;}
-p, ul{
+
+h4 {
+    padding-left: 60px;
+    color: #533627;
+    font-size: 16pt;
+}
+
+p,
+ul {
     /* wenn hier nicht section steht übernimmt es das auch für den text der anderen seite, das ist fast angenehmer, muss mans nur einmal einstellen */
-    text-align: left; /*font: blocksatz hat nicht funktioniert, so gehts */
+    text-align: left;
+    /*font: blocksatz hat nicht funktioniert, so gehts */
     font-family: 'Roboto Condensed', sans-serif;
     font-size: large;
     font-style: normal;
@@ -27,10 +35,15 @@ p, ul{
     padding-bottom: 20px;
     padding-right: 60px;
     padding-left: 60px;
-    hyphens: auto; /*automatische Silbentrennung, mit komischen trennungen.*/
+    hyphens: auto;
+    /*automatische Silbentrennung, mit komischen trennungen.*/
 
 }
-ul { padding-left: 80px; }
+
+ul {
+    padding-left: 80px;
+}
+
 /*definition Abschnitte braucht es das eig noch ??
 section {
     width: 100%;
@@ -47,7 +60,7 @@ footer {
 
 /* Body */
 body {
-   /* max-width: 100%; /*banner und website auf full screen */
+    /* max-width: 100%; /*banner und website auf full screen */
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     background-color: #7c7878;
@@ -66,40 +79,49 @@ body {
 /* Beschriftung Banner mit Quelle*/
 figcaption {
     background-color: #576b59;
-    color: #1f410b; /*gleiche wie der restl. hintergrund*/
+    color: #1f410b;
+    /*gleiche wie der restl. hintergrund*/
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: right;
- }
+}
 
 /* Formatierung Menüleiste!*/
-header div, footer div { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
+header div,
+footer div {
+    /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
     display: flex;
     /*float: 400em; */
     margin-top: 1em;
     margin-bottom: 1em;
     vertical-align: auto;
     /*flex-wrap: nowrap;*/
-    background-color: #576b59;    /*gleiche wie bei banner quelle */
+    background-color: #576b59;
+    /*gleiche wie bei banner quelle */
     justify-content: space-around;
- 
 
 }
 
 /*Farbe für Links zu den anderen Seiten & Quellen*/
 a:link,
 a:visited {
-    color: #b7c4b8;/*damit linkfarbe gleich bleibt auch beim anklicken */
+    color: #b7c4b8;
+    /*damit linkfarbe gleich bleibt auch beim anklicken */
 }
+
 p a:link,
 p a:visited,
 a:visited,
-a:link { color: #b7c4b8;}
+a:link {
+    color: #b7c4b8;
+}
+
 /*Quellenangaben bearbeiten: */
 #myDropdown a:link,
-#myDropdown a:visited { 
-    color: whitesmoke; 
-    font-size:10pt;}
+#myDropdown a:visited {
+    color: whitesmoke;
+    font-size: 10pt;
+}
 
 #textmenu {
     font-weight: bold;
@@ -115,8 +137,10 @@ a:link { color: #b7c4b8;}
 
 .flex {
     display: flex;
-    flex-wrap: nowrap; /*alle sind in einer zeile */
-    justify-content: space-around; /*elemente haben gleiche Abstände um sich herum */
+    flex-wrap: nowrap;
+    /*alle sind in einer zeile */
+    justify-content: space-around;
+    /*elemente haben gleiche Abstände um sich herum */
 }
 
 .boxperson {
@@ -130,8 +154,10 @@ a:link { color: #b7c4b8;}
 
 .danke {
     display: flex;
-    border-radius: 50%; /*bild wird "rund"*/
-    margin: auto; /*bild wird mit display u margin zentriert */
+    border-radius: 50%;
+    /*bild wird "rund"*/
+    margin: auto;
+    /*bild wird mit display u margin zentriert */
 }
 
 
@@ -153,20 +179,23 @@ a:link { color: #b7c4b8;}
     margin: auto;
     border: 1px solid #2f3a2e;
 }
-    
-/* ERGEBNISSE KARTE */ /*könnte man e noc hvergrößern ??*/
+
+/* ERGEBNISSE KARTE */
+/*könnte man e noc hvergrößern ??*/
 #map {
     height: 500px;
     width: 70%;
     margin: auto;
-    border: 1px solid #2f3a2e;}
+    border: 1px solid #2f3a2e;
+}
 
-/*POPUPS KARTE design muss noch angepasst werden*/ 
+/*POPUPS KARTE design muss noch angepasst werden*/
 .popup {
     font-size: 10pt;
-    color:#1f410b;
-    
+    color: #1f410b;
+
 }
+
 /*titel popups*/
 h5 {
     font-size: 12pt;
@@ -175,13 +204,19 @@ h5 {
 
 /*Bildschirmeinstellung für kleinere Bildschirme */
 @media screen and (max-width:900px) {
+
     /*bilder*/
     .danke {
         width: 100%;
-    };
+    }
+
+    ;
+
     header img .banner {
         width: 100vw;
-    };
+    }
+
+    ;
 
     /*Fotoboxen und Menu */
     .boxperson {
@@ -189,43 +224,53 @@ h5 {
         width: 100%;
 
     }
+
     #textmenu {
-        flex-wrap:wrap;
-        text-align:center;
+        flex-wrap: wrap;
+        text-align: center;
         width: 100%;
     }
+
     .flex {
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         margin: auto;
         width: 90%;
     }
+
     /*text*/
     /* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
-    h4, body p {
+    h4,
+    body p {
         padding-left: 10mm;
         padding-right: 10mm;
 
     }
+
     /*Karten */
-    #map, #overviewmap {
-       width: 90%;
-       margin: center;
+    #map,
+    #overviewmap {
+        width: 90%;
+        margin: center;
     }
 
     /*Dropdownmenu*/
     .dropbtn {
-        display:block; /*Quellenbox mittig */
+        display: block;
+        /*Quellenbox mittig */
         position: relative;
     }
+
     .dropdown-content {
-        left:0; /*damti es nicht mehr über den bildschirmrand hinausgeht. */
-        right:0;
+        left: 0;
+        /*damti es nicht mehr über den bildschirmrand hinausgeht. */
+        right: 0;
     }
+
     /*LINK NOCH ANPASSE NIN QUELLE */
     #myDropdown a:link,
-    #myDropdown a:visited { 
-    left:0;
-    right:0;
+    #myDropdown a:visited {
+        left: 0;
+        right: 0;
     }
 }
 
@@ -238,36 +283,59 @@ h5 {
 
 /*Dropdown Button für Quellenverzeichnis */
 .dropbtn {
-    background-color:#576b59; /* Farbe wie footer*/
+    background-color: #576b59;
+    /* Farbe wie footer*/
     border: 1px solid;
-    border-color: grey;    
+    border-color: grey;
     font-size: 20px;
-    text-align: center; /*text zentriert */
-    padding-top: 10px; /*größe der box */
+    text-align: center;
+    /*text zentriert */
+    padding-top: 10px;
+    /*größe der box */
     padding-bottom: 10px;
-    display: block; /*damit dehnt es sich zum rand*/
-    max-width: 100%;/*Box soll sich bis zum margin dehnen */
+    display: block;
+    /*damit dehnt es sich zum rand*/
+    max-width: 100%;
+    /*Box soll sich bis zum margin dehnen */
 }
+
 .dropdown {
-    position:relative; /*damit der dropdown mittig kommt*/
-    display:inline-flexbox; /*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
-    margin-left: 5em; /*entfernung der box u des kontents vom rand */
+    position: relative;
+    /*damit der dropdown mittig kommt*/
+    display: inline-flexbox;
+    /*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
+    margin-left: 5em;
+    /*entfernung der box u des kontents vom rand */
     margin-right: 5em;
-    
+
 }
-/*Inhalt innerhalb des  Dropdown */ 
+
+/*Inhalt innerhalb des  Dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #533627; /*#b7c4b8 */
+    background-color: #533627;
+    /*#b7c4b8 */
     min-width: 10px;
-    z-index: 20;   
+    z-index: 20;
 }
+
 /*mousover für das dropdown*/
-.dropdown-content a:hover {font-style: gray;} /*styles der schrift oben bei a:visited usw verändern! */
+.dropdown-content a:hover {
+    font-style: gray;
+}
+
+/*styles der schrift oben bei a:visited usw verändern! */
 /* .dropdown:hover .dropdown-content {display: block;}  --> nur wenn nicht klicken will*/
-.dropdown:hover .dropbtn {background-color: grey;}
-.show {display:block;} /*Verknüpfung zum JS, damit funktioniert ide Funktion mti dem Klicken */
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+.show {
+    display: block;
+}
+
+/*Verknüpfung zum JS, damit funktioniert ide Funktion mti dem Klicken */
 
 
 /* Container für den Text und das Bild */
@@ -275,47 +343,47 @@ h5 {
     position: relative;
     text-align: center;
     color: white;
-   }
-  
-  /* Bottom left text
+}
+
+/* Bottom left text
   .bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
   } */
-  
-  /* Top left text 
+
+/* Top left text 
   .top-left {
     position: absolute;
     top: 8px;
     left: 16px;
   }*/
-  
-  /* Top right text 
+
+/* Top right text 
   .top-right {
     position: absolute;
     top: 8px;
     right: 16px;
   }*/
-  
-  /* Bottom right text 
+
+/* Bottom right text 
   .bottom {
     position: absolute;
     bottom: 8px;
     right: 16px;
  
   }*/
-  
-  /* Centered text */
-  .centered {
+
+/* Centered text */
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color:black;
-    text-shadow:white;
+    color: black;
+    text-shadow: white;
     font-weight: bold;
-    
-                  
-  }
+
+
+}
