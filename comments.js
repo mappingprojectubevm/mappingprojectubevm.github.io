@@ -64,7 +64,7 @@ const COMMENTS = [{
 }, {
     nr: 10,
     ort: "Schweizerischer Nationalpark",
-    txt: "Der Schweizericshe Nationalpark ist asl Trennung und zugleich auch als Verbindung zwischen den Tälern zu sehen. Damit stellt er einen Vorteil und zugleich auch einen Nachteil dar.",
+    txt: "Der Schweizerische Nationalpark ist als Trennung und zugleich auch als Verbindung zwischen den Tälern zu sehen. Damit stellt er einen Vorteil und zugleich auch einen Nachteil dar.",
     lat: 46.64842, 
     lng: 10.26607,
     id:"keineZuordnung", //Vorteil und nachteil zugleich -> entweder gelb machen oder zwei kästchen  
