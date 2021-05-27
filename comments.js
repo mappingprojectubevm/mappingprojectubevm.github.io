@@ -120,10 +120,10 @@ const COMMENTS = [{
 }, {
     nr: 17,
     ort: "gesamtes existierendes Biosphärenparkgebiet",
-    txt: "Das gesamte bisherige Gebiet wird als gut entwickelt angesehen, wobei keine Einschränkungen zu finden sind, sondern lediglich Vortiele im Gebiet zu erreichen sind. Besonders die aktuelle Größe des Gebietes ist vortielhaft, da in dieser Größenordung KOmmunikaton gut möglich ist. Auf der anderen Seite wird gesagt, dass die räumliche Trennung der zwei Täler sich auch in Schwierigkeiten der Kommunikation niederschlägt. Hier würde noch Entwicklugnsdarf herrschen.",
+    txt: "Das gesamte bisherige Gebiet wird als gut entwickelt angesehen, wobei keine Einschränkungen zu finden sind, sondern lediglich Vortiele im Gebiet zu erreichen sind. Besonders die aktuelle Größe des Gebietes ist vortielhaft, da in dieser Größenordung Kommunikaton gut möglich ist. Auf der anderen Seite wird gesagt, dass die räumliche Trennung der zwei Täler sich auch in Schwierigkeiten der Kommunikation niederschlägt. Hier würde noch Entwicklugnsdarf herrschen.",
     lat: 46.6721,
     lng: 10.2619,
-    id:"keine Zuordnung",  //Könnte man auch einfach in den text unter die Karte geben. jedenfalls POpup anders formatieren, oder doch mehrere Popups machen.
+    id:"keineZuordnung",  //Könnte man auch einfach in den text unter die Karte geben. jedenfalls POpup anders formatieren, oder doch mehrere Popups machen.
 },
 
 ]
