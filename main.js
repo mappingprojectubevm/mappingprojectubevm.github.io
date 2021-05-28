@@ -14,13 +14,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
 //.openPopup();
 
-//Icon für Vorteile (ist ein Plus) (https://fontawesome.com/icons/plus-circle?style=regular)  <i class="far fa-plus-square"></i>
-//Icon für Nachteile https://fontawesome.com/icons/minus-square?style=regular <i class="far fa-minus-square"></i>
-//Icon für Entwicklungsbedarf https://fontawesome.com/icons/thermometer-quarter?style=solid <i class="fas fa-thermometer-quarter"></i>
-//Icon für gut Entwickelt https://fontawesome.com/icons/thermometer-three-quarters?style=solid <i class="fas fa-thermometer-three-quarters"></i>
-
-
-
 // hash: zeigt in der URL leiste die Koordinaten und den #zoom des kartenausschnittes an 
 var hash = new L.Hash(map); //Var hash steht hier nur weil man eine neue Var erstellt, falls man sie später noch mal braucht. new  --> nach L muss großbuchstabe sein.
 
@@ -35,17 +28,19 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 //Legende: https://github.com/ptma/Leaflet.Legend 
 
 
+//Icon download: https://icons8.de/icons 
+//müssen Link auf die Seite setzen für die Icons die wir verwenden: <a target="_blank" href="https://icons8.de/icon/114091/minus">Minus</a> Icon von <a target="_blank" href="https://icons8.de">Icons8</a>
+//<a target="_blank" href="https://icons8.de/icon/zddfYtvTqQmM/volle-batterie">Volle Batterie</a> Icon von <a target="_blank" href="https://icons8.de">Icons8</a>
+//<a target="_blank" href="https://icons8.de/icon/78189/leere-batterie">Leere Batterie</a> Icon von <a target="_blank" href="https://icons8.de">Icons8</a>
 
-
-//Icons für die verschiedenen Bereiche definieren
+//Icons für die verschiedenen Bereiche definieren (noch bessere suchen)
 let icons = {
-  "Entwickelt": "",
-  "Entwicklungsbedarf": "",
-  "Vorteil": "",
-  "Nachteil": "",
+  "Entwickelt": "entwickelt.png",
+  "Entwicklungsbedarf": "entwicklungsbedarf.png",
+  "Vorteil": "vorteil.png",
+  "Nachteil": "nachteil.png",
   "keineZuordnung": "comment-map-icon.png"
 }
-
 
 console.log(COMMENTS) //Schauen ob die erknüpfung funktioniert und etwas geloged wird
 for (let entry of COMMENTS) { //marker müssen noch an id angepasst werden. entry wird hier als begriff für die einzelnen Variablen bzw keys in COMMENTS definiert  
