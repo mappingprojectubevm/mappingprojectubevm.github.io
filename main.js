@@ -12,7 +12,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Beispielmarker für Popups: koordinaten und text ändern :) die koordinaten könnten zb mithilfe des hash plugins herausgelesen werden! :)
 //L.marker([46.7599, 10.2104]).addTo(map)
 //  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-  //.openPopup();
+//.openPopup();
 
 //Icon für Vorteile (ist ein Plus) (https://fontawesome.com/icons/plus-circle?style=regular)  <i class="far fa-plus-square"></i>
 //Icon für Nachteile https://fontawesome.com/icons/minus-square?style=regular <i class="far fa-minus-square"></i>
@@ -38,33 +38,35 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 
 
 //Icons für die verschiedenen Bereiche definieren
-  let icons = {
-    "Entwickelt": "comment-map-icon.png",
-    "Entwicklungsbedarf": "",
-    "Vorteil": "",
-    "Nachteil": "",
-  }
+let icons = {
+  "Entwickelt": "",
+  "Entwicklungsbedarf": "",
+  "Vorteil": "",
+  "Nachteil": "",
+  "keineZuordnung": "comment-map-icon.png"
+}
 
 
 console.log(COMMENTS) //Schauen ob die erknüpfung funktioniert und etwas geloged wird
-for (let entry of COMMENTS){ //marker müssen noch an id angepasst werden. entry wird hier als begriff für die einzelnen Variablen bzw keys in COMMENTS definiert  
+for (let entry of COMMENTS) { //marker müssen noch an id angepasst werden. entry wird hier als begriff für die einzelnen Variablen bzw keys in COMMENTS definiert  
   //console.log(entry);
   //wählen wann welches Icon zum einsatz kommt
-  if (icons[entry.id == "Entwickelt"]) {
-  }if (icons[entry.id == "Enwicklungsbedarf"]) {
-  }if (icons[entry.id == "Vorteil"]) {
-  }if (icons[entry.id == "Nachteil"]) {
-  }else { icons["comment-map-icon.png"]}
+  if (icons[entry.id == "Entwickelt"]) {}
+  if (icons[entry.id == "Enwicklungsbedarf"]) {}
+  if (icons[entry.id == "Vorteil"]) {}
+  if (icons[entry.id == "Nachteil"]) {}
+  if (icons[entry.id == "keineZuordnung"]) {} //in der Legende vlt als Beschriebung / Kommentar benennen
+
 //Icons einsetzen:
-  let mrk = L.marker([entry.lat, entry.lng], {
-    icon: L.icon({
-      iconUrl: `icons/${icons[entry.id]}`,
-      iconSize: [32, 37], //array höhe u breite, kann ich im img anschauen. mit der size ist der icon mittig, aber die iconspitze liegt nicht auf koordinate. also;
-      iconAnchor: [16, 37], //damit richitg positioniert, aber verdeckt durchpopup, deswegen siehe nächste zeile:
-      popupAnchor: [0, -37], //mitte passt =0, dann nach oben verschieben um icongröße, dann gehts oberhalb auf
-})
-  }).addTo(map);
-  mrk.bindPopup(`
+let mrk = L.marker([entry.lat, entry.lng], {
+  icon: L.icon({
+    iconUrl: `icons/${icons[entry.id]}`,
+    iconSize: [32, 37], //array höhe u breite, kann ich im img anschauen. mit der size ist der icon mittig, aber die iconspitze liegt nicht auf koordinate. also;
+    iconAnchor: [16, 37], //damit richitg positioniert, aber verdeckt durchpopup, deswegen siehe nächste zeile:
+    popupAnchor: [0, -37], //mitte passt =0, dann nach oben verschieben um icongröße, dann gehts oberhalb auf
+  })
+}).addTo(map);
+mrk.bindPopup(`
       <strong> ${entry.ort}:</strong>
       <hr>${entry.txt}
       `);
@@ -94,7 +96,3 @@ window.onclick = function (e) {
     }
   }
 }
-
-
-
-
