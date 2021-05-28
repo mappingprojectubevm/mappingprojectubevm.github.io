@@ -47,7 +47,7 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 
 
 console.log(COMMENTS) //Schauen ob die erknüpfung funktioniert und etwas geloged wird
-for (let entry of COMMENTS){ //marker müssen noch an id angepasst werden.    
+for (let entry of COMMENTS){ //marker müssen noch an id angepasst werden. entry wird hier als begriff für die einzelnen Variablen bzw keys in COMMENTS definiert  
   //console.log(entry);
   //wählen wann welches Icon zum einsatz kommt
   if (icons[entry.id == "Entwickelt"]) {
