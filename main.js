@@ -56,7 +56,7 @@ for (let entry of COMMENTS) { //marker müssen noch an id angepasst werden. entr
 let mrk = L.marker([entry.lat, entry.lng], {
   icon: L.icon({
     iconUrl: `icons/${icons[entry.id]}`,
-    iconSize: [32, 37], //array höhe u breite, kann ich im img anschauen. mit der size ist der icon mittig, aber die iconspitze liegt nicht auf koordinate. also;
+    iconSize: [37, 37], //array höhe u breite, kann ich im img anschauen. mit der size ist der icon mittig, aber die iconspitze liegt nicht auf koordinate. also;
     iconAnchor: [16, 37], //damit richitg positioniert, aber verdeckt durchpopup, deswegen siehe nächste zeile:
     popupAnchor: [0, -37], //mitte passt =0, dann nach oben verschieben um icongröße, dann gehts oberhalb auf
   })
