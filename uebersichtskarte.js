@@ -12,6 +12,9 @@ let map = L.map('overviewmap', { //muss overviewmap heißen, weil das div elemen
     fullscreenControl: true,//Fullscreen plugin
     layers: [baselayers.standard]
 }) 
+let overlays = {
+  geometry: L.featureGroup(), //overlay für die Zonierung definieren
+}
 
 // Kartenhintergründe und Overlays zur Layer-Control hinzufügen -namen der karten, bzw. andre karten könnte man noch ausstauschen
 let layerControl = L.control.layers({
@@ -20,11 +23,55 @@ let layerControl = L.control.layers({
     "Bildkarte": baselayers.imagery,
 },
 //{"Interviews": overlays.Comments,} //ausgeklammert, weil die karte damit nicht mehr ging, weil dieser layer nicht existiert
+ { //Klammer erneut innerhalb der runden klammer öffnen, damit es eine visuelle abtrennung gibt, wo man dann andre sachen einblenden kann. 
+    "Zonierung des Biosphärenreservates": overlays.geometry,
+ }).addTo(map);
 
-// { //Klammer erneut innerhalb der runden klammer öffnen, damit es eine visuelle abtrennung gibt, wo man dann andre sachen einblenden kann. 
-//     // "Zonierung des Biosphärenreservates": , layer fehlt
-// }
-).addTo(map);
+
+overlays.geometry.addTo(map) //Overlays anzeigen lassen
+
+//Konst erstellen, über die wir auf die daten der zonierung zugreifen
+const ZONE = [{
+  title: "Zonierung des UBEVM",
+  data: "data/UBEVM_Zonierung_Perimeter.json"
+}]
+//Forschleife machen, die über die gazen geojson daten Läuft
+for (let config of ZONE) {
+  fetch(config.data)
+  .then(response => response.json()) //innere runde klammer: Funktionsaufruf, damit es gestartet / ausgeführt wird ! 
+  .then(geojsonData => {
+      //console.log("Data: ", geojsonData);
+      if (config.title == "Zonierung des UBEVM") { 
+          drawGeometry(geojsonData);
+}})};
+//Zonierung "zeichnen" + hinzufügen
+let drawGeometry = (geojsonData) => {
+  console.log("Geometry", geojsonData);
+  L.geoJson(geojsonData, {
+    style: (feature) =>{
+      return {
+          color: "darkgreen",
+          fillColor: "green",
+          fillOpacity: 0.3
+      }
+    }, //Popups einbinden und beschriften, damit man auf die Zone klicken kann, wenn wir das wollen
+    onEachFeature: (features, layer) => {
+      layer.bindPopup(`<strong>Zonierung des UBEVM</strong>
+      <hr>
+      ${features.properties.Zone || ""}<br>
+      Größe: ${features.properties.Area_ha|| ""}ha
+      `);
+  },
+  }).addTo(overlays.geometry)
+}
+
+
+
+
+
+     
+
+
 
 // Plugin hash
 L.hash(map);
