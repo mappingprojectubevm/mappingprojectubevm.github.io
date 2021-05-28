@@ -35,17 +35,40 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 //Legende: https://github.com/ptma/Leaflet.Legend 
 
 
+
+
+//Icons für die verschiedenen Bereiche definieren
+  let icons = {
+    "Entwickelt": "comment-map-icon.png",
+    "Entwicklungsbedarf": "",
+    "Vorteil": "",
+    "Nachteil": "",
+  }
+
+
 console.log(COMMENTS) //Schauen ob die erknüpfung funktioniert und etwas geloged wird
 for (let entry of COMMENTS){ //marker müssen noch an id angepasst werden.    
   //console.log(entry);
-  let mrk = L.marker([entry.lat, entry.lng]).addTo(map);
+  //wählen wann welches Icon zum einsatz kommt
+  if (icons[entry.id == "Entwickelt"]) {
+  }if (icons[entry.id == "Enwicklungsbedarf"]) {
+  }if (icons[entry.id == "Vorteil"]) {
+  }if (icons[entry.id == "Nachteil"]) {
+  }else { icons["comment-map-icon.png"]}
+//Icons einsetzen:
+  let mrk = L.marker([entry.lat, entry.lng], {
+    icon: L.icon({
+      iconUrl: `icons/${icons[entry.id]}`,
+      iconSize: [32, 37], //array höhe u breite, kann ich im img anschauen. mit der size ist der icon mittig, aber die iconspitze liegt nicht auf koordinate. also;
+      iconAnchor: [16, 37], //damit richitg positioniert, aber verdeckt durchpopup, deswegen siehe nächste zeile:
+      popupAnchor: [0, -37], //mitte passt =0, dann nach oben verschieben um icongröße, dann gehts oberhalb auf
+})
+  }).addTo(map);
   mrk.bindPopup(`
       <strong> ${entry.ort}:</strong>
       <hr>${entry.txt}
       `);
 }
-
-
 
 
 
