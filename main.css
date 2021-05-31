@@ -79,8 +79,7 @@ body {
 /* Beschriftung Banner mit Quelle*/
 figcaption {
     background-color: #576b59;
-    color: #1f410b;
-    /*gleiche wie der restl. hintergrund*/
+    color: #1f410b;/*gleiche wie der restl. hintergrund*/
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: right;
@@ -102,6 +101,11 @@ footer div {
 
 }
 
+#textmenu {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
 /*Farbe für Links zu den anderen Seiten & Quellen*/
 a:link,
 a:visited {
@@ -121,12 +125,8 @@ a:link {
 #myDropdown a:visited {
     color: whitesmoke;
     font-size: 10pt;
-}
+    /*text-decoration: none; /*damit werden links nicht mehr unterstrichen */
 
-#textmenu {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 20px;
 }
 
 
@@ -152,6 +152,7 @@ a:link {
     vertical-align: auto;
 }
 
+/*Danke Bild */
 .danke {
     display: flex;
     border-radius: 50%;
@@ -190,6 +191,7 @@ a:link {
 }
 
 
+/* ******* ******** ********* *********** ******** ************** */
 /*Bildschirmeinstellung für kleinere Bildschirme */
 @media screen and (max-width:900px) {
 
@@ -239,19 +241,14 @@ a:link {
 
     /*Dropdownmenu*/
     .dropbtn {
-        display: block;
-        /*Quellenbox mittig */
-        position: relative;
+        display: block;/*Quellenbox mittig */      
     }
 
     .dropdown-content {
-        left: 0;
-        /*damit es nicht mehr über den bildschirmrand hinausgeht. */
+        left: 0;/*damit es nicht mehr über den bildschirmrand hinausgeht. */
         right: 0;
-
     }
 
-    /*LINK NOCH ANPASSEN IN QUELLE */
     #myDropdown a:link,
     #myDropdown a:visited {
         left: 0;
@@ -264,6 +261,8 @@ a:link {
         width: 100vw;
     }
 }
+/* ***** ********* ************ ************** ************* ************** */
+
 
 /*Dropdown Button für Quellenverzeichnis */
 .dropbtn {
@@ -298,8 +297,7 @@ a:link {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #533627;
-    /*#b7c4b8 */
+    background-color: #533627;/*#b7c4b8 */
     min-width: 10px;
     z-index: 20;
 }
@@ -317,11 +315,9 @@ a:link {
 
 .show {
     display: block;
-}
+}/*Verknüpfung zum JS, damit funktioniert ide Funktion mti dem Klicken */
 
-/*Verknüpfung zum JS, damit funktioniert ide Funktion mti dem Klicken */
-
-
+/*HEADER*/
 /* Container für den Text und das Bild */
 .container {
     position: relative;
