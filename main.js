@@ -14,7 +14,7 @@ const ZONE = [{
   data: "data/UBEVM_Zonierung_Perimeter.json",
 }]
 
-//VAriabel erstellen in der die Zonierungen unterschiedlihce Farben bekommen. Braucht kein eigenes skript, weil nur wenig inhalt
+//Variable erstellen in der die Zonierungen unterschiedlihce Farben bekommen (kann hier angepasst werden). Braucht kein eigenes skript, weil nur wenig inhalt
 const COLORS = {
   "Kernzone": "darkred",
   "Pflegezone": "green",
