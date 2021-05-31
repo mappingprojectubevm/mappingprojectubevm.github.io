@@ -9,6 +9,51 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
+const ZONE = [{
+  title: "Zonierung des UBEVM",
+  data: "data/UBEVM_Zonierung_Perimeter.json",
+}]
+
+//VAriabel erstellen in der die Zonierungen unterschiedlihce Farben bekommen. Braucht kein eigenes skript, weil nur wenig inhalt
+const COLORS = {
+  "Kernzone": "darkred",
+  "Pflegezone": "green",
+  "Entwicklungszone": "orange"
+}
+//Forschleife machen, die über die ganzen geojson daten Läuft
+for (let config of ZONE) {
+  fetch(config.data)
+    .then(response => response.json()) //innere runde klammer: Funktionsaufruf, damit es gestartet / ausgeführt wird ! 
+    .then(geojsonData => {
+      //console.log("Data: ", geojsonData);
+      if (config.title == "Zonierung des UBEVM") {
+        drawGeometry(geojsonData);
+      }
+    });
+};
+//Zonierung "zeichnen" + hinzufügen
+let drawGeometry = (geojsonData) => {
+  //console.log("Geometry", geojsonData);
+  L.geoJson(geojsonData, {
+    style: (feature) => {
+      let col = COLORS[feature.properties.Zone]; //Eckige Klammern weil ich in einem Objekt auf einen wert/Schlüssel zureifen will, der ein Leerzeichen aht
+      return {
+          color: col,
+          fillOpacity: 0.2,      
+      }
+    }, //Popups einbinden und beschriften, damit man auf die Zone klicken kann, wenn wir das wollen
+    onEachFeature: (features, layer) => {
+      layer.bindPopup(`<strong>Zonierung des UBEVM</strong>
+      <hr>
+      ${features.properties.Zone || ""}<br>
+      Gesamtgröße: ${features.properties.Area_ha|| ""} ha
+      `);
+    },
+  }).addTo(map)
+}
+
+
+
 // Beispielmarker für Popups: koordinaten und text ändern :) die koordinaten könnten zb mithilfe des hash plugins herausgelesen werden! :)
 //L.marker([46.7599, 10.2104]).addTo(map)
 //  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')

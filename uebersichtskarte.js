@@ -76,9 +76,6 @@ let drawGeometry = (geojsonData) => {
 
 
 
-
-
-
 // Plugin hash
 L.hash(map);
 
