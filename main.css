@@ -194,6 +194,8 @@ a:link {
 /* ******* ******** ********* *********** ******** ************** */
 /*Bildschirmeinstellung für kleinere Bildschirme */
 @media screen and (max-width:900px) {
+    /*HEADER Titel noch anpassen */
+
 
     /*bilder*/
     .danke {
