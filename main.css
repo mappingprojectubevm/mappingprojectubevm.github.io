@@ -190,28 +190,22 @@ a:link {
 }
 
 
-
 /*Bildschirmeinstellung für kleinere Bildschirme */
 @media screen and (max-width:900px) {
 
     /*bilder*/
     .danke {
         width: 100%;
-    }
-
-    ;
+    };
 
     header img .banner {
         width: 100vw;
-    }
-
-    ;
+    };
 
     /*Fotoboxen und Menu */
     .boxperson {
         flex-wrap: wrap;
         width: 100%;
-
     }
 
     #textmenu {
@@ -230,11 +224,12 @@ a:link {
     /* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
     h4,
     body p {
-        padding-left: 10mm;
-        padding-right: 10mm;
-
+        padding-left: 5mm;
+        padding-right: 5mm;
     }
-
+    ul {
+        padding-left: 50px;
+    }
     /*Karten */
     #map,
     #overviewmap {
@@ -268,7 +263,6 @@ a:link {
         width: 100vw;
     }
 }
-
 
 /*Dropdown Button für Quellenverzeichnis */
 .dropbtn {
