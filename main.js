@@ -52,27 +52,6 @@ let drawGeometry = (geojsonData) => {
   }).addTo(map)
 }
 
-
-
-// Beispielmarker für Popups: koordinaten und text ändern :) die koordinaten könnten zb mithilfe des hash plugins herausgelesen werden! :)
-//L.marker([46.7599, 10.2104]).addTo(map)
-//  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-//.openPopup();
-
-// hash: zeigt in der URL leiste die Koordinaten und den #zoom des kartenausschnittes an 
-var hash = new L.Hash(map); //Var hash steht hier nur weil man eine neue Var erstellt, falls man sie später noch mal braucht. new  --> nach L muss großbuchstabe sein.
-
-
-// //Minimap
-var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"), {
-  toggleDisplay: true, //minimap ein und ausklappbar
-  minimized: true //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
-}).addTo(map);
-
-
-//Legende: https://github.com/ptma/Leaflet.Legend 
-
-
 //Icon download: https://icons8.de/icons 
 //müssen Link auf die Seite setzen für die Icons die wir verwenden: <a target="_blank" href="https://icons8.de/icon/114091/minus">Minus</a> Icon von <a target="_blank" href="https://icons8.de">Icons8</a>
 //<a target="_blank" href="https://icons8.de/icon/zddfYtvTqQmM/volle-batterie">Volle Batterie</a> Icon von <a target="_blank" href="https://icons8.de">Icons8</a>
@@ -117,7 +96,26 @@ L.control.scale({
   imperial: false
 }).addTo(map)
 
+// hash: zeigt in der URL leiste die Koordinaten und den #zoom des kartenausschnittes an 
+var hash = new L.Hash(map); //Var hash steht hier nur weil man eine neue Var erstellt, falls man sie später noch mal braucht. new  --> nach L muss großbuchstabe sein.
 
+//Minimap
+var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"), {
+  toggleDisplay: true, //minimap ein und ausklappbar
+  minimized: true //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
+}).addTo(map);
+
+
+//Legende: https://github.com/ptma/Leaflet.Legend 
+
+L.control.Legend({
+position: "bottomleft",
+legends: [{
+  label: "Marker1",
+  type: "image",
+  url: "marker/marker-red.png",
+}]
+}).addTo(map);
 
 /* DROPDOWN FÜR QUELLE
 When the user clicks on the button, 
