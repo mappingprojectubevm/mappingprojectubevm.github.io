@@ -246,11 +246,12 @@ a:link {
 
     .dropdown-content {
         left: 0;
-        /*damti es nicht mehr über den bildschirmrand hinausgeht. */
+        /*damit es nicht mehr über den bildschirmrand hinausgeht. */
         right: 0;
+
     }
 
-    /*LINK NOCH ANPASSE NIN QUELLE */
+    /*LINK NOCH ANPASSEN IN QUELLE */
     #myDropdown a:link,
     #myDropdown a:visited {
         left: 0;
