@@ -263,6 +263,19 @@ a:link {
         width: 100vw;
     }
 }
+/*TEXT FÜR GROSSE BILDSCHIRME nicht so auseinander ziehen */
+@media screen and (max-width: 2280px) { 
+    ul{ width:75%; margin: auto}
+    p {
+        width: 80%;
+        margin: auto;
+    }
+    h3, h4 {
+        width: 85%;
+        margin: auto
+    }
+}
+
 /* ***** ********* ************ ************** ************* ************** */
 
 
