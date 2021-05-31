@@ -81,7 +81,10 @@ for (let config of ZONE) {
     minimized: false //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
   }).addTo(map);
 
-
+//Maßstab siehe: https://leafletjs.com/reference-1.7.1.html#control-scale
+L.control.scale({
+  imperial: false
+}).addTo(map)
 
 
   /* DROPDOWN FÜR Quellenangaben

@@ -67,7 +67,10 @@ mrk.bindPopup(`
       `);
 }
 
-
+//Maßstab siehe: https://leafletjs.com/reference-1.7.1.html#control-scale
+L.control.scale({
+  imperial: false
+}).addTo(map)
 
 
 
