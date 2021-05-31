@@ -35,6 +35,13 @@ const ZONE = [{
   title: "Zonierung des UBEVM",
   data: "data/UBEVM_Zonierung_Perimeter.json",
 }]
+
+//VAriabel erstellen in der die Zonierungen unterschiedlihce Farben bekommen. Braucht kein eigenes skript, weil nur wenig inhalt
+const COLORS = {
+  "Kernzone": "darkred",
+  "Pflegezone": "green",
+  "Entwicklungszone": "orange"
+}
 //Forschleife machen, die über die ganzen geojson daten Läuft
 for (let config of ZONE) {
   fetch(config.data)
@@ -51,17 +58,17 @@ let drawGeometry = (geojsonData) => {
   //console.log("Geometry", geojsonData);
   L.geoJson(geojsonData, {
     style: (feature) => {
-      return { //Farben noch anpassen
-        color: "darkgreen",
-        fillColor: "green",
-        fillOpacity: 0.3
+      let col = COLORS[feature.properties.Zone]; //Eckige Klammern weil ich in einem Objekt auf einen wert/Schlüssel zureifen will, der ein Leerzeichen aht
+      return {
+          color: col,
+          fillOpacity: 0.2,      
       }
     }, //Popups einbinden und beschriften, damit man auf die Zone klicken kann, wenn wir das wollen
     onEachFeature: (features, layer) => {
       layer.bindPopup(`<strong>Zonierung des UBEVM</strong>
       <hr>
       ${features.properties.Zone || ""}<br>
-      Größe: ${features.properties.Area_ha|| ""} ha
+      Gesamtgröße: ${features.properties.Area_ha|| ""} ha
       `);
     },
   }).addTo(overlays.geometry)
