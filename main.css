@@ -375,10 +375,15 @@ a:link {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
-    color: black;
-    text-shadow: white;
+    font-size: 60px;
+    color: #b7c4b8;
+    text-shadow:
+    -1px -1px 0 #1f410b,
+    -1px -1px 0 #1f410b,
+    -1px -1px 0 #1f410b,
+    -1px -1px 0 #1f410b;
     font-weight: bold;
+    background-color: transparent;
 
 
 }
