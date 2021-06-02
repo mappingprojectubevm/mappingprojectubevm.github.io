@@ -391,10 +391,10 @@ a:link {
 
     /* Schrift mit Schatten, versetzt*/
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 80px;
+    font-size: 60px;
     line-height: 80px;
     color: #b7c4b8;
     text-shadow: 0 11.36px 8.896px #7c7878,0 -1px 1px;
@@ -402,3 +402,35 @@ a:link {
     background-color: transparent;
 
 }
+
+.centered2 {
+ 
+    /* Schrift mit Schatten, versetzt*/
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    line-height: 80px;
+    color: whitesmoke ;
+    text-shadow: 0 11.36px 8.896px #b7c4b8,0 -1px 1px;
+    letter-spacing: -4px;
+    background-color: transparent;
+
+}
+
+.centered3 {
+ 
+     /* Schrift mit Schatten, versetzt*/
+     position: absolute;
+     top: 70%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 60px;
+     line-height: 80px;
+     color: #1f410b;
+     text-shadow: 0 11.36px 8.896px #576b59,0 -1px 1px;
+     letter-spacing: -4px;
+     background-color: transparent;
+ 
+ }
