@@ -388,7 +388,8 @@ a:link {
     -4px -4px 0 #1f410b;
     font-weight: bold;
     background-color: transparent; */
-    
+
+    /* Schrift mit Schatten, versetzt*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -396,7 +397,7 @@ a:link {
     font-size: 80px;
     line-height: 80px;
     color: #b7c4b8;
-    text-shadow: 0 13.36px 8.896px #7c7878,0 -1px 1px;
+    text-shadow: 0 11.36px 8.896px #7c7878,0 -1px 1px;
     letter-spacing: -4px;
     background-color: transparent;
 
