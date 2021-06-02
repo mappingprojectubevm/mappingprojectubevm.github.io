@@ -84,8 +84,7 @@ body {
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: right;
-    display: flex;
-}
+ }
 
 /* Formatierung Menüleiste!*/
 header div,
@@ -434,3 +433,4 @@ a:link {
      background-color: transparent;
  
  }
+ /*https://codepen.io/namho/pen/jEaXra*/
