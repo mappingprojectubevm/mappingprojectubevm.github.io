@@ -73,16 +73,18 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    margin-bottom: 0mm;
 }
 
 
 /* Beschriftung Banner mit Quelle*/
-figcaption {
+#figcapt {
     background-color: #576b59;
     color: #1f410b;/*gleiche wie der restl. hintergrund*/
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: right;
+    display: flex;
 }
 
 /* Formatierung Menüleiste!*/
@@ -98,8 +100,10 @@ footer div {
     background-color: #576b59;
     /*gleiche wie bei banner quelle */
     justify-content: space-around;
-
 }
+
+
+
 
 #textmenu {
     font-weight: bold;
