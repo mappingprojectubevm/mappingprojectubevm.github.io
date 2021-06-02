@@ -109,4 +109,12 @@ window.onclick = function (e) {
   }
 }
 
+var north = L.control({position: "bottomright"});
+north.onAdd = function(map) {
+    var div = L.DomUtil.create("div", "info legend");
+    div.innerHTML = '<icons src="north-arrow.png">';
+    return div;
+}
+north.addTo(map);
 
+/*https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map Skript, */
