@@ -375,19 +375,29 @@ a:link {
 
 /* Centered text */
 .centered {
-    position: absolute;
+   /*  position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60px;
     color: #b7c4b8;
     text-shadow:
-    -1px -1px 0 #1f410b,
-    -1px -1px 0 #1f410b,
-    -1px -1px 0 #1f410b,
-    -1px -1px 0 #1f410b;
+    -4px -4px 0 #1f410b,
+    -4px -4px 0 #1f410b,
+    -4px -4px 0 #1f410b,
+    -4px -4px 0 #1f410b;
     font-weight: bold;
+    background-color: transparent; */
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    line-height: 80px;
+    color: #b7c4b8;
+    text-shadow: 0 13.36px 8.896px #7c7878,0 -1px 1px;
+    letter-spacing: -4px;
     background-color: transparent;
-
 
 }
