@@ -1,20 +1,20 @@
 const COMMENTS = [{
     nr: 1,
-    ort: "Schigebiet Scuol", //Könnte man ev. als titel ds popups verwenden
+    ort: "Schigebiet Scuol", //Könnte man ev. als Titel der Popups verwenden
     txt: "Mithilfe des UBEVM könnte man das Schigebiet in ein nachhaltiges Schigebiet wandlen und es als 'das nachhaltigste Schigebiet der Welt' vermarkten.",
     lat:46.8289,
     lng:10.2743,
-    id: "Vorteil", //das muss so eingearbeitet werden, dass es sich auf die form der popoups bezieht
+    id: "Vorteil", //ID, um dann die Icons festzulegen
 }, {
-    nr: 2, //nur zur Übersicht, brauchen wir eig nicht zrum einbinden
+    nr: 2, //nur zur Übersicht, brauchen wir nicht unbedingt zum einbinden
     ort: "Schigebiet Scuol",
     txt: "Schigebiete fühlen sich bei ihren touristischen Angebotsmöglichkeiten eingeschränkt, wenn sie sich  mit dem Leitbild des UBEVM nicht identifizieren können.",
-    lat: 46.8289, //muss man wahrscheinlich noch überall anpassen nach dem implementieren
+    lat: 46.8289, 
     lng: 10.2993,
     id:"Nachteil", 
 },  {
     nr: 3,
-    ort: "Gebiet Valsot", //unsre kartengrundlage zeigt den ort valsot nicht, das ist ein bisschen blöd, finde aber keine andre
+    ort: "Gemeinde Valsot",
     txt: "Dort wo noch kein UBEVM ist, wäre noch Entwicklungspotenzial.",
     lat: 46.8643,
     lng: 10.4207,
@@ -120,10 +120,10 @@ const COMMENTS = [{
 }, {
     nr: 17,
     ort: "gesamtes existierendes Biosphärenparkgebiet",
-    txt: "Das gesamte bisherige Gebiet wird als gut entwickelt angesehen, wobei keine Einschränkungen zu finden sind, sondern lediglich Vortiele im Gebiet zu erreichen sind. Besonders die aktuelle Größe des Gebietes ist vortielhaft, da in dieser Größenordung Kommunikaton gut möglich ist. Auf der anderen Seite wird gesagt, dass die räumliche Trennung der zwei Täler sich auch in Schwierigkeiten der Kommunikation niederschlägt. Hier würde noch Entwicklungsdarf herrschen.",
+    txt: "Das gesamte bisherige Gebiet wird als gut entwickelt angesehen, wobei keine Einschränkungen zu finden sind, sondern lediglich Vortiele im Gebiet zu erreichen sind. Besonders die aktuelle Größe des Gebietes ist vorteilhaft, da in dieser Größenordung Kommunikaton gut möglich ist. Auf der anderen Seite wird gesagt, dass die räumliche Trennung der zwei Täler sich auch in Schwierigkeiten der Kommunikation niederschlägt. Hier würde noch Entwicklungsdarf herrschen.",
     lat: 46.6721,
     lng: 10.2619,
-    id:"keineZuordnung",  //Könnte man auch einfach in den text unter die Karte geben. jedenfalls POpup anders formatieren, oder doch mehrere Popups machen.
+    id:"keineZuordnung", 
 },
 
 ]
