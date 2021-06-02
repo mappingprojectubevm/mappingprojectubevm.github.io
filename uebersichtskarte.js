@@ -5,49 +5,46 @@ let baselayers = {
   imagery: L.tileLayer.provider("Esri.WorldImagery"),
 };
 
-//variable erstellen, und einstellungen für die Map hinzufügen:
-let map = L.map('overviewmap', { //muss overviewmap heißen, weil das div element dazu im index html so definiert. ergebniskarte heißt map!
-  center: [46.7699, 10.2405], //welcher kartenausschnitt u darunter welcher zoom
-  zoom: 10,
-  fullscreenControl: true, //Fullscreen plugin
+//variable "map" erstellen und Einstellungen für die Map hinzufügen:
+let map = L.map('overviewmap', { //muss overviewmap heißen, weil das div element dazu im index html so definiert ist. Die ID der Ergebniskarte heißt "map"!
+  center: [46.7699, 10.2405], //welcher Kartenausschnitt
+  zoom: 10,//welcher Zoom
+  fullscreenControl: true, //Fullscreen Plugin
   layers: [baselayers.standard]
 })
 let overlays = {
-  geometry: L.featureGroup(), //overlay für die Zonierung definieren
+  geometry: L.featureGroup(), //Overlay für das Hinzufügen der Zonierung definieren
 }
 
-// Kartenhintergründe und Overlays zur Layer-Control hinzufügen -namen der karten, bzw. andre karten könnte man noch ausstauschen
+//Kartenhintergründe und Overlays zur Layer-Control hinzufügen
 let layerControl = L.control.layers({
     "Standard": baselayers.standard,
     "Topographie": baselayers.topographie,
     "Bildkarte": baselayers.imagery,
   },
-  //{"Interviews": overlays.Comments,} //ausgeklammert, weil die karte damit nicht mehr ging, weil dieser layer nicht existiert
-  { //Klammer erneut innerhalb der runden klammer öffnen, damit es eine visuelle abtrennung gibt, wo man dann andre sachen einblenden kann. 
+  { //Klammer erneut innerhalb der runden klammer öffnen, damit es eine visuelle Abtrennung gibt zwischen den verschiedenen Overlays 
     "Zonierung des Biosphärenreservates": overlays.geometry,
   }).addTo(map);
 
-
 overlays.geometry.addTo(map) //Overlays anzeigen lassen
 
-//Konst erstellen, über die wir auf die daten der zonierung zugreifen
+//Konstante erstellen, über die wir auf die Daten der Zonierung zugreifen
 const ZONE = [{
   title: "Zonierung des UBEVM",
   data: "data/UBEVM_Zonierung_Perimeter.json",
 }]
 
-//Variable erstellen in der die Zonierungen unterschiedliche Farben bekommen (kann hier angepast werden). Braucht kein eigenes skript, weil nur wenig inhalt
+//Variable erstellen in der die Zonierungen unterschiedliche Farben bekommen. Braucht kein eigenes Skript, weil nur wenig Inhalt. Farben können hier angepasst werden:
 const COLORS = {
   "Kernzone": "darkred",
   "Pflegezone": "green",
   "Entwicklungszone": "orange"
 }
-//Forschleife machen, die über die ganzen geojson daten Läuft
+//For-Schleife machen, die über die ganzen Geojson-Daten Läuft
 for (let config of ZONE) {
   fetch(config.data)
-    .then(response => response.json()) //innere runde klammer: Funktionsaufruf, damit es gestartet / ausgeführt wird ! 
+    .then(response => response.json()) //innere runde Klammer: Funktionsaufruf, damit es gestartet / ausgeführt wird 
     .then(geojsonData => {
-      //console.log("Data: ", geojsonData);
       if (config.title == "Zonierung des UBEVM") {
         drawGeometry(geojsonData);
       }
@@ -55,10 +52,10 @@ for (let config of ZONE) {
 };
 //Zonierung "zeichnen" + hinzufügen
 let drawGeometry = (geojsonData) => {
-  //console.log("Geometry", geojsonData);
+  //console.log("Geometry", geojsonData); //schauen ob es bisher geklappt hat
   L.geoJson(geojsonData, {
     style: (feature) => {
-      let col = COLORS[feature.properties.Zone]; //Eckige Klammern weil ich in einem Objekt auf einen wert/Schlüssel zureifen will, der ein Leerzeichen aht
+      let col = COLORS[feature.properties.Zone]; //Eckige Klammern weil ich in einem Objekt auf einen Wert/Schlüssel zureifen will, der ein Leerzeichen hat
       return {
           color: col,
           fillOpacity: 0.2,      
@@ -81,13 +78,13 @@ L.hash(map);
 
 // Plugin Minimap
 var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"), {
-  toggleDisplay: true, //minimap ein und ausklappbar
-  minimized: false //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
+  toggleDisplay: true, //Minimap ein- und ausklappbar
+  minimized: false //false: Anzeige im eingeklappten Zustand.
 }).addTo(map);
 
 //Maßstab siehe: https://leafletjs.com/reference-1.7.1.html#control-scale
 L.control.scale({
-  imperial: false //löscht meilen raus
+  imperial: false //löscht Meilen raus
 }).addTo(map)
 
 
