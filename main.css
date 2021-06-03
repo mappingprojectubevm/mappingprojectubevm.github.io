@@ -1,4 +1,4 @@
-/* Formatierung nach Elementen  */
+
 /* Überschriften */
 h1 {
     color: #1f410b;
@@ -14,7 +14,6 @@ h2 {
 h3 {
     color: #1f410b;
     text-align: center;
-    /* text-size + font ändern*/
 }
 
 h4 {
@@ -23,11 +22,9 @@ h4 {
     font-size: 16pt;
 }
 
-p,
+p, /*damit übernimmt es die Formatierung für alle Textparts auf allen drei HTML-Seiten */
 ul {
-    /* wenn hier nicht section steht übernimmt es das auch für den text der anderen seite, das ist fast angenehmer, muss mans nur einmal einstellen */
     text-align: left;
-    /*font: blocksatz hat nicht funktioniert, so gehts */
     font-family: 'Roboto Condensed', sans-serif;
     font-size: large;
     font-style: normal;
@@ -35,22 +32,12 @@ ul {
     padding-bottom: 20px;
     padding-right: 60px;
     padding-left: 60px;
-    hyphens: auto;
-    /*automatische Silbentrennung, mit komischen trennungen.*/
-
+    hyphens: auto;/*automatische Silbentrennung, mit komischen trennungen.*/
 }
 
 ul {
     padding-left: 80px;
 }
-
-/*definition Abschnitte braucht es das eig noch ??
-section {
-    width: 100%;
-    height: auto;
-    /* background-color: #7c7878; auskommentiert, weil sonst überlagert das teile der karte bzw. die layercontrol! 
-}*/
-
 
 footer {
     margin: auto;
@@ -76,46 +63,37 @@ body {
     margin-bottom: 0mm;
 }
 
-
 /* Beschriftung Banner mit Quelle*/
 #figcapt {
     background-color: #576b59;
-    color: #1f410b;/*gleiche wie der restl. hintergrund*/
+    color: #1f410b; /*gleiche Farbe wie der restl. hintergrund*/
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: right;
- }
+}
 
 /* Formatierung Menüleiste!*/
 header div,
-footer div {
-    /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
+footer div { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
     display: flex;
-    /*float: 400em; */
     margin-top: 1em;
     margin-bottom: 1em;
     vertical-align: auto;
-    /*flex-wrap: nowrap;*/
-    background-color: #576b59;
-    /*gleiche wie bei banner quelle */
+    background-color: #576b59; /*gleiche wie bei banner quelle */
     justify-content: space-around;
 }
-
-
-
-
+/*Text in der Menüleiste mit der ID, damit es nur dafür verwendet wird*/ 
 #textmenu {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
 }
+
 /*Farbe für Links zu den anderen Seiten & Quellen*/
 a:link,
 a:visited {
-    color: #b7c4b8;
-    /*damit linkfarbe gleich bleibt auch beim anklicken */
+    color: #b7c4b8; /*damit Linkfarbe gleich bleibt, auch beim Anklicken */
 }
-
 p a:link,
 p a:visited,
 a:visited,
@@ -128,8 +106,7 @@ a:link {
 #myDropdown a:visited {
     color: whitesmoke;
     font-size: 10pt;
-    /*text-decoration: none; /*damit werden links nicht mehr unterstrichen */
-
+    /*text-decoration: none; /*damit werden links nicht mehr unterstrichen, falls man das will */
 }
 
 /* Fotoboxen */
@@ -139,14 +116,11 @@ a:link {
 
 .flex {
     display: flex;
-    flex-wrap: nowrap;
-    /*alle sind in einer zeile */
-    justify-content: space-around;
-    /*elemente haben gleiche Abstände um sich herum */
+    flex-wrap: nowrap; /*alle sind in einer zeile */
+    justify-content: space-around; /*elemente haben gleiche Abstände um sich herum */
 }
 
 .boxperson {
-    /*float: 500em;*/
     margin: 1.0em;
     /*Rahmen für die Box in denen Fotos sind könnte man mit border einstellen border: solid 1px #2f3a2e */
     padding: 3em 3.5em;
@@ -157,10 +131,8 @@ a:link {
 /*Danke Bild */
 .danke {
     display: flex;
-    border-radius: 50%;
-    /*bild wird "rund"*/
-    margin: auto;
-    /*bild wird mit display u margin zentriert */
+    border-radius: 50%; /*bild wird "rund"*/
+    margin: auto; /*bild wird mit display u margin zentriert */
 }
 
 
@@ -170,7 +142,6 @@ a:link {
 .mr-5 {
     margin-right: 3em;
 }
-
 .ml-5 {
     margin-left: 3em;
 }
@@ -184,7 +155,6 @@ a:link {
 }
 
 /* ERGEBNISSE KARTE */
-/*könnte man e noc hvergrößern ??*/
 #map {
     height: 500px;
     width: 70%;
@@ -199,7 +169,7 @@ a:link {
     /*HEADER Titel noch anpassen */
 
 
-    /*bilder*/
+    /*Bilder*/
     .danke {
         width: 100%;
     };
@@ -226,16 +196,17 @@ a:link {
         width: 90%;
     }
 
-    /*text*/
-    /* p text sollte angepasst werden -> mit Blocksatz zu große Löcher im Text bei Handy */
+    /*Titel udn Text*/
     h4,
     body p {
         padding-left: 5mm;
         padding-right: 5mm;
     }
+
     ul {
         padding-left: 50px;
     }
+
     /*Karten */
     #map,
     #overviewmap {
@@ -245,11 +216,11 @@ a:link {
 
     /*Dropdownmenu*/
     .dropbtn {
-        display: block;/*Quellenbox mittig */      
+        display: block; /*Quellenbox mittig */
     }
 
     .dropdown-content {
-        left: 0;/*damit es nicht mehr über den bildschirmrand hinausgeht. */
+        left: 0; /*damit es nicht mehr über den bildschirmrand hinausgeht. */
         right: 0;
     }
 
@@ -265,56 +236,51 @@ a:link {
         width: 100vw;
     }
 }
-/*TEXT FÜR GROSSE BILDSCHIRME nicht so auseinander ziehen */
-@media screen and (max-width: 2280px) { 
-    ul{ width:75%; margin: auto}
+
+@media screen and (max-width: 2280px) {
+    /*TEXT FÜR GROSSE BILDSCHIRME nicht so auseinander ziehen */
+    ul {
+        width: 75%;
+        margin: auto
+    }
     p {
         width: 80%;
         margin: auto;
     }
-    h3, h4 {
+    h3,
+    h4 {
         width: 85%;
         margin: auto
     }
 }
-
 /* ***** ********* ************ ************** ************* ************** */
 
 
-/*Dropdown Button für Quellenverzeichnis */
+/*Dropdown Button+Menü für Quellenverzeichnis */
 .dropbtn {
-    background-color: #576b59;
-    /* Farbe wie footer*/
+    background-color: #576b59; /* Farbe wie footer*/
     border: 1px solid;
     border-color: grey;
     font-size: 20px;
-    text-align: center;
-    /*text zentriert */
-    padding-top: 10px;
-    /*größe der box */
+    text-align: center; /*text zentriert */
+    padding-top: 10px; /*größe der box */
     padding-bottom: 10px;
-    display: block;
-    /*damit dehnt es sich zum rand*/
-    max-width: 100%;
-    /*Box soll sich bis zum margin dehnen */
+    display: block;/*damit dehnt es sich zum rand*/
+    max-width: 100%; /*Box soll sich bis zum margin dehnen */
 }
 
 .dropdown {
-    position: relative;
-    /*damit der dropdown mittig kommt*/
-    display: inline-flexbox;
-    /*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
-    margin-left: 5em;
-    /*entfernung der box u des kontents vom rand */
+    position: relative;/*damit der dropdown mittig kommt*/
+    display: inline-flexbox;/*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
+    margin-left: 5em; /*entfernung der box u des kontents vom rand */
     margin-right: 5em;
-
 }
 
 /*Inhalt innerhalb des  Dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #533627;/*#b7c4b8 */
+    background-color: #533627;
     min-width: 10px;
     z-index: 20;
 }
@@ -325,15 +291,15 @@ a:link {
 }
 
 /*styles der schrift oben bei a:visited usw verändern! */
-/* .dropdown:hover .dropdown-content {display: block;}  --> nur wenn nicht klicken will*/
+/* .dropdown:hover .dropdown-content {display: block;}  --> nur aktivieren, wenn man nicht klicken will*/
 .dropdown:hover .dropbtn {
     background-color: grey;
 }
 
 .show {
     display: block;
-}/*Verknüpfung zum JS, damit funktioniert ide Funktion mti dem Klicken */
-
+}
+/*Verknüpfung zum JS, damit funktioniert die Funktion mit dem Klicken */
 
 
 
@@ -376,7 +342,7 @@ a:link {
 
 /* Centered text */
 .centered {
-   /*  position: absolute;
+    /*  position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -398,14 +364,14 @@ a:link {
     font-size: 60px;
     line-height: 80px;
     color: #b7c4b8;
-    text-shadow: 0 11.36px 8.896px #7c7878,0 -1px 1px;
+    text-shadow: 0 11.36px 8.896px #7c7878, 0 -1px 1px;
     letter-spacing: -4px;
     background-color: transparent;
 
 }
 
 .centered2 {
- 
+
     /* Schrift mit Schatten, versetzt*/
     position: absolute;
     top: 70%;
@@ -413,26 +379,27 @@ a:link {
     transform: translate(-50%, -50%);
     font-size: 60px;
     line-height: 80px;
-    color: whitesmoke ;
-    text-shadow: 0 11.36px 8.896px #b7c4b8,0 -1px 1px;
+    color: whitesmoke;
+    text-shadow: 0 11.36px 8.896px #b7c4b8, 0 -1px 1px;
     letter-spacing: -4px;
     background-color: transparent;
 
 }
 
 .centered3 {
- 
-     /* Schrift mit Schatten, versetzt*/
-     position: absolute;
-     top: 70%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     font-size: 60px;
-     line-height: 80px;
-     color: #1f410b;
-     text-shadow: 0 11.36px 8.896px #576b59,0 -1px 1px;
-     letter-spacing: -4px;
-     background-color: transparent;
- 
- }
- /*https://codepen.io/namho/pen/jEaXra*/
+
+    /* Schrift mit Schatten, versetzt*/
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    line-height: 80px;
+    color: #1f410b;
+    text-shadow: 0 11.36px 8.896px #576b59, 0 -1px 1px;
+    letter-spacing: -4px;
+    background-color: transparent;
+
+}
+
+/*https://codepen.io/namho/pen/jEaXra*/
