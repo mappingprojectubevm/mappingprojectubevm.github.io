@@ -1,8 +1,8 @@
-// https://leafletjs.com/
-const map = L.map('map', { //map heißen, weil das div element dazu im index html so definiert. ergebniskarte heißt map!
+// Siehe Anleitung: https://leafletjs.com/
+const map = L.map('map', { //muss Map heißen, weil das DIV-Element dazu im Index.html so definiert ist.
   center: [46.7699, 10.2405],
   zoom: 10,
-  fullscreenControl: true, //Fullscreen plugin
+  fullscreenControl: true, //Fullscreen Plugin
 })
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -14,18 +14,18 @@ const ZONE = [{
   data: "data/UBEVM_Zonierung_Perimeter.json",
 }]
 
-//Variable erstellen in der die Zonierungen unterschiedlihce Farben bekommen (kann hier angepasst werden). Braucht kein eigenes skript, weil nur wenig inhalt
+//eine Variable erstellen in der die Zonierungen unterschiedliche Farben bekommen (kann hier angepasst werden). Braucht kein eigenes skript, weil nur wenig Inhalt
 const COLORS = {
   "Kernzone": "darkred",
   "Pflegezone": "green",
   "Entwicklungszone": "orange"
 }
-//Forschleife machen, die über die ganzen geojson daten Läuft
+//Forschleife machen, die über die ganzen Geojson-Daten Läuft
 for (let config of ZONE) {
   fetch(config.data)
-    .then(response => response.json()) //innere runde klammer: Funktionsaufruf, damit es gestartet / ausgeführt wird ! 
+    .then(response => response.json()) //innere runde Klammer: Funktionsaufruf, damit es gestartet/ausgeführt wird 
     .then(geojsonData => {
-      //console.log("Data: ", geojsonData);
+      //console.log("Data: ", geojsonData); //Immer mal wieder, zum schauen ob es funktioniert oder Fehler gibt.
       if (config.title == "Zonierung des UBEVM") {
         drawGeometry(geojsonData);
       }
@@ -36,7 +36,7 @@ let drawGeometry = (geojsonData) => {
   //console.log("Geometry", geojsonData);
   L.geoJson(geojsonData, {
     style: (feature) => {
-      let col = COLORS[feature.properties.Zone]; //Eckige Klammern weil ich in einem Objekt auf einen wert/Schlüssel zureifen will, der ein Leerzeichen aht
+      let col = COLORS[feature.properties.Zone]; //Eckige Klammern weil ich in einem Objekt auf einen Wert/Schlüssel zureifen will, der ein Leerzeichen hat
       return {
           color: col,
           fillOpacity: 0.2,      
@@ -66,23 +66,22 @@ let icons = {
   "keineZuordnung": "comment-map-icon.png"
 }
 
-console.log(COMMENTS) //Schauen ob die erknüpfung funktioniert und etwas geloged wird
-for (let entry of COMMENTS) { //marker müssen noch an id angepasst werden. entry wird hier als begriff für die einzelnen Variablen bzw keys in COMMENTS definiert  
+console.log(COMMENTS) //Schauen ob die Verknüpfung funktioniert und etwas in der Console gelogged wird
+for (let entry of COMMENTS) { //Marker müssen noch an ID angepasst werden. "entry" wird hier als Begriff für die einzelnen Variablen bzw Keys in COMMENTS definiert  
   //console.log(entry);
-  //wählen wann welches Icon zum einsatz kommt
+  //wählen wann welches Icon zum Einsatz kommt:
   if (icons[entry.id == "Entwickelt"]) {}
   if (icons[entry.id == "Enwicklungsbedarf"]) {}
   if (icons[entry.id == "Vorteil"]) {}
   if (icons[entry.id == "Nachteil"]) {}
-  if (icons[entry.id == "keineZuordnung"]) {} //in der Legende vlt als Beschriebung / Kommentar benennen
+  if (icons[entry.id == "keineZuordnung"]) {} //In die Legende einbauen (dieses ev. als Kommentar?)
 
 //Icons einsetzen:
 let mrk = L.marker([entry.lat, entry.lng], {
   icon: L.icon({
     iconUrl: `icons/${icons[entry.id]}`,
-    iconSize: [37, 37], //array höhe u breite, kann ich im img anschauen. mit der size ist der icon mittig, aber die iconspitze liegt nicht auf koordinate. also;
-    //iconAnchor: [16, 37], //damit richitg positioniert, aber verdeckt durchpopup, deswegen siehe nächste zeile:
-    popupAnchor: [0, -19], //mitte passt =0, dann nach oben verschieben um halbeicongröße, dann gehts oberhalb auf
+    iconSize: [37, 37], //Array mit Höhe u Breite, kann ich im img anschauen. Mit der Size ist das Icon genau mittig auf den Koordinatenpunkt, passend für unsere Karte.
+    popupAnchor: [0, -19], //Damit das Popup am ende des Icons aufploppt udn nicht in der Mitte und die Hälfte überdeckt, verschieben wir es um die Hälfte ca. nach oben.
   })
 }).addTo(map);
 mrk.bindPopup(`
@@ -96,13 +95,13 @@ L.control.scale({
   imperial: false
 }).addTo(map)
 
-// hash: zeigt in der URL leiste die Koordinaten und den #zoom des kartenausschnittes an 
-var hash = new L.Hash(map); //Var hash steht hier nur weil man eine neue Var erstellt, falls man sie später noch mal braucht. new  --> nach L muss großbuchstabe sein.
+// hash: zeigt in der URL-Leiste die Koordinaten und den #Zoom des Kartenausschnittes an 
+var hash = new L.Hash(map); //var hash steht hier nur weil man eine neue Var erstellt, falls man sie später noch mal braucht. new  --> nach L muss großbuchstabe sein.
 
 //Minimap
 var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"), {
-  toggleDisplay: true, //minimap ein und ausklappbar
-  minimized: true //fangt im eingeklappten zustand an. diese einstellungen kann man alle in der leaflet/github davon nachlesen
+  toggleDisplay: true, //Minimap wird damit ein- und ausklappbar
+  minimized: true //mit true zeigt es die Minimap im eingeklappten Zustand an.
 }).addTo(map);
 
 
@@ -116,6 +115,7 @@ legends: [{
   url: "marker/marker-red.png",
 }]
 }).addTo(map);
+
 
 /* DROPDOWN FÜR QUELLE
 When the user clicks on the button, 
