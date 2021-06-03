@@ -132,7 +132,6 @@ a:link {
 
 }
 
-
 /* Fotoboxen */
 .imageround {
     border-radius: 50%;
@@ -334,6 +333,9 @@ a:link {
 .show {
     display: block;
 }/*Verknüpfung zum JS, damit funktioniert ide Funktion mti dem Klicken */
+
+
+
 
 /*HEADER*/
 /* Container für den Text und das Bild */

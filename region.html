@@ -25,7 +25,7 @@
         integrity="sha512-LixflAm9c0/qONbz9F1Ept+QJ6QBpb7wUlPuyv1EHloTVgwSK8j3yMV3elnElGQcv7Y5QTFlF/FqyeE/N4LnKQ=="
         crossorigin="anonymous"></script>
 
-    <!-- Leaflet fullscreen (stylsheet und dann js)-->
+    <!-- Leaflet fullscreen (immer besser zuerst stylsheet und dann js)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/2.0.0/Control.FullScreen.css"
         integrity="sha512-KQk/GTCcAywe4iEOhnZ6ZmWDNv/3NvOE6f0iUvrNVCX/oD7+sPXAeDP90aOX3EXHmerC6gDYUlUBaSd4hxjWEw=="
         crossorigin="anonymous" />
@@ -33,7 +33,7 @@
         integrity="sha512-TaNrKSd5TOm4PfgJMFYkDpQ1X8GmqXBlh+Kmk83Mfrcx9sjTzqI1zcZd0n0xpdJevfPL7voAcbblrUaYx+LM1g=="
         crossorigin="anonymous"></script>
 
-    <!-- Minimap -->
+    <!-- Plugin Minimap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"
         integrity="sha512-efbAfGnrnjA+hLwOLu91W034fBGPsMwZMVCTwLUI2PDX/m7rOiuhYZ+D2mZ8rKcpC/I/7pdgoL8T4eYvMHNoQg=="
         crossorigin="anonymous" />
@@ -41,7 +41,7 @@
         integrity="sha512-ceQPs2CHke3gSINLt/JV37W1rfJOM64yuH999hnRhTP7tNtcSBp5hlTKhn8CEIhsFweSBrZMPVotAKjoyxGWNg=="
         crossorigin="anonymous"></script>
 
-<!--Fontawesome-->
+<!--Fontawesome (für den arrow icon)-->
 <script src="https://kit.fontawesome.com/53766588c0.js" crossorigin="anonymous"></script>
 
 <!--eigene Skripte-->
@@ -49,9 +49,8 @@
     <script defer src="uebersichtskarte.js"></script>
 
 </head>
-<!-- hier kommt bannerbild + menüleiste -->
 <header>
-
+<!--Bannerbild, Titel, Menü-->
     <div class="container">
         <img src="images/header2.jpg" alt="BR" style="width:100%;">
   
@@ -70,7 +69,7 @@
     <br>
     <h1>Die Region und das Biosphärenreservat</h1>
 </header>
-
+<!--Hauptteil: Text und Karte-->
 <body>
     <h2>Die Region Engiadina Bassa - Val Müstair </h2>
     <p>Markante Gipfel, bewaldete Hänge, heimelige Bergdörfer – als eine echte Ferienregion mit herausragender Natur und
@@ -98,9 +97,10 @@
         beinhaltet viele wichtige Lebensräume, wie zum Beispiel Gewässerhabitate (Der Schweizerische Nationalpark,
         2016), in den Pflegezonen des Val Müstair und des Engiadina haben sich naturnahe Kulturlandschaften gebildet.
     </p>
+    <!--Karte-->
     <h3>Übersichtskarte</h3>
     <div id="overviewmap"> </div>
-
+<!--Text-->
     <h2>Das UNESCO Biosphärenreservat </h2>
     <h4>Was ist ein Biosphärenreservat?</h4><br>
     <p>Die UNESCO definiert ein Biosphärenreservat als eine ankerkannte Modellregion, in der nachhaltige Entwicklung
@@ -145,7 +145,7 @@
         </p>
         <p><a target="_blank" href="https://www.nationalpark.ch/de/about/ueber-uns/unesco-biosfera-engiadina-val-muestair/"><i class='fas fa-arrow-right arrow' style="font-size: 18px; color:#b7c4b8; text-decoration: underline;"></i> Link zur Hompage des UBEVM </a></p>      
     
-
+<!--Quellenangaben Dropdown Menu-->
     <section>
         <div class="dropdown">
             <!--Link zum Tutorial: http://www.w3bai.com/de/howto/tryit.php?filename=tryhow_css_dropdown_navbar_click-->
@@ -175,6 +175,8 @@
         </div>
     </section>
     <br>
+
+<!--Fußzeile mit Links-->
     <footer>
         <hr>
         Hier geht es weiter zu:
