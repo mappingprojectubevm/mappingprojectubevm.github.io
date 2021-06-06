@@ -112,7 +112,7 @@ window.onclick = function (e) {
 var north = L.control({position: "bottomright"});
 north.onAdd = function(map) {
     var div = L.DomUtil.create("div", "info legend");
-    div.innerHTML = '<icons src="north-arrow.png">';
+    div.innerHTML = '<img src="north-arrow.png">';
     return div;
 }
 north.addTo(map);
