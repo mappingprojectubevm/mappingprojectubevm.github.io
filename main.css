@@ -309,7 +309,7 @@ a:link {
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 /* Bottom left text
@@ -333,13 +333,18 @@ a:link {
     right: 16px;
   }*/
 
-/* Bottom right text 
-  .bottom {
+/*Bottom right text */
+  .bottom-right {
     position: absolute;
-    bottom: 8px;
-    right: 16px;
+    bottom: 1px;
+    right: 2px;
+    font-size: 12px;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 2em;
  
-  }*/
+  }
 
 /* Centered text */
 .centered {
