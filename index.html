@@ -12,14 +12,14 @@
 
     <!-- Plugins und Stylsheets verlinken -->
 
-    <!-- Dokumente Verlinken -->
+    <!--Eigene Scripte-->
     <link rel="stylesheet" href="main.css">
     <script defer src="main.js"></script>
 </head>
 
 
 <body>
-    <!-- Header -->
+    <!-- Header mit Bannerbild, Titel und Menüzeile1 -->
     <header>
         <!-- Menü Links
         <div id="textmenu">
@@ -41,7 +41,8 @@
             <!-- <div class="top-right"><a href="index.html">Über uns</a></div> -->
             <!-- <div class="bottom-right">Bottom Right</div> -->
             <div class="centered"> Über unser Projekt</div>
-        </div><figcaption id="figcapt" >Quelle: Nils Leonard Unthan </figcaption>
+        </div>
+        <figcaption id="figcapt">Quelle: Nils Leonard Unthan </figcaption>
 
         <div id="textmenu">
             <div><a href="index.html">Über uns</a></div>
@@ -54,10 +55,9 @@
         <h1>Über unser Projekt</h1> -->
     </header>
 
-    <!-- Section 1 -->
+    <!-- Section 1: Text und Fotoboxen -->
     <section>
-        <div class=background1>
-            <!-- klasse kommt nirgedns for warum ist das da?-->
+        <div>
             <h2>Über uns</h2>
             <p>Herzlich Willkommen auf unserer Projektseite! <br>
                 <br>
@@ -99,7 +99,7 @@
 
     <br>
 
-    <!-- Section 2 -->
+    <!-- Section 2: Text -->
     <section>
         <h2>Unser Projekt</h2>
         <p>Unsere Forschung im UBEVM befasste sich mit Partizipationsstrukturen für die lokale Bevölkerung, um an den
@@ -121,7 +121,7 @@
     </section>
 
     <br>
-    <!-- Section 3 -->
+    <!-- Section 3: Danke Bild und Text -->
 
     <section>
         <!-- <h2>Danke</h2> -->
@@ -137,27 +137,15 @@
             präsentieren diese auf unserer Webseite. Folgen Sie den nachfolgenden Links zur Beschreibung der Region und
             dem Biosphärenreservat und zur Seite mit einer interaktiven Ergebniskarte.</p>
     </section>
-    <script>
-        let dropBtn = document.querySelector('.dropbtn');
-        let dropdownContent = document.querySelector('.dropdown-content');
-        dropdownBtn.addEventListener('click', () => {
-            if (dropdownContent.style.display === "") {
-                dropdownContent.style.display = "block";
-            } else {
-                dropdownContent.style.display = "";
-            }
-        })
-    </script>
-    <footer>
 
+    <!--Fußzeile mit Links-->
+    <footer>
         <hr>
         Hier geht es weiter zu:
         <div id="textmenu">
             <div><a href="region.html">Region und Biosphärenreservat</a></div>
             <div><a href="karte.html">Ergebnisse und Karte</a></div>
         </div>
-
-
     </footer>
 </body>
 
