@@ -78,7 +78,6 @@ footer { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer 
     display: flex;
     margin-top: 1em;
     margin-bottom: 1em;
-    vertical-align: auto;
     background-color: #576b59; /*gleiche wie bei banner quelle */
     justify-content: space-around;
 
