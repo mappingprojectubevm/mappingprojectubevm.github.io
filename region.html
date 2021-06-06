@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Region</title>
-   
+
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -25,7 +25,7 @@
         integrity="sha512-LixflAm9c0/qONbz9F1Ept+QJ6QBpb7wUlPuyv1EHloTVgwSK8j3yMV3elnElGQcv7Y5QTFlF/FqyeE/N4LnKQ=="
         crossorigin="anonymous"></script>
 
-    <!-- Leaflet fullscreen (stylsheet und dann js)-->
+    <!-- Leaflet fullscreen (immer besser zuerst stylsheet und dann js)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/2.0.0/Control.FullScreen.css"
         integrity="sha512-KQk/GTCcAywe4iEOhnZ6ZmWDNv/3NvOE6f0iUvrNVCX/oD7+sPXAeDP90aOX3EXHmerC6gDYUlUBaSd4hxjWEw=="
         crossorigin="anonymous" />
@@ -33,7 +33,7 @@
         integrity="sha512-TaNrKSd5TOm4PfgJMFYkDpQ1X8GmqXBlh+Kmk83Mfrcx9sjTzqI1zcZd0n0xpdJevfPL7voAcbblrUaYx+LM1g=="
         crossorigin="anonymous"></script>
 
-    <!-- Minimap -->
+    <!-- Plugin Minimap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"
         integrity="sha512-efbAfGnrnjA+hLwOLu91W034fBGPsMwZMVCTwLUI2PDX/m7rOiuhYZ+D2mZ8rKcpC/I/7pdgoL8T4eYvMHNoQg=="
         crossorigin="anonymous" />
@@ -41,34 +41,39 @@
         integrity="sha512-ceQPs2CHke3gSINLt/JV37W1rfJOM64yuH999hnRhTP7tNtcSBp5hlTKhn8CEIhsFweSBrZMPVotAKjoyxGWNg=="
         crossorigin="anonymous"></script>
 
+    <!--Fontawesome (für den arrow icon)-->
+    <script src="https://kit.fontawesome.com/53766588c0.js" crossorigin="anonymous"></script>
 
+    <!--eigene Skripte-->
     <link rel="stylesheet" href="main.css">
     <script defer src="uebersichtskarte.js"></script>
 
 </head>
-<!-- hier kommt bannerbild + menüleiste -->
-<header>
-
-    <div class="container">
-        <img src="images/header2.jpg" alt="BR" style="width:100%;">
-  
-        <div class="centered2"> Die Region und das Biosphärenreservat </div>
-    </div><figcaption id="figcapt" >Quelle: Nils Leonard Unthan </figcaption>
-    <!-- Menü Links -->
-    <div id="textmenu">
-        <div><a href="index.html">Über uns</a></div>
-        <div><a href="region.html">Region und Biosphärenreservat</a></div>
-        <div><a href="karte.html">Ergebnisse und Karte</a></div>
-    </div>
-    <!-- Bild Banner 
-    <img class="banner" src="images/header2.jpg" alt="Biosphäre Engiadina Val Müstair">
-    <figcaption> Quelle: Nils Leonard Unthan </figcaption>-->
-    <!-- Überschrift -->
-    <br>
-    <h1>Die Region und das Biosphärenreservat</h1>
-</header>
 
 <body>
+    <header>
+        <!--Bannerbild, Titel, Menü-->
+        <div class="container">
+            <img src="images/header2.jpg" alt="BR" style="width:100%;">
+
+            <div class="centered2"> Die Region und das Biosphärenreservat </div>
+        </div>
+        <figcaption id="figcapt">Quelle: Nils Leonard Unthan </figcaption>
+        <!-- Menü Links -->
+        <div id="textmenu">
+            <div><a href="index.html">Über uns</a></div>
+            <div><a href="region.html">Region und Biosphärenreservat</a></div>
+            <div><a href="karte.html">Ergebnisse und Karte</a></div>
+        </div>
+        <!-- Bild Banner 
+    <img class="banner" src="images/header2.jpg" alt="Biosphäre Engiadina Val Müstair">
+    <figcaption> Quelle: Nils Leonard Unthan </figcaption>-->
+        <!-- Überschrift -->
+        <br>
+        <h1>Die Region und das Biosphärenreservat</h1>
+    </header>
+    <!--Hauptteil: Text und Karte-->
+
     <h2>Die Region Engiadina Bassa - Val Müstair </h2>
     <p>Markante Gipfel, bewaldete Hänge, heimelige Bergdörfer – als eine echte Ferienregion mit herausragender Natur und
         einzigartiger Kultur präsentiert sich die Region Engiadina Bassa / Val Müstair. Das Unterengadin und das
@@ -95,9 +100,10 @@
         beinhaltet viele wichtige Lebensräume, wie zum Beispiel Gewässerhabitate (Der Schweizerische Nationalpark,
         2016), in den Pflegezonen des Val Müstair und des Engiadina haben sich naturnahe Kulturlandschaften gebildet.
     </p>
+    <!--Karte-->
     <h3>Übersichtskarte</h3>
     <div id="overviewmap"> </div>
-
+    <!--Text-->
     <h2>Das UNESCO Biosphärenreservat </h2>
     <h4>Was ist ein Biosphärenreservat?</h4><br>
     <p>Die UNESCO definiert ein Biosphärenreservat als eine ankerkannte Modellregion, in der nachhaltige Entwicklung
@@ -109,13 +115,16 @@
         bestimmten Regeln definiert. Die drei Zonen definieren sich wie folgt:
         <ul>
             <li><b>Die Kernzone:</b> In der Kernzone soll eine natürliche Entwicklung stattfinden ohne menschliche
-                Eingriffe, das heißt eine menschliche Nutzung ist ausgeschlossen. Die Kernzone muss mindesten 3 % der Gesamtfläche
+                Eingriffe, das heißt eine menschliche Nutzung ist ausgeschlossen. Die Kernzone muss mindesten 3 % der
+                Gesamtfläche
                 ausmachen.</li>
             <li><b>Die Pflegezone:</b> Auch in der Pflegezone hat der Naturschutz Vorrang und das Gebiet wird
-                dementsprechend genutzt und gepflegt. Diese Zone stellt eine Vernetzung der Kernzone mit der Entwicklungszone dar und
+                dementsprechend genutzt und gepflegt. Diese Zone stellt eine Vernetzung der Kernzone mit der
+                Entwicklungszone dar und
                 muss die Kernzone vollständig umgeben.</li>
             <li><b>Die Entwicklungszone:</b> In der Entwicklungszone findet sich der höchste Grad der menschlichen
-                Eingriffe: hier sind die Siedlungsräume als Wirtschafts-, Lebens- und Erholungsraum zu finden. Dabei soll
+                Eingriffe: hier sind die Siedlungsräume als Wirtschafts-, Lebens- und Erholungsraum zu finden. Dabei
+                soll
                 nachhaltiges Nutzen und Wirtschaften stattfinden, welches im Einklang mit allen Bereichen der
                 Nachhaltigkeit, also Wirtschaft, Ökologie und Soziales ist (Das deutsche MAB-Nationalkomitee, 2021).
     </p>
@@ -124,7 +133,8 @@
     <h4>Das UNESCO Biosphärenreservat Engiadina Val Müstair</h4><br>
     <p>Die Entstehung des UNESCO Biosphärenreservats im Engiadina Val Müstair beginnt 1979 mit der Anerkennung der
         Schweizerischen Nationalparks (SNP) als erstes UNESCO-Biosphärenreservat in der Schweiz. Mit der
-        Sevilla-Strategie 1995 wurde beschlossen, dass für ein Biosphärenreservat eine Entwicklungs- und Pflegezone notwendig ist.
+        Sevilla-Strategie 1995 wurde beschlossen, dass für ein Biosphärenreservat eine Entwicklungs- und Pflegezone
+        notwendig ist.
         Damit wurde das Biosphärenreservat ausgeweitet und die lokale Bevölkerung sollte von da an in die Entscheidungen
         einbezogen werden. Zudem entstand im Jahr 2011 der „Regionale Naturpark Biosfera Val Müstair“ als zweiter
         wichtiger Partner des Biosphärenreservates neben dem SNP. Der Regionale Naturpark befindet sich im Val Müstair
@@ -138,11 +148,15 @@
         Koordination über, jede Institution ist mit zwei Mitgliedern im BR-Rat vertreten. Die Leitung liegt bei der
         Geschäftsstelle des Biosphärenreservats. Aus der Überlappung dieser drei Schutzschutzgebiete und der Gemeinde
         Scuol ergibt sich eine teilweise komplexe Trägerschaft des Biosphärenreservates, die eine intensive
-        Zusammenarbeit zwischen den Institutionen erfordert (Filli & Abderhalden, 2020, S. 255ff.). 
-        </p>
-        <p><a target="_blank" href="https://www.nationalpark.ch/de/about/ueber-uns/unesco-biosfera-engiadina-val-muestair/"><i class='fas fa-arrow-right' style="font-size: 26px; color:whitesmoke"></i>>>Link zur Hompage des UBEVM </a></p>      
-    
+        Zusammenarbeit zwischen den Institutionen erfordert (Filli & Abderhalden, 2020, S. 255ff.).
+    </p>
+    <p><a target="_blank"
+            href="https://www.nationalpark.ch/de/about/ueber-uns/unesco-biosfera-engiadina-val-muestair/"><i
+                class='fas fa-arrow-right arrow'
+                style="font-size: 18px; color:#b7c4b8; text-decoration: underline;"></i> Link zur Hompage des UBEVM </a>
+    </p>
 
+    <!--Quellenangaben Dropdown Menu-->
     <section>
         <div class="dropdown">
             <!--Link zum Tutorial: http://www.w3bai.com/de/howto/tryit.php?filename=tryhow_css_dropdown_navbar_click-->
@@ -172,6 +186,8 @@
         </div>
     </section>
     <br>
+
+    <!--Fußzeile mit Links-->
     <footer>
         <hr>
         Hier geht es weiter zu:

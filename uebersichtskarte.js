@@ -1,13 +1,13 @@
-// Kartenhintergründe definieren, provider ist leaflet : http://leaflet-extras.github.io/leaflet-providers/preview/index.html     http://leaflet-extras.github.io/leaflet-providers/preview/
+// Kartenhintergründe definieren, provider ist leaflet: http://leaflet-extras.github.io/leaflet-providers/preview/
 let baselayers = {
   standard: L.tileLayer.provider("OpenStreetMap.Mapnik"),
   topographie: L.tileLayer.provider("OpenTopoMap"),
   imagery: L.tileLayer.provider("Esri.WorldImagery"),
 };
 
-//variable "map" erstellen und Einstellungen für die Map hinzufügen:
-let map = L.map('overviewmap', { //muss overviewmap heißen, weil das div element dazu im index html so definiert ist. Die ID der Ergebniskarte heißt "map"!
-  center: [46.7699, 10.2405], //welcher Kartenausschnitt
+//Variable "map" erstellen und Einstellungen für die Map hinzufügen:
+let map = L.map('overviewmap', { //muss Overviewmap heißen, weil das Div-Element dazu im index.html so definiert ist. Die ID der Ergebniskarte heißt "map"!
+  center: [46.7699, 10.2405], //welcher Kartenausschnitt gezeigt werden soll
   zoom: 10,//welcher Zoom
   fullscreenControl: true, //Fullscreen Plugin
   layers: [baselayers.standard]
@@ -48,7 +48,7 @@ const COLORS = {
 //For-Schleife machen, die über die ganzen Geojson-Daten Läuft
 for (let config of ZONE) {
   fetch(config.data)
-    .then(response => response.json()) //innere runde Klammer: Funktionsaufruf, damit es gestartet / ausgeführt wird 
+    .then(response => response.json()) //innere runde Klammer: Funktionsaufruf, damit es gestartet/ausgeführt wird 
     .then(geojsonData => {
       if (config.title == "Zonierung des UBEVM") {
         drawGeometry(geojsonData);
@@ -76,19 +76,6 @@ let drawGeometry = (geojsonData) => {
   }).addTo(overlays.geometry)
 }
 
-/* Legende leaflet einfügen
-var overviewmap = L.map("overviewmap", {
-  center: [29, 120],
-});
-
-L.control.Legend({
-position: "bottomleft",
-legends: [{
-  label: "Marker1",
-  type: "image",
-  url: "marker/marker-red.png",
-}]
-}).addTo(map);*/
 
 // Plugin hash
 L.hash(map);
