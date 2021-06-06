@@ -64,18 +64,28 @@ body {
     margin-bottom: 0mm;
 }
 
-/* Beschriftung Banner mit Quelle*/
+/* Beschriftung Banner mit Quelle
 #figcapt {
     background-color: #576b59;
-    color: #1f410b; /*gleiche Farbe wie der restl. hintergrund*/
+    color: #1f410b; Kommentar: gleiche Farbe wie der restl. hintergrund
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: right;
+} */
+
+/* Formatierung Menüleiste!*/
+footer { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    vertical-align: auto;
+    background-color: #576b59; /*gleiche wie bei banner quelle */
+    justify-content: space-around;
+
 }
 
 /* Formatierung Menüleiste!*/
-header div,
-footer div { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
+header div { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
     display: flex;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -83,12 +93,21 @@ footer div { /*achtung wenn wir was fürs menü ändern dann müssen wir den foo
     background-color: #576b59; /*gleiche wie bei banner quelle */
     justify-content: space-around;
 }
+#weiter {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: large;
+    font-style: normal;
+    color: whitesmoke;
+}
+
 /*Text in der Menüleiste mit der ID, damit es nur dafür verwendet wird*/ 
 #textmenu {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
-}
+
+ }
 
 /*Farbe für Links zu den anderen Seiten & Quellen*/
 a:link,
@@ -242,7 +261,7 @@ a:link {
     /*TEXT FÜR GROSSE BILDSCHIRME nicht so auseinander ziehen */
     ul {
         width: 75%;
-        margin: auto
+        margin: auto;
     }
     p {
         width: 80%;
