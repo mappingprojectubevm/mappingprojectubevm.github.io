@@ -5,7 +5,7 @@ const map = L.map('map', { //map heißen, weil das div element dazu im index htm
   fullscreenControl: true, //Fullscreen plugin
 })
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>,<a href= "https://map.geo.admin.ch/index.html?zoom=4&lang=de&topic=ech&bgLayer=ch.swisstopo.pixelkarte-farbe&layers=ch.swisstopo.vec200-adminboundaries-protectedarea,ch.bafu.schutzgebiete-schweizerischer_nationalpark,ch.bafu.schutzgebiete-paerke_nationaler_bedeutung,ch.bafu.schutzgebiete-paerke_nationaler_bedeutung_perimeter,ch.swisstopo.pixelkarte-farbe-pk50.noscale,ch.bafu.schutzgebiete-biosphaerenreservate&layers_opacity=0.75,0.75,0.85,0.85,1,0.4&catalogNodes=457,532,687,458,510,639,653,755&E=2810569.46&N=1169334.06&layers_visibility=false,false,false,false,true,true">Zonierung<a/> contributors'
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> I <a href= "https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c212a19c-6e06-4ca4-bdee-3ec62ccd7b1e/tab/complete">Zonierung<a/> I <a href= "https://mapicons.mapsmarker.com/">Icons A<a/> I <a href= "https://icons8.de/">Icons B<a/> contributors'
 }).addTo(map);
 
 

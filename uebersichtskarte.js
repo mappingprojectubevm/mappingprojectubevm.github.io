@@ -71,7 +71,19 @@ let drawGeometry = (geojsonData) => {
   }).addTo(overlays.geometry)
 }
 
+/* Legende leaflet einfügen
+var overviewmap = L.map("overviewmap", {
+  center: [29, 120],
+});
 
+L.control.Legend({
+position: "bottomleft",
+legends: [{
+  label: "Marker1",
+  type: "image",
+  url: "marker/marker-red.png",
+}]
+}).addTo(map);*/
 
 // Plugin hash
 L.hash(map);
