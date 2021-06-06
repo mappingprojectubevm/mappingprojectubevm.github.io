@@ -16,6 +16,11 @@ let overlays = {
   geometry: L.featureGroup(), //Overlay für das Hinzufügen der Zonierung definieren
 }
 
+//Zusätzliche Quellenangaben für die Karte 
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '<a href= "https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c212a19c-6e06-4ca4-bdee-3ec62ccd7b1e/tab/complete">Zonierung<a/>'
+}).addTo(map);
+
 //Kartenhintergründe und Overlays zur Layer-Control hinzufügen
 let layerControl = L.control.layers({
     "Standard": baselayers.standard,
