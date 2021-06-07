@@ -5,7 +5,7 @@ const map = L.map('map', { //muss Map heißen, weil das DIV-Element dazu im Inde
   fullscreenControl: true, //Fullscreen Plugin
 })
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> I <a href= "https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c212a19c-6e06-4ca4-bdee-3ec62ccd7b1e/tab/complete">Zonierung<a/> I <a href= "https://mapicons.mapsmarker.com/">Icons A<a/> I <a href= "https://icons8.de/">Icons B<a/> contributors'
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>contributors, <a href= "https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c212a19c-6e06-4ca4-bdee-3ec62ccd7b1e/tab/complete">Zonierung<a/>, <a href= "https://mapicons.mapsmarker.com/">Icons A<a/> I <a href= "https://icons8.de/">Icons B<a/> '
 }).addTo(map);
 
 

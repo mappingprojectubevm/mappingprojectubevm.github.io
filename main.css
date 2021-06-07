@@ -73,24 +73,7 @@ body {
     text-align: right;
 } */
 
-/* Formatierung Menüleiste Footer!*/
-footer div { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
-    display: flex;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    background-color: #576b59; /*gleiche wie bei banner quelle */
-    justify-content: space-around;
-}
-
-/* Formatierung Menüleiste Header!*/
-header div { /*achtung wenn wir was fürs menü ändern dann müssen wir den footer hier rausnehmen*/
-    display: flex;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    vertical-align: auto;
-    background-color: #576b59; /*gleiche wie bei banner quelle */
-    justify-content: space-around;
-}
+/*Footer Text oberhalb Menuleiste*/
 #weiter {
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
@@ -99,12 +82,19 @@ header div { /*achtung wenn wir was fürs menü ändern dann müssen wir den foo
     color: whitesmoke;
 }
 
-/*Text in der Menüleiste mit der ID, damit es nur dafür verwendet wird*/ 
+/*Text in der Menüleisteim Header und Footer mit der ID, damit es nur dafür verwendet wird*/ 
 #textmenu {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
-
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    vertical-align: auto;
+    background-color: #576b59; /*gleiche wie bei banner quelle */
+    justify-content: space-around;
+    padding-bottom: 1em;
+    padding-top: 1em; /*größe der grünen box mit padding */
  }
 
 /*Farbe für Links zu den anderen Seiten & Quellen*/
