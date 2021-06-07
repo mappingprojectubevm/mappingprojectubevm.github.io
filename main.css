@@ -169,7 +169,13 @@ a:link {
     margin: auto;
     border: 1px solid #2f3a2e;
 }
-
+.textkarte {
+    margin: auto;
+    width: 70%;
+    font-style: italic;
+    color:#1f410b;
+    font-size: 16px;
+}
 
 /* ******* ******** ********* *********** ******** ************** */
 /*Bildschirmeinstellung für kleinere Bildschirme */
@@ -204,13 +210,16 @@ a:link {
         width: 90%;
     }
 
-    /*Titel udn Text*/
+    /*Titel und Text*/
     h4,
     body p {
         padding-left: 5mm;
         padding-right: 5mm;
     }
-
+    .textkarte {
+        margin-left: 0;
+        margin-right: 0;
+    }
     ul {
         padding-left: 50px;
     }
