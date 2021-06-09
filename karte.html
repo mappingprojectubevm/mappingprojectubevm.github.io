@@ -138,7 +138,7 @@
 
   <div class="Feedback">
   <div style="text-align:center">
-    <h2>Contact Us</h2>
+    <h2>Sie haben noch mehr Informationen für uns?</h2>
     <h2>Wenn Sie noch weitere Kommentare zu den Themen in der Karte haben, können Sie diese hier an uns schicken. Wir fügen Sie dann in die Karte ein.
       <br><br>
       Danke für Ihr Interesse!
@@ -151,19 +151,28 @@
     </div>
     <div class="column">
       <form action="/action_page.php">
-        <label for="fname">Wo auf der Karte soll Ihr Input platziert werden? (Koordinaten / Gemeinde)</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Welcher der folgenden Kategorien würden Sie es zuordnen?</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="fname">Wo auf der Karte soll Ihre Information platziert werden? (Koordinaten / Gemeinde / Schutzgebiet)</label>
+        <input type="text" id="fname" name="koordinaten" placeholder="Tragen Sie hier Ihre Information ein.">
+        <!-- <label for="lname">Welcher der folgenden Kategorien würden Sie Ihr Thema zuordnen?</label>
+        <input type="text" id="lname" name="lastname" placeholder="Wählen Sie hier die Kategorie aus."> -->
+
+        <label for="kategorie">Wählen Sie hier die Kategorie aus, der Sie Ihr Thema zuordnen würden.</label>
+        <select id="kategorie" name="kategorie">
+          <option value="nachteile">Nachteile</option>
+          <option value="vorteile">Vorteile</option>
+          <option value="entwicklungsbedarf">Entwicklungspotenzial</option>
+          <option value="ntwickelt">Perfekt entwickelt</option>
+        </select>
         <label for="country">Kommentar zu ...</label>
         <select id="country" name="country">
           <option value="gemeinde">... einer Gemeinde</option>
           <option value="region">... der Region</option>
           <option value="schutzgebiete">... einem Schutzgebiet</option>
+          <option value="sektoren">... einem Sektor</option>
         </select>
         <label for="subject">Text</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
+        <textarea id="subject" name="subject" placeholder="Schreiben Sie hier Ihren Text ..." style="height:170px"></textarea>
+        <input type="submit" value="Senden">
         <form action="mailto:julia1983baumgartner@gmail.com" method="post" enctype="text/plain"></form>
       </form>
     </div>
