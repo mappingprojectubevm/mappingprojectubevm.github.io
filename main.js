@@ -123,16 +123,16 @@ var legend = L.control({ position: "bottomleft" });
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Ergebnisse</h4>";
-  div.innerHTML += '<i style="background: #477AC2"></i><span>Vorteile</span><br>';
-  div.innerHTML += '<i style="background: #448D40"></i><span>Nachteile</span><br>';
-  div.innerHTML += '<i style="background: #E6E696"></i><span>Entwicklungspotenzial</span><br>';
-  div.innerHTML += '<i style="background: #E8E6E0"></i><span>Gut entwickelt</span><br>';
-  div.innerHTML += '<i style="background: #FFFFFF"></i><span>Ice</span><br>';
+  div.innerHTML += '<img src=icons/vorteil.png></i><span>Vorteile</span><br>';
+  div.innerHTML += '<img src=icons/nachteil.png></i><span>Nachteile</span><br>';
+  div.innerHTML += '<img src=icons/entwicklungsbedarf.png></i><span>Entwicklungsbedarf</span><br>';
+  div.innerHTML += '<img src=icons/entwickelt.png></i><span>Gut entwickelt</span><br>';
+  div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
+  div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
+  div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';
   div.innerHTML += '<i class="icon" style="background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/194515-200.png);background-repeat: no-repeat;"></i><span>Grænse</span><br>';
   
-  
-
-  return div;
+    return div;
 };
 
 legend.addTo(map);
