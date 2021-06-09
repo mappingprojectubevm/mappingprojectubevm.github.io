@@ -38,8 +38,8 @@ let drawGeometry = (geojsonData) => {
     style: (feature) => {
       let col = COLORS[feature.properties.Zone]; //Eckige Klammern weil ich in einem Objekt auf einen Wert/Schlüssel zureifen will, der ein Leerzeichen hat
       return {
-          color: col,
-          fillOpacity: 0.2,      
+        color: col,
+        fillOpacity: 0.2,
       }
     }, //Popups einbinden und beschriften, damit man auf die Zone klicken kann, wenn wir das wollen
     onEachFeature: (features, layer) => {
@@ -76,15 +76,15 @@ for (let entry of COMMENTS) { //Marker müssen noch an ID angepasst werden. "ent
   if (icons[entry.id == "Nachteil"]) {}
   if (icons[entry.id == "keineZuordnung"]) {} //In die Legende einbauen (dieses ev. als Kommentar?)
 
-//Icons einsetzen:
-let mrk = L.marker([entry.lat, entry.lng], {
-  icon: L.icon({
-    iconUrl: `icons/${icons[entry.id]}`,
-    iconSize: [37, 37], //Array mit Höhe u Breite, kann ich im img anschauen. Mit der Size ist das Icon genau mittig auf den Koordinatenpunkt, passend für unsere Karte.
-    popupAnchor: [0, -19], //Damit das Popup am ende des Icons aufploppt udn nicht in der Mitte und die Hälfte überdeckt, verschieben wir es um die Hälfte ca. nach oben.
-  })
-}).addTo(map);
-mrk.bindPopup(`
+  //Icons einsetzen:
+  let mrk = L.marker([entry.lat, entry.lng], {
+    icon: L.icon({
+      iconUrl: `icons/${icons[entry.id]}`,
+      iconSize: [37, 37], //Array mit Höhe u Breite, kann ich im img anschauen. Mit der Size ist das Icon genau mittig auf den Koordinatenpunkt, passend für unsere Karte.
+      popupAnchor: [0, -19], //Damit das Popup am ende des Icons aufploppt udn nicht in der Mitte und die Hälfte überdeckt, verschieben wir es um die Hälfte ca. nach oben.
+    })
+  }).addTo(map);
+  mrk.bindPopup(`
       <strong> ${entry.ort}:</strong>
       <hr>${entry.txt}
       `);
@@ -106,11 +106,13 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 
 
 //Nordpfeil einfügen
-var north = L.control({position: "bottomleft"});
-north.onAdd = function(map) {
-    var div = L.DomUtil.create("div", "info legend");
-    div.innerHTML = '<img src="images/arrowkl.png">';
-    return div;
+var north = L.control({
+  position: "bottomleft"
+});
+north.onAdd = function (map) {
+  var div = L.DomUtil.create("div", "info legend");
+  div.innerHTML = '<img src="images/arrowkl.png">';
+  return div;
 }
 north.addTo(map);
 
@@ -119,9 +121,11 @@ north.addTo(map);
 //Legende: https://github.com/ptma/Leaflet.Legend 
 
 /*Legend specific*/
-var legend = L.control({ position: "bottomleft" });
+var legend = L.control({
+  position: "bottomleft"
+});
 
-legend.onAdd = function(map) {
+legend.onAdd = function (map) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Ergebnisse</h4>";
   div.innerHTML += '<img src=icons/vorteil.png class="imglegend mr-L" ><span>Vorteile</span><br>';
@@ -133,8 +137,8 @@ legend.onAdd = function(map) {
   div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
   div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';
   // div.innerHTML += '<i class="icon" style="background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/194515-200.png);background-repeat: no-repeat;"></i><span>Grænse</span><br>';
-  
-    return div;
+
+  return div;
 };
 legend.addTo(map);
 
@@ -160,5 +164,3 @@ window.onclick = function (e) {
     }
   }
 }
-
-
