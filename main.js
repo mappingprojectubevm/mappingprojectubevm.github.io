@@ -130,11 +130,10 @@ legend.onAdd = function(map) {
   div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
   div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
   div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';
-  div.innerHTML += '<i class="icon" style="background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/194515-200.png);background-repeat: no-repeat;"></i><span>Grænse</span><br>';
+  // div.innerHTML += '<i class="icon" style="background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/194515-200.png);background-repeat: no-repeat;"></i><span>Grænse</span><br>';
   
     return div;
 };
-
 legend.addTo(map);
 
 
