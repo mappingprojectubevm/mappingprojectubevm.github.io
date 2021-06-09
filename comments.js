@@ -65,8 +65,8 @@ const COMMENTS = [{
     nr: 10,
     ort: "Schweizerischer Nationalpark",
     txt: "Der Schweizerische Nationalpark ist als Trennung und zugleich auch als Verbindung zwischen den Tälern zu sehen. Damit stellt er einen Vorteil und zugleich auch einen Nachteil dar.",
-    lat: 46.64842, 
-    lng: 10.26607,
+    lat: 46.667,
+    lng: 10.2216,
     id:"keineZuordnung", //Vorteil und nachteil zugleich -> entweder gelb machen oder zwei kästchen  
 }, {
     nr: 11,
@@ -121,8 +121,8 @@ const COMMENTS = [{
     nr: 17,
     ort: "Gesamtes bestehendes Biosphärenparkgebiet",
     txt: "Das gesamte bisherige Gebiet wird als gut entwickelt angesehen, wobei keine Einschränkungen zu finden sind, sondern lediglich Vortiele im Gebiet zu erreichen sind. Besonders die aktuelle Größe des Gebietes ist vorteilhaft, da in dieser Größenordung Kommunikaton gut möglich ist. Auf der anderen Seite wird gesagt, dass die räumliche Trennung der zwei Täler sich auch in Schwierigkeiten der Kommunikation niederschlägt. Hier würde noch Entwicklungsdarf herrschen.",
-    lat: 46.6721,
-    lng: 10.2619,
+    lat: 46.6729,
+    lng: 10.2850,
     id:"keineZuordnung", 
 },
 
