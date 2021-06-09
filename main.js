@@ -104,6 +104,7 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
   minimized: true //mit true zeigt es die Minimap im eingeklappten Zustand an.
 }).addTo(map);
 
+
 //Nordpfeil einfügen
 var north = L.control({position: "bottomleft"});
 north.onAdd = function(map) {
