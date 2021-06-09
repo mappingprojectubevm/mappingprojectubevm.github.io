@@ -21,7 +21,7 @@ const COMMENTS = [{
     id:"Entwicklungsbedarf", 
 },   {
     nr: 4,
-    ort: "Gebiet Scuol",
+    ort: "Gemeindegebiet Scuol",
     txt: "Dort wo noch kein UBEVM ist, wäre noch Entwicklungspotenzial.",
     lat: 46.7987,
     lng: 10.3092,
@@ -119,7 +119,7 @@ const COMMENTS = [{
     id:"Entwickelt", 
 }, {
     nr: 17,
-    ort: "gesamtes existierendes Biosphärenparkgebiet",
+    ort: "Gesamtes bestehendes Biosphärenparkgebiet",
     txt: "Das gesamte bisherige Gebiet wird als gut entwickelt angesehen, wobei keine Einschränkungen zu finden sind, sondern lediglich Vortiele im Gebiet zu erreichen sind. Besonders die aktuelle Größe des Gebietes ist vorteilhaft, da in dieser Größenordung Kommunikaton gut möglich ist. Auf der anderen Seite wird gesagt, dass die räumliche Trennung der zwei Täler sich auch in Schwierigkeiten der Kommunikation niederschlägt. Hier würde noch Entwicklungsdarf herrschen.",
     lat: 46.6721,
     lng: 10.2619,
