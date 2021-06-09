@@ -117,14 +117,26 @@ north.addTo(map);
 
 //Legende: https://github.com/ptma/Leaflet.Legend 
 
-L.control.Legend({
-position: "bottomleft",
-legends: [{
-  label: "Marker1",
-  type: "image",
-  url: "marker/marker-red.png",
-}]
-}).addTo(map);
+/*Legend specific*/
+var legend = L.control({ position: "bottomleft" });
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML += "<h4>Ergebnisse</h4>";
+  div.innerHTML += '<i style="background: #477AC2"></i><span>Vorteile</span><br>';
+  div.innerHTML += '<i style="background: #448D40"></i><span>Nachteile</span><br>';
+  div.innerHTML += '<i style="background: #E6E696"></i><span>Entwicklungspotenzial</span><br>';
+  div.innerHTML += '<i style="background: #E8E6E0"></i><span>Gut entwickelt</span><br>';
+  div.innerHTML += '<i style="background: #FFFFFF"></i><span>Ice</span><br>';
+  div.innerHTML += '<i class="icon" style="background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/194515-200.png);background-repeat: no-repeat;"></i><span>Grænse</span><br>';
+  
+  
+
+  return div;
+};
+
+legend.addTo(map);
+
 
 
 /* DROPDOWN FÜR QUELLE
