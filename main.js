@@ -104,6 +104,16 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
   minimized: true //mit true zeigt es die Minimap im eingeklappten Zustand an.
 }).addTo(map);
 
+//Nordpfeil einfügen
+var north = L.control({position: "bottomleft"});
+north.onAdd = function(map) {
+    var div = L.DomUtil.create("div", "info legend");
+    div.innerHTML = '<img src="images/arrowkl.png">';
+    return div;
+}
+north.addTo(map);
+
+
 
 //Legende: https://github.com/ptma/Leaflet.Legend 
 
@@ -137,3 +147,5 @@ window.onclick = function (e) {
     }
   }
 }
+
+

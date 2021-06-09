@@ -113,6 +113,7 @@ window.onclick = function (e) {
   }
 }
 
+//Nordpfeil einfügen
 var north = L.control({position: "bottomleft"});
 north.onAdd = function(map) {
     var div = L.DomUtil.create("div", "info legend");
