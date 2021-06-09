@@ -135,55 +135,49 @@
     funktionieren.
 
   </p>
-
+<!-- Feedbakc / Kommentarfunktion -->
   <div class="Feedback">
   <div style="text-align:center">
-    <h2>Sie haben noch mehr Informationen für uns?</h2>
-    <h2>Wenn Sie noch weitere Kommentare zu den Themen in der Karte haben, können Sie diese hier an uns schicken. Wir fügen Sie dann in die Karte ein.
-      <br><br>
-      Danke für Ihr Interesse!
-      <br><br>
-      Swing by for a cup of coffee, or leave us a message:</h2>
+   <!-- <h2>Sie haben noch mehr Informationen für uns?</h2> -->
+    <h2>Wenn Sie noch weitere Kommentare zu den Themen in der Karte haben, können Sie diese hier an uns schicken. Wir fügen sie dann in die Karte ein.</h2>
+      <!-- <br><br> Swing by for a cup of coffee, or leave us a message: -->
+    <h2>Danke für Ihr Interesse!</h2>
   </div>
   <div class="row">
     <div class="column">
-      <img src="/images/feedback.jpg" style="width:100%">
+      <img src="/images/feedback.jpg" style="width:100%"> <!--Quelle Angeben-->
     </div>
     <div class="column">
       <!-- <form action="/action_page.php"> -->
-        <form action="mailto:julia1983baumgartner@gmail.com" method="post" enctype="text/plain"></form>
-        <label for="fname">Wo auf der Karte soll Ihre Information platziert werden? (Koordinaten / Gemeinde / Schutzgebiet)</label>
-        <input type="text" id="fname" name="koordinaten" placeholder="Tragen Sie hier Ihre Information ein.">
-        <!-- <label for="lname">Welcher der folgenden Kategorien würden Sie Ihr Thema zuordnen?</label>
-        <input type="text" id="lname" name="lastname" placeholder="Wählen Sie hier die Kategorie aus."> -->
-
-        <label for="kategorie">Wählen Sie hier die Kategorie aus, der Sie Ihr Thema zuordnen würden.</label>
-        <select id="kategorie" name="kategorie">
-          <option value="nachteile">Nachteile</option>
-          <option value="vorteile">Vorteile</option>
-          <option value="entwicklungsbedarf">Entwicklungspotenzial</option>
-          <option value="ntwickelt">Perfekt entwickelt</option>
-        </select>
-        <label for="country">Kommentar zu ...</label>
+        <form action="mailto:elisakuntner@gmail.com" method="post" enctype="text/plain">
+        <!--Eingabefelder -->
+        <label for="country">Dies ist ein Kommentar zu ...</label>
         <select id="country" name="country">
           <option value="gemeinde">... einer Gemeinde</option>
           <option value="region">... der Region</option>
           <option value="schutzgebiete">... einem Schutzgebiet</option>
           <option value="sektoren">... einem Sektor</option>
         </select>
+        <label for="fname">Wo genau auf der Karte soll Ihre Information platziert werden? (Angabe der Koordinaten, Gemeinde, Schutzgebietzone oder ähnliches)</label>
+        <input type="text" id="fname" name="koordinaten" placeholder="Tragen Sie hier Ihre Information ein.">
+        <label for="kategorie">Wählen Sie hier die Kategorie aus, der Sie Ihr Thema zuordnen würden.</label>
+        <select id="kategorie" name="kategorie">
+          <option value="nachteile">Nachteile</option>
+          <option value="vorteile">Vorteile</option>
+          <option value="entwicklungsbedarf">Entwicklungsbedarf</option> <!--wenn wir hier potenzial schreiben, dann auch im Text und in der Legende, ggf noch überall anpassen! -->
+          <option value="entwickelt">Perfekt Entwickelt</option>
+        </select>
+
         <label for="subject">Text</label>
         <textarea id="subject" name="subject" placeholder="Schreiben Sie hier Ihren Text ..." style="height:170px"></textarea>
         <input type="submit" value="Senden">
-
       </form>
     </div>
   </div>
 </div>
 
 
-
-
-
+<br>
   <!--Droptownmenü mit Quellen-->
   <section>
     <div class="dropdown">
