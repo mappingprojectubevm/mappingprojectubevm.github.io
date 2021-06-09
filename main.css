@@ -459,6 +459,7 @@ body,
 .legend span {
   position: relative;
   bottom: 3px;
+  text-align: center;
 }
 
 .legend i {
@@ -476,4 +477,9 @@ body,
 
 .imglegend {
     width: 25px;
+ }
+
+/* Einrücken von Icons */
+.mr-L {
+    margin-right: 0.5em;
 }
