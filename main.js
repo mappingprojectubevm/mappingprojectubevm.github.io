@@ -5,7 +5,7 @@ const map = L.map('map', { //muss Map heißen, weil das DIV-Element dazu im Inde
   fullscreenControl: true, //Fullscreen Plugin
 })
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href= "https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c212a19c-6e06-4ca4-bdee-3ec62ccd7b1e/tab/complete">Zonierung<a/>, <a href= "https://mapicons.mapsmarker.com/">Icons A<a/>, <a href= "https://icons8.de/">Icons B<a/> '
+  attribution: '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a target="_blank" href= "https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c212a19c-6e06-4ca4-bdee-3ec62ccd7b1e/tab/complete">Zonierung<a/>, <a target="_blank" href="https://pixabay.com/vectors/arrow-map-north-orienteering-152596/">Nordpfeil</a>, Icons von <a target="_blank" href="https://icons8.de">Icons8</a>: <a target="_blank" href="https://icons8.de/icon/61876/gef%C3%BCllte-sprechblase">Sprechblase</a>,  <a target="_blank" href="https://icons8.de/icon/DigGIRktG1KK/minus">Minus</a>, <a target="_blank" href="https://icons8.de/icon/zddfYtvTqQmM/volle-batterie">Volle Batterie</a>, <a target="_blank" href="https://icons8.de/icon/2d4uwoSaZeKO/batterie-voll-geladen">Batterie geladen</a>'
 }).addTo(map);
 
 
