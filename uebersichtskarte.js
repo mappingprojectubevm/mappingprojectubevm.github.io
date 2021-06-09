@@ -113,6 +113,24 @@ window.onclick = function (e) {
   }
 }
 
+
+//Legende: https://github.com/ptma/Leaflet.Legend 
+
+/*Legend specific*/
+var legend = L.control({ position: "bottomleft" });
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML += "<h4>Zonierung</h4>";
+  div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
+  div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
+  div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';
+  // div.innerHTML += '<i class="icon" style="background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/194515-200.png);background-repeat: no-repeat;"></i><span>Grænse</span><br>';
+  
+    return div;
+};
+legend.addTo(map);
+
 //Nordpfeil einfügen
 var north = L.control({position: "bottomleft"});
 north.onAdd = function(map) {
