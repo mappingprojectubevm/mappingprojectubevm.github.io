@@ -1,14 +1,14 @@
 const COMMENTS = [{
     nr: 1,
-    ort: "Schigebiet Scuol", //Könnte man ev. als Titel der Popups verwenden
-    txt: "Mithilfe des UBEVM könnte man das Schigebiet in ein nachhaltiges Schigebiet wandlen und es als 'das nachhaltigste Schigebiet der Welt' vermarkten.",
+    ort: "Skigebiet Scuol", //Könnte man ev. als Titel der Popups verwenden
+    txt: "Mithilfe des UBEVM könnte man das Skigebiet in ein nachhaltiges Skigebiet wandlen und es als 'das nachhaltigste Skigebiet der Welt' vermarkten.",
     lat:46.8289,
     lng:10.2743,
     id: "Vorteil", //ID, um dann die Icons festzulegen
 }, {
     nr: 2, //nur zur Übersicht, brauchen wir nicht unbedingt zum einbinden
-    ort: "Schigebiet Scuol",
-    txt: "Schigebiete fühlen sich bei ihren touristischen Angebotsmöglichkeiten eingeschränkt, wenn sie sich  mit dem Leitbild des UBEVM nicht identifizieren können.",
+    ort: "Skigebiet Scuol",
+    txt: "Skigebiete fühlen sich bei ihren touristischen Angebotsmöglichkeiten eingeschränkt, wenn sie sich  mit dem Leitbild des UBEVM nicht identifizieren können.",
     lat: 46.8289, 
     lng: 10.2993,
     id:"Nachteil", 
@@ -77,15 +77,15 @@ const COMMENTS = [{
     id:"Entwickelt",
 }, {
     nr: 12,
-    ort: "Schigebiet Val Müstair",
-    txt: "Naturschutzorganisationen verhindern eine Erweiterung und Ausbau des Schigebietes und schränken dieses damit in ihren Handlungsmöglichkeiten ein.",
+    ort: "Skigebiet Val Müstair",
+    txt: "Naturschutzorganisationen verhindern eine Erweiterung und Ausbau des Skigebietes und schränken dieses damit in ihren Handlungsmöglichkeiten ein.",
     lat: 46.6464,
     lng: 10.3202,
     id:"Nachteil", 
 }, {
     nr: 13,
-    ort: "Schigebiet Val Müstair",
-    txt: "Durch einen guten Austausch zwischen den Naturschutzorganisationen und dem Schigebiet könnten Vorteile für beide entstehen.",
+    ort: "Skigebiet Val Müstair",
+    txt: "Durch einen guten Austausch zwischen den Naturschutzorganisationen und dem Skigebiet könnten Vorteile für beide entstehen.",
     lat: 46.645,
     lng: 10.3459,
     id:"Vorteil", 
