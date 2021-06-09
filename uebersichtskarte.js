@@ -114,6 +114,17 @@ window.onclick = function (e) {
 }
 
 
+/*https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map Skript, */
+//Nordpfeil einfügen
+var north = L.control({position: "bottomleft"});
+north.onAdd = function(map) {
+    var div = L.DomUtil.create("div", "info legend");
+    div.innerHTML = '<img src="images/arrowkl.png">';
+    return div;
+}
+north.addTo(map);   
+
+
 //Legende: https://github.com/ptma/Leaflet.Legend 
 
 /*Legend specific*/
@@ -131,13 +142,3 @@ legend.onAdd = function(map) {
 };
 legend.addTo(map);
 
-//Nordpfeil einfügen
-var north = L.control({position: "bottomleft"});
-north.onAdd = function(map) {
-    var div = L.DomUtil.create("div", "info legend");
-    div.innerHTML = '<img src="images/arrowkl.png">';
-    return div;
-}
-north.addTo(map);   
-
-/*https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map Skript, */
