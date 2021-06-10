@@ -71,7 +71,7 @@ for (let entry of COMMENTS) { //Marker müssen noch an ID angepasst werden. "ent
   //console.log(entry);
   //wählen wann welches Icon zum Einsatz kommt:
   if (icons[entry.id == "Entwickelt"]) {}
-  if (icons[entry.id == "Enwicklungsbedarf"]) {}
+  if (icons[entry.id == "Entwicklungsbedarf"]) {}
   if (icons[entry.id == "Vorteil"]) {}
   if (icons[entry.id == "Nachteil"]) {}
   if (icons[entry.id == "keineZuordnung"]) {} //In die Legende einbauen (dieses ev. als Kommentar?)
