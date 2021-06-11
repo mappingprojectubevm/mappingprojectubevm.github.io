@@ -277,7 +277,7 @@ a:link {
     border-color: grey;
     font-size: 20px;
     text-align: center; /*text zentriert */
-    padding-top: 10px; /*größe der box */
+    padding-top: 0px; /*größe der box */
     padding-bottom: 10px;
     display: block;/*damit dehnt es sich zum rand*/
     max-width: 100%; /*Box soll sich bis zum margin dehnen */
@@ -297,6 +297,7 @@ a:link {
     background-color: #533627;
     min-width: 10px;
     z-index: 20;
+    padding-top: 10px;
 }
 
 /*mousover für das dropdown*/
