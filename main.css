@@ -469,9 +469,6 @@ a:link {
     box-sizing: border-box;
   }
   
-
-
-  /*KOMMENTARFUNKTION*/
   /* Style inputs */
   input[type=text], select, textarea {
     width: 100%;
@@ -483,15 +480,15 @@ a:link {
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
+    background-color:  #b7c4b8;
+    color: whitesmoke;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #576B59;
   }
   
   /* Style the container/contact section */
