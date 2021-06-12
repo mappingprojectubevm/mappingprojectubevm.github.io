@@ -130,8 +130,8 @@ legend.onAdd = function (map) {
   div.innerHTML += "<h4>Ergebnisse</h4>";
   div.innerHTML += '<img src=icons/vorteil.png class="imglegend mr-L" ><span>Vorteile</span><br>';
   div.innerHTML += '<img src=icons/nachteil.png class="imglegend mr-L"><span>Nachteile</span><br>';
-  div.innerHTML += '<img src=icons/entwicklungsbedarf.png class="imglegend mr-L"><span>Entwicklungsbedarf</span><br>';
   div.innerHTML += '<img src=icons/entwickelt.png class="imglegend mr-L"><span>Gut entwickelt</span><br>';
+  div.innerHTML += '<img src=icons/entwicklungsbedarf.png class="imglegend mr-L"><span>Entwicklungsbedarf</span><br>';
   div.innerHTML += '<img src=icons/comment-map-icon.png class="imglegend mr-L"><span>Kommentare</span><br>';
   div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
   div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
