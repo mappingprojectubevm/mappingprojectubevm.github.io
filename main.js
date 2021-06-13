@@ -122,7 +122,7 @@ var legend = L.control({
 
 legend.onAdd = function (map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Ergebnisse</h4>";
+  div.innerHTML += "<h4 id=h4legend>Ergebnisse</h4>";
   div.innerHTML += '<img src=icons/vorteil.png class="imglegend mr-L"><span id=textlegend>Vorteile</span><br>';
   div.innerHTML += '<img src=icons/nachteil.png class="imglegend mr-L"><span id=textlegend>Nachteile</span><br>';
   div.innerHTML += '<img src=icons/entwickelt.png class="imglegend mr-L"><span id=textlegend>Sehr Gut Entwickelt</span><br>';
