@@ -7,7 +7,7 @@ let baselayers = {
 
 //Variable "map" erstellen und Einstellungen für die Map hinzufügen:
 let map = L.map('overviewmap', { //muss Overviewmap heißen, weil das Div-Element dazu im index.html so definiert ist. Die ID der Ergebniskarte heißt "map"!
-  center: [46.7699, 10.2405], //welcher Kartenausschnitt gezeigt werden soll
+  center: [46.5916, 10.2611], //welcher Kartenausschnitt gezeigt werden soll
   zoom: 10,//welcher Zoom
   fullscreenControl: true, //Fullscreen Plugin
   layers: [baselayers.standard]
@@ -76,7 +76,6 @@ let drawGeometry = (geojsonData) => {
   }).addTo(overlays.geometry)
 }
 
-
 // Plugin hash
 L.hash(map);
 
@@ -90,7 +89,6 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 L.control.scale({
   imperial: false //löscht Meilen raus
 }).addTo(map)
-
 
 /* DROPDOWN FÜR Quellenangaben
 When the user clicks on the button, 
@@ -113,7 +111,6 @@ window.onclick = function (e) {
   }
 }
 
-
 /*https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map Skript, */
 //Nordpfeil einfügen
 var north = L.control({position: "bottomleft"});
@@ -126,18 +123,17 @@ north.addTo(map);
 
 
 //Legende: https://github.com/ptma/Leaflet.Legend 
-
-/*Legend specific*/
-var legend = L.control({ position: "bottomleft" });
+var legend = L.control({ 
+  position: "bottomleft",
+  collapsed: true,
+});
 
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Zonierung</h4>";
+  div.innerHTML += "<h4 id=h4legend>Zonierung</h4>";
   div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
   div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
-  div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';
-  // div.innerHTML += '<i class="icon" style="background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/194515-200.png);background-repeat: no-repeat;"></i><span>Grænse</span><br>';
-  
+  div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';  
     return div;
 };
 legend.addTo(map);
