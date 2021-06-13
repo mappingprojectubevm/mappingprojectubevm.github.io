@@ -363,7 +363,7 @@ a:link {
  }
  #h4legend {
    
-    margin-left: 0.2em;
+    margin-left: 0.1em;
     padding-left: 0;
  }
  #textlegend { /*Legendenbeschriftung mittig */
@@ -479,14 +479,14 @@ a:link {
     /*Titel und Text*/
     h4,
     body p {
-        padding-left: 5mm;
-        padding-right: 5mm;
+        padding-left: 1mm;
+        padding-right: 1mm;
     }
     .textkarte {
         margin: center;
     }
     ul {
-        padding-left: 50px;
+        padding-left: 5mm;
     }
 
     /*Karten */
