@@ -1,7 +1,7 @@
 // Siehe Anleitung: https://leafletjs.com/
 const map = L.map('map', { //muss Map heißen, weil das DIV-Element dazu im Index.html so definiert ist.
-  center: [46.7699, 10.2405],
-  zoom: 10,
+  center: [46.7435,10.0670],
+  zoom: 9,
   fullscreenControl: true, //Fullscreen Plugin
 })
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
