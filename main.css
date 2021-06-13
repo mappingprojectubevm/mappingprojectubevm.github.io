@@ -174,102 +174,6 @@ a:link {
     width: 70%;
 }
 
-/* ******* ******** ********* *********** ******** ************** */
-/*Bildschirmeinstellung für kleinere Bildschirme */
-@media screen and (max-width:900px) {
-    /*HEADER Titel noch anpassen */
-
-
-    /*Bilder*/
-    .danke {
-        width: 100%;
-    };
-
-    header img .banner {
-        width: 100vw;
-    };
-
-    /*Fotoboxen und Menu */
-    .boxperson {
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    #textmenu {
-        flex-wrap: wrap;
-        text-align: center;
-        width: 100%;
-    }
-
-    .flex {
-        flex-wrap: wrap;
-        margin: auto;
-        width: 90%;
-    }
-
-    /*Titel und Text*/
-    h4,
-    body p {
-        padding-left: 5mm;
-        padding-right: 5mm;
-    }
-    .textkarte {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    ul {
-        padding-left: 50px;
-    }
-
-    /*Karten */
-    #map,
-    #overviewmap {
-        width: 90%;
-        margin: center;
-    }
-
-    /*Dropdownmenu*/
-    .dropbtn {
-        display: block; /*Quellenbox mittig */
-    }
-
-    .dropdown-content {
-        left: 0; /*damit es nicht mehr über den bildschirmrand hinausgeht. */
-        right: 0;
-    }
-
-    #myDropdown a:link,
-    #myDropdown a:visited {
-        left: 0;
-        right: 0;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    header img .banner {
-        width: 100vw;
-    }
-}
-
-@media screen and (max-width: 2280px) {
-    /*TEXT FÜR GROSSE BILDSCHIRME nicht so auseinander ziehen */
-    ul {
-        width: 75%;
-        margin: auto;
-    }
-    p {
-        width: 80%;
-        margin: auto;
-    }
-    h3,
-    h4 {
-        width: 85%;
-        margin: auto
-    }
-}
-/* ***** ********* ************ ************** ************* ************** */
-
-
 /*Dropdown Button+Menü für Quellenverzeichnis */
 .dropbtn {
     background-color: #576b59; /* Farbe wie footer*/
@@ -277,7 +181,7 @@ a:link {
     border-color: grey;
     font-size: 20px;
     text-align: center; /*text zentriert */
-    padding-top: 0px; /*größe der box */
+    padding-top: 10px; /*größe der box */
     padding-bottom: 10px;
     display: block;/*damit dehnt es sich zum rand*/
     max-width: 100%; /*Box soll sich bis zum margin dehnen */
@@ -359,11 +263,10 @@ a:link {
     padding-bottom: 0.5em;
     padding-right: 2em;
     color: #b7c4b8;
- 
   }
 
-/* Centered text */
-.centered {
+/* Centered text 
+.centered2 {
     /*  position: absolute;
     top: 50%;
     left: 50%;
@@ -378,7 +281,7 @@ a:link {
     font-weight: bold;
     background-color: transparent; */
 
-    /* Schrift mit Schatten, versetzt*/
+    /* Schrift mit Schatten, versetzt
     position: absolute;
     top: 70%;
     left: 50%;
@@ -389,9 +292,9 @@ a:link {
     text-shadow: 0 11.36px 8.896px #7c7878, 0 -1px 1px;
     letter-spacing: -4px;
     background-color: transparent;
-}
+} */
 
-.centered2 {/* Schrift mit Schatten, versetzt*/
+.centered {/* Schrift mit Schatten, versetzt*/
     position: absolute;
     top: 70%;
     left: 50%;
@@ -402,10 +305,9 @@ a:link {
     text-shadow: 0 11.36px 8.896px #b7c4b8, 0 -1px 1px;
     letter-spacing: -4px;
     background-color: transparent;
-
 }
-
-.centered3 {/* Schrift mit Schatten, versetzt: https://codepen.io/namho/pen/jEaXra*/
+/*
+.centered3 {/* Schrift mit Schatten, versetzt: https://codepen.io/namho/pen/jEaXra
     position: absolute;
     top: 70%;
     left: 50%;
@@ -416,7 +318,7 @@ a:link {
     text-shadow: 0 11.36px 8.896px #576b59, 0 -1px 1px;
     letter-spacing: -4px;
     background-color: transparent;
-}
+} */
 
 
 /*Legende: https://codepen.io/haakseth/pen/KQbjdO*/
@@ -491,7 +393,7 @@ a:link {
     background-color: #576B59;
   }
   
-  /* Style the container/contact section */
+  /* Style Container/Kontaktformular */
   .Feedback {
     width: 70%;
     border-radius: 5px;
@@ -500,7 +402,7 @@ a:link {
     margin: auto;
   }
   
-  /* Create two columns that float next to eachother */
+  /* Zwei gefloatete Kolummnen nebeneinander machen */
   .column {
     float: left;
     width: 50%;
@@ -508,17 +410,123 @@ a:link {
     padding: 20px;
   }
   
-  /* Clear floats after the columns */
+  /* Floats nach den Kolumnen rausnehmen */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+
+  /* ******* ******** ********* *********** ******** ************** */
+/*Bildschirmeinstellung Responsive */ 
+  /* Responsives Kontaktformular */
+@media screen and (max-width: 600px) {
     .column, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
   }
+@media screen and (max-width:900px) {
+    /*HEADER Texte*/
+    .centered {
+        font-size:40px;
+        position: center;
+        list-style: 0;
+        width: 100%;
+        flex-wrap:wrap;
+        line-height: 1;
+        top: 50%;
+    }
+    .bottom-right{
+        font-size: 7px;
+}
+
+ /*Bilder*/
+    .danke {
+        width: 100%;
+    };
+
+    .centered {
+        width: 100%;
+    
+    };
+
+    /*Fotoboxen und Menu */
+    .boxperson {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #textmenu {
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+        margin: auto;
+        width: 90%;
+    }
+
+    /*Titel und Text*/
+    h4,
+    body p {
+        padding-left: 5mm;
+        padding-right: 5mm;
+    }
+    .textkarte {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    ul {
+        padding-left: 50px;
+    }
+
+    /*Karten */
+    #map,
+    #overviewmap {
+        width: 90%;
+        margin: center;
+    }
+
+    /*Dropdownmenu*/
+    .dropbtn {
+        display: block; /*Quellenbox mittig */
+    }
+
+    .dropdown-content {
+        left: 0; /*damit es nicht mehr über den bildschirmrand hinausgeht. */
+        right: 0;
+    }
+
+    #myDropdown a:link,
+    #myDropdown a:visited {
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    header img .banner {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 2280px) {
+    /*TEXT FÜR GROSSE BILDSCHIRME nicht so auseinander ziehen */
+    ul {
+        width: 75%;
+        margin: auto;
+    }
+    p {
+        width: 80%;
+        margin: auto;
+    }
+    h3,
+    h4 {
+        width: 85%;
+        margin: auto
+    }
+}
+/* ***** ********* ************ ************** ************* ************** */
