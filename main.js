@@ -115,7 +115,7 @@ north.onAdd = function (map) {
 }
 north.addTo(map);
 
-//Legende: https://github.com/ptma/Leaflet.Legend 
+//Legende:
 var legend = L.control({
   position: "bottomleft",
 });

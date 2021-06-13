@@ -1,4 +1,3 @@
-
 /* Überschriften */
 h1 {
     color: #1f410b;
@@ -22,7 +21,8 @@ h4 {
     font-size: 16pt;
 }
 
-p, /*damit übernimmt es die Formatierung für alle Textparts auf allen drei HTML-Seiten */
+p,
+/*damit übernimmt es die Formatierung für alle Textparts auf allen drei HTML-Seiten */
 ul {
     text-align: left;
     font-family: 'Roboto Condensed', sans-serif;
@@ -32,7 +32,8 @@ ul {
     padding-bottom: 20px;
     padding-right: 60px;
     padding-left: 60px;
-    hyphens: auto;/*automatische Silbentrennung, mit komischen trennungen.*/
+    hyphens: auto;
+    /*automatische Silbentrennung, mit komischen trennungen.*/
 }
 
 ul {
@@ -82,7 +83,7 @@ body {
     color: whitesmoke;
 }
 
-/*Text in der Menüleisteim Header und Footer mit der ID, damit es nur dafür verwendet wird*/ 
+/*Text in der Menüleisteim Header und Footer mit der ID, damit es nur dafür verwendet wird*/
 #textmenu {
     font-weight: bold;
     text-transform: uppercase;
@@ -91,17 +92,21 @@ body {
     margin-top: 0em;
     margin-bottom: 1em;
     vertical-align: auto;
-    background-color: #576b59; /*gleiche wie bei banner quelle */
+    background-color: #576b59;
+    /*gleiche wie bei banner quelle */
     justify-content: space-around;
     padding-bottom: 1em;
-    padding-top: 1em; /*größe der grünen box mit padding */
- }
+    padding-top: 1em;
+    /*größe der grünen box mit padding */
+}
 
 /*Farbe für Links zu den anderen Seiten & Quellen*/
 a:link,
 a:visited {
-    color: #b7c4b8; /*damit Linkfarbe gleich bleibt, auch beim Anklicken */
+    color: #b7c4b8;
+    /*damit Linkfarbe gleich bleibt, auch beim Anklicken */
 }
+
 p a:link,
 p a:visited,
 a:visited,
@@ -124,8 +129,10 @@ a:link {
 
 .flex {
     display: flex;
-    flex-wrap: nowrap; /*alle sind in einer zeile */
-    justify-content: space-around; /*elemente haben gleiche Abstände um sich herum */
+    flex-wrap: nowrap;
+    /*alle sind in einer zeile */
+    justify-content: space-around;
+    /*elemente haben gleiche Abstände um sich herum */
 }
 
 .boxperson {
@@ -139,8 +146,10 @@ a:link {
 /*Danke Bild */
 .danke {
     display: flex;
-    border-radius: 50%; /*bild wird "rund"*/
-    margin: auto; /*bild wird mit display u margin zentriert */
+    border-radius: 50%;
+    /*bild wird "rund"*/
+    margin: auto;
+    /*bild wird mit display u margin zentriert */
 }
 
 
@@ -150,6 +159,7 @@ a:link {
 .mr-5 {
     margin-right: 3em;
 }
+
 .ml-5 {
     margin-left: 3em;
 }
@@ -169,6 +179,7 @@ a:link {
     margin: auto;
     border: 1px solid #2f3a2e;
 }
+
 .textkarte {
     margin: auto;
     width: 70%;
@@ -176,21 +187,29 @@ a:link {
 
 /*Dropdown Button+Menü für Quellenverzeichnis */
 .dropbtn {
-    background-color: #576b59; /* Farbe wie footer*/
+    background-color: #576b59;
+    /* Farbe wie footer*/
     border: 1px solid;
     border-color: grey;
     font-size: 20px;
-    text-align: center; /*text zentriert */
-    padding-top: 10px; /*größe der box */
+    text-align: center;
+    /*text zentriert */
+    padding-top: 10px;
+    /*größe der box */
     padding-bottom: 10px;
-    display: block;/*damit dehnt es sich zum rand*/
-    max-width: 100%; /*Box soll sich bis zum margin dehnen */
+    display: block;
+    /*damit dehnt es sich zum rand*/
+    max-width: 100%;
+    /*Box soll sich bis zum margin dehnen */
 }
 
 .dropdown {
-    position: relative;/*damit der dropdown mittig kommt*/
-    display: inline-flexbox;/*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
-    margin-left: 5em; /*entfernung der box u des kontents vom rand */
+    position: relative;
+    /*damit der dropdown mittig kommt*/
+    display: inline-flexbox;
+    /*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
+    margin-left: 5em;
+    /*entfernung der box u des kontents vom rand */
     margin-right: 5em;
 }
 
@@ -218,6 +237,7 @@ a:link {
 .show {
     display: block;
 }
+
 /*Verknüpfung zum JS, damit funktioniert die Funktion mit dem Klicken */
 
 
@@ -252,7 +272,7 @@ a:link {
   }*/
 
 /*Bottom right text */
-  .bottom-right {
+.bottom-right {
     position: absolute;
     bottom: 1px;
     right: 2px;
@@ -263,7 +283,7 @@ a:link {
     padding-bottom: 0.5em;
     padding-right: 2em;
     color: #b7c4b8;
-  }
+}
 
 /* Centered text 
 .centered2 {
@@ -281,7 +301,7 @@ a:link {
     font-weight: bold;
     background-color: transparent; */
 
-    /* Schrift mit Schatten, versetzt
+/* Schrift mit Schatten, versetzt
     position: absolute;
     top: 70%;
     left: 50%;
@@ -294,7 +314,8 @@ a:link {
     background-color: transparent;
 } */
 
-.centered {/* Schrift mit Schatten, versetzt*/
+.centered {
+    /* Schrift mit Schatten, versetzt*/
     position: absolute;
     top: 70%;
     left: 50%;
@@ -306,6 +327,7 @@ a:link {
     letter-spacing: -4px;
     background-color: transparent;
 }
+
 /*
 .centered3 {/* Schrift mit Schatten, versetzt: https://codepen.io/namho/pen/jEaXra
     position: absolute;
@@ -323,138 +345,147 @@ a:link {
 
 /*Legende: https://codepen.io/haakseth/pen/KQbjdO*/
 .legend {
-  padding: 6px 8px;
-  font: 14px Arial, Helvetica, sans-serif;
-  background: white;
-  background: rgba(255, 255, 255, 0.8);
-  /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
-  /*border-radius: 5px;*/
-  line-height: 24px;
-  color: #555;
+    padding: 6px 8px;
+    font: 14px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+    /*border-radius: 5px;*/
+    line-height: 24px;
+    color: #555;
 }
+
 .legend h4 {
-  text-align: left;
-  font-size: 16px;
-  margin: 2px 12px 8px;
-  color: #777;
-  margin-left: 0.1em;
-  padding-left: 0;
+    text-align: left;
+    font-size: 16px;
+    margin: 2px 12px 8px;
+    color: #777;
+    margin-left: 0.1em;
+    padding-left: 0;
 }
 
 .legend span {
-  position: relative;
-  bottom: 3px;
-  text-align: center;
+    position: relative;
+    bottom: 3px;
+    text-align: center;
 }
 
 .legend i {
-  width: 18px;
-  height: 18px;
-  float: left;
-  margin: 0 8px 0 0;
-  opacity: 0.7;
-}
-
-.legend i.icon {
-  background-size: 18px;
-  background-color: rgba(255, 255, 255, 1);
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 0 8px 0 0;
+    opacity: 0.7;
 }
 
 .imglegend {
     width: 25px;
- }
+}
 
- #textlegend { /*Legendenbeschriftung mittig */
-     top: -7.5px;
-   }
+#textlegend {
+    /*Legendenbeschriftung mittig */
+    top: -7.5px;
+}
+
 /* Einrücken von Icons */
 .mr-L {
-    margin-right: 0.5em; 
+    margin-right: 0.5em;
 }
 
 * {
     box-sizing: border-box;
-  }
-  
-  /* Style inputs */
-  input[type=text], select, textarea {
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color:  #b7c4b8;
+}
+
+input[type=submit] {
+    background-color: #b7c4b8;
     color: whitesmoke;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #576B59;
-  }
-  
-  /* Style Container/Kontaktformular */
-  .Feedback {
+}
+
+/* Style Container/Kontaktformular */
+.Feedback {
     width: 70%;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
     margin: auto;
-  }
-  
-  /* Zwei gefloatete Kolummnen nebeneinander machen */
-  .column {
+}
+
+/* Zwei gefloatete Kolummnen nebeneinander machen */
+.column {
     float: left;
     width: 50%;
     margin-top: 6px;
     padding: 20px;
-  }
-  
-  /* Floats nach den Kolumnen rausnehmen */
-  .row:after {
+}
+
+/* Floats nach den Kolumnen rausnehmen */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 /* ******* ******** ********* *********** ******** ************** */
-/*Bildschirmeinstellung Responsive */ 
-  /* Responsives Kontaktformular */
+/*Bildschirmeinstellung Responsive */
+/* Responsives Kontaktformular */
 @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
-  }
+}
+
 @media screen and (max-width:900px) {
+
     /*HEADER Texte*/
     .centered {
-        font-size:40px;
+        font-size: 40px;
         position: center;
         list-style: 0;
         width: 100%;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         line-height: 1;
         top: 50%;
     }
-    .bottom-right{
-        font-size: 7px;
-}
 
- /*Bilder*/
+    .bottom-right {
+        font-size: 7px;
+    }
+
+    /*Bilder*/
     .danke {
         width: 100%;
-    };
+    }
+
+    ;
 
     .centered {
         width: 100%;
-    
-    };
+
+    }
+
+    ;
 
     /*Fotoboxen und Menu */
     .boxperson {
@@ -480,9 +511,11 @@ a:link {
         padding-left: 1mm;
         padding-right: 1mm;
     }
+
     .textkarte {
         margin: center;
     }
+
     ul {
         padding-left: 5mm;
     }
@@ -496,11 +529,13 @@ a:link {
 
     /*Dropdownmenu*/
     .dropbtn {
-        display: block; /*Quellenbox mittig */
+        display: block;
+        /*Quellenbox mittig */
     }
 
     .dropdown-content {
-        left: 0; /*damit es nicht mehr über den bildschirmrand hinausgeht. */
+        left: 0;
+        /*damit es nicht mehr über den bildschirmrand hinausgeht. */
         right: 0;
     }
 
@@ -509,28 +544,56 @@ a:link {
         left: 0;
         right: 0;
     }
-}
-
-@media screen and (max-width: 1280px) {
-    header img .banner {
-        width: 100vw;
+    /*LEGENDE anpassen, dass sie nicht die ganze Karte überdeckt */ 
+    .legend h4 {
+        font-size: 14px;
+    }
+    .legend span {
+        font-size: 10px;
+    }
+    .imglegend {
+        width: 15px;
+    }
+    legend i {
+        font-size: 10px;
+    }
+    .legend {
+        font: 10px Arial, Helvetica, sans-serif;
+        line-height: 16px;
+    }
+    .legend h4 {
+        font-size: 16px;
+    }
+    .legend i {
+        width: 14px;
+        height: 14px;
+    }
+    .imglegend {
+        width: 16px;
+    }
+    #textlegend {
+        top: -3px;
     }
 }
 
 @media screen and (max-width: 2280px) {
+
     /*TEXT FÜR GROSSE BILDSCHIRME nicht so auseinander ziehen */
     ul {
         width: 75%;
         margin: auto;
     }
+
     p {
         width: 80%;
         margin: auto;
     }
+
     h3,
     h4 {
         width: 85%;
         margin: auto
     }
 }
+
 /* ***** ********* ************ ************** ************* ************** */
