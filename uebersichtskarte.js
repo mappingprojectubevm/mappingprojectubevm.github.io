@@ -90,14 +90,11 @@ L.control.scale({
   imperial: false //löscht Meilen raus
 }).addTo(map)
 
-/* DROPDOWN FÜR Quellenangaben
-When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* DROPDOWN für Quellenangaben - über Klick öffnen*/
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
-// Close the dropdown if the user clicks outside of it
+// Dropdown schließen, wenn man außerhabl klickt
 window.onclick = function (e) {
   if (!e.target.matches('.dropbtn')) {
 
@@ -130,7 +127,7 @@ var legend = L.control({
 
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4 id=h4legend>Zonierung</h4>";
+  div.innerHTML += "<h4>Zonierung</h4>";
   div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
   div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
   div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';  
