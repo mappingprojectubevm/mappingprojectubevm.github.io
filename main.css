@@ -77,14 +77,7 @@ a:visited {
     color: #b7c4b8;/*damit Linkfarbe gleich bleibt, auch beim Anklicken */
 }
 
-/*Quellenangaben bearbeiten: */
-#myDropdown a:link,
-#myDropdown a:visited {
-    color: whitesmoke;
-    font-size: 10pt;
-}
-
-/* Fotoboxen */
+/* Fotoboxen Fotos*/
 .imageround {
     border-radius: 50%;
 }
@@ -96,11 +89,18 @@ a:visited {
 }
 
 .boxperson {
-    margin: 1.0em;
-    /*Rahmen für die Box in denen Fotos sind könnte man mit border einstellen border: solid 1px #2f3a2e */
+    margin: 1.0em;/*Rahmen für die Box in denen Fotos sind könnte man mit border einstellen border: solid 1px #2f3a2e */
     padding: 3em 3.5em;
     background-color: #576b59;
     vertical-align: auto;
+}
+
+/* Fotoboxen einrücken von Seitenrand! */
+.mr-5 {
+    margin-right: 3em;
+}
+.ml-5 {
+    margin-left: 3em;
 }
 
 /*Danke Bild */
@@ -110,13 +110,6 @@ a:visited {
     margin: auto;/*bild wird mit display u margin zentriert */
 }
 
-/* Einrücken von Seitenrand! */
-.mr-5 {
-    margin-right: 3em;
-}
-.ml-5 {
-    margin-left: 3em;
-}
 
 /* REGION KARTE */
 #overviewmap {
@@ -133,13 +126,13 @@ a:visited {
     margin: auto;
     border: 1px solid #2f3a2e;
 }
-/*BEschreibender Text über Ergebniskarte */
+/*Beschreibender Text über Ergebniskarte */
 .textkarte {
     margin: auto;
     width: 70%;
 }
 
-/*Im Leaflet Stylesheet nach der Klasse suchen und Quellenangabe in Karte anpassen, weil sie zu groß ist */ 
+/*Im eingebundenen Leaflet Stylesheet nach der Klasse suchen und Quellenangabe in Karte anpassen, weil sie zu groß ist */ 
 .leaflet-container .leaflet-control-attribution,
 .leaflet-container .leaflet-control-scale{
     font-size: 5pt;
@@ -160,14 +153,12 @@ a:visited {
     display: block;/*damit dehnt es sich zum rand*/
     max-width: 100%;/*Box soll sich bis zum margin dehnen */
 }
-
 .dropdown {
     position: relative;/*damit der dropdown mittig kommt*/
     display: inline-flexbox;/*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
     margin-left: 5em;/*entfernung der box u des kontents vom rand */
     margin-right: 5em;
 }
-
 /*Inhalt innerhalb des  Dropdown */
 .dropdown-content {
     display: none;
@@ -177,21 +168,21 @@ a:visited {
     z-index: 20;
     padding-top: 10px;
 }
-
 /*Mousover für das Dropdown*/
 .dropdown-content a:hover {
     font-style: gray;
 }
-/*styles der schrift oben bei a:visited usw verändern! */
-/* .dropdown:hover .dropdown-content {display: block;}  --> nur aktivieren, wenn man nicht klicken will*/
 .dropdown:hover .dropbtn {
     background-color: grey;
-}
-
+} 
 .show {
     display: block;
 }/*Verknüpfung zum JS, damit funktioniert die Funktion mit dem Klicken */
-
+/*Quellenangaben Schrift bearbeiten: */
+#myDropdown a:link,
+#myDropdown a:visited {
+    color: whitesmoke;
+}
 
 /*HEADER*/
 /* Container für den Text und das Bild */
@@ -200,7 +191,6 @@ a:visited {
     text-align: center;
     color: black;
 }
-
 /*Bottom right text - Figcapture / Bildquelle*/
 .bottom-right {
     position: absolute;
@@ -214,7 +204,7 @@ a:visited {
     padding-right: 2em;
     color: #b7c4b8;
 }
-
+/*Schrift Titel*/ 
 .centered {/* Schrift mit Schatten, versetzt*/
     position: absolute;
     top: 70%;
@@ -260,7 +250,7 @@ a:visited {
 .imglegend {
     width: 25px;
 }
-#textlegend { /*Legendenbeschriftung mittig */
+#textlegend { /*Legendenbeschriftung mittig zum Icon */
     top: -7.5px;
 }
 /* Einrücken von Icons */
@@ -271,6 +261,7 @@ a:visited {
     box-sizing: border-box;
 }
 
+/*Kontaktformular */
 /* Style inputs Kontaktformular*/
 input[type=text],
 select,
@@ -290,11 +281,9 @@ input[type=submit] {
     border: none;
     cursor: pointer;
 }
-
 input[type=submit]:hover {
     background-color: #576B59;
 }
-
 /* Style Container/Kontaktformular */
 .Feedback {
     width: 70%;
@@ -346,17 +335,15 @@ input[type=submit]:hover {
         flex-wrap: wrap;
         width: 100%;
     }
-
-    #textmenu {
-        flex-wrap: wrap;
-        text-align: center;
-        width: 100%;
-    }
-
     .flex {
         flex-wrap: wrap;
         margin: auto;
         width: 90%;
+    }
+    #textmenu {
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
     }
 
     /*Titel und Text*/
@@ -365,11 +352,9 @@ input[type=submit]:hover {
         padding-left: 1mm;
         padding-right: 1mm;
     }
-
     .textkarte {
         margin: center;
     }
-
     ul {
         padding-left: 5mm;
     }
@@ -399,6 +384,7 @@ input[type=submit]:hover {
         left: 0;
         right: 0;
     }
+
     /*LEGENDE anpassen, dass sie nicht die ganze Karte überdeckt */ 
     .legend h4 {
         font-size: 14px;
@@ -429,6 +415,7 @@ input[type=submit]:hover {
     #textlegend {
         top: -5px;
     }
+
     /*Kontaktformular*/
     .column,
     input[type=submit] {
@@ -454,5 +441,3 @@ input[type=submit]:hover {
         margin: auto
     }
 }
-
-/* ***** ********* ************ ************** ************* ************** */
