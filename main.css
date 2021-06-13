@@ -185,6 +185,14 @@ a:link {
     width: 70%;
 }
 
+/*Im Leaflet Stylesheet nach der Klasse suchen und Quellenangabe in Karte anpasssen, weil sie zu groß ist */ 
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-scale{
+    font-size: 5pt;
+    color:black;
+}
+/*Linkfarbe ändern, damit man sie auf jedem Kartenuntergrund lesen kann! */
+#map a:link, #map a:visited, #overviewmap a:link, #overviewmap a:visited {color:black}
 /*Dropdown Button+Menü für Quellenverzeichnis */
 .dropbtn {
     background-color: #576b59;
