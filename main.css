@@ -476,8 +476,7 @@ a:link {
         padding-right: 5mm;
     }
     .textkarte {
-        margin-left: 0;
-        margin-right: 0;
+        margin: center;
     }
     ul {
         padding-left: 50px;
