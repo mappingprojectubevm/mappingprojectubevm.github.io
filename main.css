@@ -193,6 +193,7 @@ a:link {
 }
 /*Linkfarbe ändern, damit man sie auf jedem Kartenuntergrund lesen kann! */
 #map a:link, #map a:visited, #overviewmap a:link, #overviewmap a:visited {color:black}
+
 /*Dropdown Button+Menü für Quellenverzeichnis */
 .dropbtn {
     background-color: #576b59;
@@ -484,16 +485,11 @@ input[type=submit]:hover {
     /*Bilder*/
     .danke {
         width: 100%;
-    }
-
-    ;
+    };
 
     .centered {
         width: 100%;
-
-    }
-
-    ;
+    };
 
     /*Fotoboxen und Menu */
     .boxperson {
@@ -535,6 +531,11 @@ input[type=submit]:hover {
         margin: center;
     }
 
+    /*Quellen in Karten */
+    .leaflet-container .leaflet-control-attribution,
+    .leaflet-container {
+        margin-left:35%;
+    }
     /*Dropdownmenu*/
     .dropbtn {
         display: block;

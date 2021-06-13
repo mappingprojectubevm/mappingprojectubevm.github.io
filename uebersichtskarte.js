@@ -87,7 +87,7 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 
 //Maßstab siehe: https://leafletjs.com/reference-1.7.1.html#control-scale
 L.control.scale({
-  imperial: false //löscht Meilen raus
+  imperial: false, //löscht Meilen raus
 }).addTo(map)
 
 /* DROPDOWN für Quellenangaben - über Klick öffnen*/
