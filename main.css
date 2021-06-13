@@ -558,7 +558,7 @@ input[type=submit]:hover {
         font-size: 10px;
     }
     .legend {
-        font: 10px Arial, Helvetica, sans-serif;
+        font: 10px;
         line-height: 16px;
     }
     .legend h4 {
@@ -572,7 +572,7 @@ input[type=submit]:hover {
         width: 16px;
     }
     #textlegend {
-        top: -3px;
+        top: -5px;
     }
 }
 
