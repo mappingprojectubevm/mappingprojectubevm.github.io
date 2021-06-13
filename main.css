@@ -361,10 +361,12 @@ a:link {
 .imglegend {
     width: 25px;
  }
-
+ #textlegend { /*Legendenbeschriftung mittig */
+     top: -7.5px;
+   }
 /* Einrücken von Icons */
 .mr-L {
-    margin-right: 0.5em;
+    margin-right: 0.5em; 
 }
 
 * {
@@ -417,7 +419,7 @@ a:link {
     clear: both;
   }
 
-  /* ******* ******** ********* *********** ******** ************** */
+/* ******* ******** ********* *********** ******** ************** */
 /*Bildschirmeinstellung Responsive */ 
   /* Responsives Kontaktformular */
 @media screen and (max-width: 600px) {

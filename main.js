@@ -104,7 +104,6 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
   minimized: true //mit true zeigt es die Minimap im eingeklappten Zustand an.
 }).addTo(map);
 
-
 //Nordpfeil einfügen
 var north = L.control({
   position: "bottomleft"
@@ -116,11 +115,7 @@ north.onAdd = function (map) {
 }
 north.addTo(map);
 
-
-
 //Legende: https://github.com/ptma/Leaflet.Legend 
-
-/*Legend specific*/
 var legend = L.control({
   position: "bottomleft"
 });
@@ -128,33 +123,27 @@ var legend = L.control({
 legend.onAdd = function (map) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Ergebnisse</h4>";
-  div.innerHTML += '<img src=icons/vorteil.png class="imglegend mr-L" ><span>Vorteile</span><br>';
-  div.innerHTML += '<img src=icons/nachteil.png class="imglegend mr-L"><span>Nachteile</span><br>';
-  div.innerHTML += '<img src=icons/entwickelt.png class="imglegend mr-L"><span>Sehr Gut Entwickelt</span><br>';
-  div.innerHTML += '<img src=icons/entwicklungsbedarf.png class="imglegend mr-L"><span>Entwicklungspotenzial</span><br>';
-  div.innerHTML += '<img src=icons/comment-map-icon.png class="imglegend mr-L"><span>Kommentare</span><br>';
+  div.innerHTML += '<img src=icons/vorteil.png class="imglegend mr-L"><span id=textlegend>Vorteile</span><br>';
+  div.innerHTML += '<img src=icons/nachteil.png class="imglegend mr-L"><span id=textlegend>Nachteile</span><br>';
+  div.innerHTML += '<img src=icons/entwickelt.png class="imglegend mr-L"><span id=textlegend>Sehr Gut Entwickelt</span><br>';
+  div.innerHTML += '<img src=icons/entwicklungsbedarf.png class="imglegend mr-L"><span id=textlegend>Entwicklungspotenzial</span><br>';
+  div.innerHTML += '<img src=icons/comment-map-icon.png class="imglegend mr-L"><span id=textlegend>Kommentare</span><br>';
   div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
   div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
   div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';
-  // div.innerHTML += '<i class="icon" style="background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/194515-200.png);background-repeat: no-repeat;"></i><span>Grænse</span><br>';
 
   return div;
 };
 legend.addTo(map);
 
 
-
-/* DROPDOWN FÜR QUELLE
-When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* DROPDOWN FÜR QUELLE - Öffnen via Klick */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
-// Close the dropdown if the user clicks outside of it
+// Dropdown schließen, wenn man außerhalb davon klickt
 window.onclick = function (e) {
   if (!e.target.matches('.dropbtn')) {
-
     var dropdowns = document.getElementsByClassName("dropdown-content");
     for (var d = 0; d < dropdowns.length; d++) {
       var openDropdown = dropdowns[d];
