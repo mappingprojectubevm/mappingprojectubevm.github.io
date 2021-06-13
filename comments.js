@@ -67,7 +67,7 @@ const COMMENTS = [{
     txt: "Der Schweizerische Nationalpark ist als Trennung und zugleich auch als Verbindung zwischen den Tälern zu sehen. Damit stellt er einen Vorteil und zugleich auch einen Nachteil dar.",
     lat: 46.667,
     lng: 10.2216,
-    id:"keineZuordnung", //Vorteil und nachteil zugleich -> entweder gelb machen oder zwei kästchen  
+    id:"keineZuordnung", //Vorteil und nachteil zugleich, kann keiner anderen ID zugeordnet werden und wird als "Kommentar" deklariert 
 }, {
     nr: 11,
     ort: "Kernzone",

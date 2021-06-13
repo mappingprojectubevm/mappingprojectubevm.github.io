@@ -16,7 +16,7 @@ let overlays = {
   geometry: L.featureGroup(), //Overlay für das Hinzufügen der Zonierung definieren
 }
 
-//Zusätzliche Quellenangaben für die Karte 
+//Zusätzliche Quellenangaben für die Karte über attribution von L.tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '<a target="_blank" href= "https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c212a19c-6e06-4ca4-bdee-3ec62ccd7b1e/tab/complete">Zonierung<a/>, <a target="_blank" href="https://pixabay.com/vectors/arrow-map-north-orienteering-152596/">Nordpfeil</a>'
 }).addTo(map);
@@ -31,7 +31,7 @@ let layerControl = L.control.layers({
     "Zonierung des Biosphärenreservates": overlays.geometry,
   }).addTo(map);
 
-overlays.geometry.addTo(map) //Overlays anzeigen lassen
+overlays.geometry.addTo(map) //Overlays in der Karte anzeigen lassen
 
 //Konstante erstellen, über die wir auf die Daten der Zonierung zugreifen
 const ZONE = [{
@@ -94,7 +94,7 @@ L.control.scale({
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-// Dropdown schließen, wenn man außerhabl klickt
+// Dropdown schließen, wenn man außerhalb klickt
 window.onclick = function (e) {
   if (!e.target.matches('.dropbtn')) {
 
@@ -108,8 +108,7 @@ window.onclick = function (e) {
   }
 }
 
-/*https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map Skript, */
-//Nordpfeil einfügen
+/*Nordpfeil einfügen: https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map Skript, */
 var north = L.control({position: "bottomleft"});
 north.onAdd = function(map) {
     var div = L.DomUtil.create("div", "info legend");

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karte</title>
+  <title>Ergebnisse</title>
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -55,7 +55,6 @@
       <div class="bottom-right">Quelle: Nils Leonard Unthan</div>
       <div class="centered"> Forschungsergebnisse </div>
     </div>
-    <!-- <figcaption id="figcapt">Quelle: Nils Leonard Unthan </figcaption> -->
 
     <!-- Menü Links -->
     <div id="textmenu">
@@ -63,18 +62,11 @@
       <div><a href="region.html">Region und Biosphärenreservat</a></div>
       <div><a href="karte.html">Forschungsergebnisse</a></div>
     </div>
-    <!-- Bild Banner 
-    <img class="banner" src="images/header3.jpg" alt="Biosphäre Engiadina Val Müstair">
-    <figcaption> Quelle: Nils Leonard Unthan </figcaption>-->
-    <!-- Überschrift -->
-    <br>
-    <!-- <h1>Forschungsergebnisse</h1> -->
-
   </header>
 
+<!--Hauptteil-->
+  <!-- Textpart zur Karte -->
   <h2>Die Entstehung der Karte</h2>
-
-  <!-- karte -->
   <p>In dieser Karte finden Sie die Inhalte der partizipativen Kartierung mit unseren Interviewpartner*innen.
     <br>Aufgrund der Covid-19-Einschränkungen konnten wir die Region nicht besuchen, wir wollten uns mit Hilfe unserer
     Interviewpartner*innen in der Region ein wenig orientieren können. Um dies zu erleichtern, haben wir ergänzend zu
@@ -106,7 +98,6 @@
   </p>
   <div id="map"></div>
 
-
   <!--Ergebnistext-->
   <br>
   <h2>Ergebnisse</h2>
@@ -135,21 +126,18 @@
     Biosphärenreservat als Modellregion der nachhaltigen Entwicklung kann nur mit der Teilnahme von jedem Einzelnen
     funktionieren.
   </p>
-<!-- Feedback / Kommentarfunktion -->
-<!-- https://www.w3schools.com/howto/howto_css_contact_section.asp -->
+<!-- Feedback / Kommentarfunktion Tutorial: https://www.w3schools.com/howto/howto_css_contact_section.asp -->
   <div class="Feedback">
   <div style="text-align:center">
-   <!-- <h2>Sie haben noch mehr Informationen für uns?</h2> -->
     <h2>Wenn Sie noch weitere Kommentare zu den Themen in der Karte haben, können Sie diese hier an uns schicken. Wir fügen sie dann in die Karte ein.</h2>
-      <!-- <br><br> Swing by for a cup of coffee, or leave us a message: -->
     <h2>Danke für Ihr Interesse!</h2>
   </div>
   <div class="row">
     <div class="column">
-      <img src="/images/feedback.jpg" style="width:100%"> <!--Quelle Angeben-->
+      <img src="/images/feedback.jpg" style="width:100%"> <!--Quelle muss nicht angegeben werden-->
     </div>
     <div class="column">
-      <!-- <form action="/action_page.php"> -->
+      <!-- <form action="/action_page.php"> --><!--über ein php wäre eine Alternative Möglichkeit-->
         <form action="mailto:Elisa.Kuntner@student.uibk.ac.at" method="post" enctype="text/plain">
         <!--Eingabefelder -->
         <label for="country">Dies ist ein Kommentar zu ...</label>
@@ -166,9 +154,8 @@
           <option value="vorteile">Vorteile</option>
           <option value="nachteile">Nachteile</option>
           <option value="entwickelt">Sehr Gut Entwickelt</option>
-          <option value="entwicklungsbedarf">Entwicklungspotenzial</option> <!--wenn wir hier potenzial schreiben, dann auch im Text und in der Legende, ggf noch überall anpassen! -->
+          <option value="entwicklungsbedarf">Entwicklungspotenzial</option>
         </select>
-
         <label for="subject">Text</label>
         <textarea id="subject" name="subject" placeholder="Schreiben Sie hier Ihren Text ..." style="height:170px"></textarea>
         <input type="submit" value="Senden">
@@ -176,8 +163,6 @@
     </div>
   </div>
 </div>
-
-
 <br>
   <!--Droptownmenü mit Quellen-->
   <section>
@@ -193,6 +178,7 @@
     </div>
   </section>
   <br>
+  
   <!--Fußzeile mit Links-->
   <footer>
     <hr>

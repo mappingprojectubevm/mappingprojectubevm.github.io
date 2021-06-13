@@ -1,9 +1,4 @@
 /* Überschriften */
-h1 {
-    color: #1f410b;
-    text-align: center;
-}
-
 h2 {
     padding-top: 20px;
     color: #533627;
@@ -31,8 +26,7 @@ ul {
     padding-bottom: 20px;
     padding-right: 60px;
     padding-left: 60px;
-    hyphens: auto;
-    /*automatische Silbentrennung, mit komischen trennungen.*/
+    hyphens: auto;/*automatische Silbentrennung, mit komischen trennungen.*/
 }
 ul {
     padding-left: 80px;
@@ -200,54 +194,12 @@ a:visited {
 
 
 /*HEADER*/
-
-/*am ende löschen was hier nicht mehr gebraucht wird:*/
-/* Bannerfoto */
-/*.banner {
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 0mm;
-}
-
-/* Beschriftung Banner mit Quelle
-#figcapt {
-    background-color: #576b59;
-    color: #1f410b; Kommentar: gleiche Farbe wie der restl. hintergrund
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: right;
-} */
-
 /* Container für den Text und das Bild */
 .container {
     position: relative;
     text-align: center;
     color: black;
 }
-
-/* Bottom left text
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  } */
-
-/* Top left text 
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }*/
-
-/* Top right text 
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }*/
 
 /*Bottom right text - Figcapture / Bildquelle*/
 .bottom-right {
@@ -263,35 +215,6 @@ a:visited {
     color: #b7c4b8;
 }
 
-/* Centered text 
-.centered2 {
-    /*  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-    color: #b7c4b8;
-    text-shadow:
-    -4px -4px 0 #1f410b,
-    -4px -4px 0 #1f410b,
-    -4px -4px 0 #1f410b,
-    -4px -4px 0 #1f410b;
-    font-weight: bold;
-    background-color: transparent; */
-
-/* Schrift mit Schatten, versetzt
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-    line-height: 80px;
-    color: #b7c4b8;
-    text-shadow: 0 11.36px 8.896px #7c7878, 0 -1px 1px;
-    letter-spacing: -4px;
-    background-color: transparent;
-} */
-
 .centered {/* Schrift mit Schatten, versetzt*/
     position: absolute;
     top: 70%;
@@ -305,22 +228,7 @@ a:visited {
     background-color: transparent;
 }
 
-/*
-.centered3 {/* Schrift mit Schatten, versetzt: https://codepen.io/namho/pen/jEaXra
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-    line-height: 80px;
-    color: #1f410b;
-    text-shadow: 0 11.36px 8.896px #576b59, 0 -1px 1px;
-    letter-spacing: -4px;
-    background-color: transparent;
-} */
-
-
-/*Legende: https://codepen.io/haakseth/pen/KQbjdO*/
+/*Legende: Tutorial: https://codepen.io/haakseth/pen/KQbjdO*/
 .legend {
     padding: 6px 8px;
     font: 14px Arial, Helvetica, sans-serif;
@@ -329,7 +237,6 @@ a:visited {
     line-height: 24px;
     color: #555;
 }
-
 .legend h4 {
     text-align: left;
     font-size: 16px;
@@ -338,13 +245,11 @@ a:visited {
     margin-left: 0.1em;
     padding-left: 0;
 }
-
 .legend span {
     position: relative;
     bottom: 3px;
     text-align: center;
 }
-
 .legend i {
     width: 18px;
     height: 18px;
@@ -352,25 +257,21 @@ a:visited {
     margin: 0 8px 0 0;
     opacity: 0.7;
 }
-
 .imglegend {
     width: 25px;
 }
-
 #textlegend { /*Legendenbeschriftung mittig */
     top: -7.5px;
 }
-
 /* Einrücken von Icons */
 .mr-L {
     margin-right: 0.5em;
 }
-
 * {
     box-sizing: border-box;
 }
 
-/* Style inputs */
+/* Style inputs Kontaktformular*/
 input[type=text],
 select,
 textarea {
@@ -402,7 +303,6 @@ input[type=submit]:hover {
     padding: 10px;
     margin: auto;
 }
-
 /* Zwei gefloatete Kolummnen nebeneinander machen */
 .column {
     float: left;
@@ -410,7 +310,6 @@ input[type=submit]:hover {
     margin-top: 6px;
     padding: 20px;
 }
-
 /* Floats nach den Kolumnen rausnehmen */
 .row:after {
     content: "";
@@ -420,16 +319,6 @@ input[type=submit]:hover {
 
 /* ******* ******** ********* *********** ******** ************** */
 /*Bildschirmeinstellung Responsive */
-/* Responsives Kontaktformular */
-@media screen and (max-width: 600px) {
-
-    .column,
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
-
 @media screen and (max-width:900px) {
 
     /*HEADER Texte*/
@@ -449,10 +338,6 @@ input[type=submit]:hover {
 
     /*Bilder*/
     .danke {
-        width: 100%;
-    };
-
-    .centered {
         width: 100%;
     };
 
@@ -495,12 +380,12 @@ input[type=submit]:hover {
         width: 90%;
         margin: center;
     }
-
     /*Quellen in Karten */
     .leaflet-container .leaflet-control-attribution,
     .leaflet-container {
         margin-left:35%;
     }
+
     /*Dropdownmenu*/
     .dropbtn {
         display: block;/*Quellenbox mittig */
@@ -543,6 +428,12 @@ input[type=submit]:hover {
     }
     #textlegend {
         top: -5px;
+    }
+    /*Kontaktformular*/
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
 }
 

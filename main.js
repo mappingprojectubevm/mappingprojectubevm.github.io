@@ -52,12 +52,7 @@ let drawGeometry = (geojsonData) => {
   }).addTo(map)
 }
 
-//Icon download: https://icons8.de/icons 
-//müssen Link auf die Seite setzen für die Icons die wir verwenden: <a target="_blank" href="https://icons8.de/icon/114091/minus">Minus</a> Icon von <a target="_blank" href="https://icons8.de">Icons8</a>
-//<a target="_blank" href="https://icons8.de/icon/zddfYtvTqQmM/volle-batterie">Volle Batterie</a> Icon von <a target="_blank" href="https://icons8.de">Icons8</a>
-//<a target="_blank" href="https://icons8.de/icon/78189/leere-batterie">Leere Batterie</a> Icon von <a target="_blank" href="https://icons8.de">Icons8</a>
-
-//Icons für die verschiedenen Bereiche definieren (noch bessere suchen)
+//Icons für die verschiedenen Bereiche definieren
 let icons = {
   "Entwickelt": "entwickelt.png",
   "Entwicklungsbedarf": "entwicklungsbedarf.png",
@@ -74,7 +69,7 @@ for (let entry of COMMENTS) { //Marker müssen noch an ID angepasst werden. "ent
   if (icons[entry.id == "Entwicklungsbedarf"]) {}
   if (icons[entry.id == "Vorteil"]) {}
   if (icons[entry.id == "Nachteil"]) {}
-  if (icons[entry.id == "keineZuordnung"]) {} //In die Legende einbauen (dieses ev. als Kommentar?)
+  if (icons[entry.id == "keineZuordnung"]) {} //In die Legende einbauen (als Kommentar)
 
   //Icons einsetzen:
   let mrk = L.marker([entry.lat, entry.lng], {
