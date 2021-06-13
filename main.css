@@ -21,8 +21,7 @@ h4 {
     font-size: 16pt;
 }
 
-p,
-/*damit übernimmt es die Formatierung für alle Textparts auf allen drei HTML-Seiten */
+p,/*damit übernimmt es die Formatierung für alle Textparts auf allen drei HTML-Seiten */
 ul {
     text-align: left;
     font-family: 'Roboto Condensed', sans-serif;
@@ -35,11 +34,10 @@ ul {
     hyphens: auto;
     /*automatische Silbentrennung, mit komischen trennungen.*/
 }
-
 ul {
     padding-left: 80px;
 }
-
+/*Footer */
 footer {
     margin: auto;
     color: #1f410b;
@@ -48,31 +46,10 @@ footer {
 
 /* Body */
 body {
-    /* max-width: 100%; /*banner und website auf full screen */
     margin: auto;
     font-family: 'Open Sans', sans-serif;
     background-color: #7c7878;
 }
-
-/*am ende löschen was hier nicht mehr gebraucht wird:*/
-/* Bannerfoto */
-.banner {
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-bottom: 0mm;
-}
-
-/* Beschriftung Banner mit Quelle
-#figcapt {
-    background-color: #576b59;
-    color: #1f410b; Kommentar: gleiche Farbe wie der restl. hintergrund
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: right;
-} */
 
 /*Footer Text oberhalb Menuleiste*/
 #weiter {
@@ -92,26 +69,18 @@ body {
     margin-top: 0em;
     margin-bottom: 1em;
     vertical-align: auto;
-    background-color: #576b59;
-    /*gleiche wie bei banner quelle */
+    background-color: #576b59;/*gleiche wie bei banner quelle */
     justify-content: space-around;
     padding-bottom: 1em;
-    padding-top: 1em;
-    /*größe der grünen box mit padding */
+    padding-top: 1em;/*größe der grünen box mit padding */
 }
 
 /*Farbe für Links zu den anderen Seiten & Quellen*/
-a:link,
-a:visited {
-    color: #b7c4b8;
-    /*damit Linkfarbe gleich bleibt, auch beim Anklicken */
-}
-
 p a:link,
 p a:visited,
-a:visited,
-a:link {
-    color: #b7c4b8;
+a:link,
+a:visited {
+    color: #b7c4b8;/*damit Linkfarbe gleich bleibt, auch beim Anklicken */
 }
 
 /*Quellenangaben bearbeiten: */
@@ -119,7 +88,6 @@ a:link {
 #myDropdown a:visited {
     color: whitesmoke;
     font-size: 10pt;
-    /*text-decoration: none; /*damit werden links nicht mehr unterstrichen, falls man das will */
 }
 
 /* Fotoboxen */
@@ -129,10 +97,8 @@ a:link {
 
 .flex {
     display: flex;
-    flex-wrap: nowrap;
-    /*alle sind in einer zeile */
-    justify-content: space-around;
-    /*elemente haben gleiche Abstände um sich herum */
+    flex-wrap: nowrap;/*alle sind in einer zeile */
+    justify-content: space-around;/*elemente haben gleiche Abstände um sich herum */
 }
 
 .boxperson {
@@ -146,20 +112,14 @@ a:link {
 /*Danke Bild */
 .danke {
     display: flex;
-    border-radius: 50%;
-    /*bild wird "rund"*/
-    margin: auto;
-    /*bild wird mit display u margin zentriert */
+    border-radius: 50%;/*bild wird "rund"*/
+    margin: auto;/*bild wird mit display u margin zentriert */
 }
-
-
-/* Allgemeines */
 
 /* Einrücken von Seitenrand! */
 .mr-5 {
     margin-right: 3em;
 }
-
 .ml-5 {
     margin-left: 3em;
 }
@@ -179,13 +139,13 @@ a:link {
     margin: auto;
     border: 1px solid #2f3a2e;
 }
-
+/*BEschreibender Text über Ergebniskarte */
 .textkarte {
     margin: auto;
     width: 70%;
 }
 
-/*Im Leaflet Stylesheet nach der Klasse suchen und Quellenangabe in Karte anpasssen, weil sie zu groß ist */ 
+/*Im Leaflet Stylesheet nach der Klasse suchen und Quellenangabe in Karte anpassen, weil sie zu groß ist */ 
 .leaflet-container .leaflet-control-attribution,
 .leaflet-container .leaflet-control-scale{
     font-size: 5pt;
@@ -196,29 +156,21 @@ a:link {
 
 /*Dropdown Button+Menü für Quellenverzeichnis */
 .dropbtn {
-    background-color: #576b59;
-    /* Farbe wie footer*/
+    background-color: #576b59;/* Farbe wie footer*/
     border: 1px solid;
     border-color: grey;
     font-size: 20px;
-    text-align: center;
-    /*text zentriert */
-    padding-top: 10px;
-    /*größe der box */
+    text-align: center;/*text zentriert */
+    padding-top: 10px;/*größe der box */
     padding-bottom: 10px;
-    display: block;
-    /*damit dehnt es sich zum rand*/
-    max-width: 100%;
-    /*Box soll sich bis zum margin dehnen */
+    display: block;/*damit dehnt es sich zum rand*/
+    max-width: 100%;/*Box soll sich bis zum margin dehnen */
 }
 
 .dropdown {
-    position: relative;
-    /*damit der dropdown mittig kommt*/
-    display: inline-flexbox;
-    /*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
-    margin-left: 5em;
-    /*entfernung der box u des kontents vom rand */
+    position: relative;/*damit der dropdown mittig kommt*/
+    display: inline-flexbox;/*Braucht es auch damit die Box hochspringt + damit der inhalt unter der box und nicht auf der box kommt*/
+    margin-left: 5em;/*entfernung der box u des kontents vom rand */
     margin-right: 5em;
 }
 
@@ -232,11 +184,10 @@ a:link {
     padding-top: 10px;
 }
 
-/*mousover für das dropdown*/
+/*Mousover für das Dropdown*/
 .dropdown-content a:hover {
     font-style: gray;
 }
-
 /*styles der schrift oben bei a:visited usw verändern! */
 /* .dropdown:hover .dropdown-content {display: block;}  --> nur aktivieren, wenn man nicht klicken will*/
 .dropdown:hover .dropbtn {
@@ -245,13 +196,31 @@ a:link {
 
 .show {
     display: block;
-}
-
-/*Verknüpfung zum JS, damit funktioniert die Funktion mit dem Klicken */
-
+}/*Verknüpfung zum JS, damit funktioniert die Funktion mit dem Klicken */
 
 
 /*HEADER*/
+
+/*am ende löschen was hier nicht mehr gebraucht wird:*/
+/* Bannerfoto */
+/*.banner {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 0mm;
+}
+
+/* Beschriftung Banner mit Quelle
+#figcapt {
+    background-color: #576b59;
+    color: #1f410b; Kommentar: gleiche Farbe wie der restl. hintergrund
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: right;
+} */
+
 /* Container für den Text und das Bild */
 .container {
     position: relative;
@@ -280,7 +249,7 @@ a:link {
     right: 16px;
   }*/
 
-/*Bottom right text */
+/*Bottom right text - Figcapture / Bildquelle*/
 .bottom-right {
     position: absolute;
     bottom: 1px;
@@ -323,8 +292,7 @@ a:link {
     background-color: transparent;
 } */
 
-.centered {
-    /* Schrift mit Schatten, versetzt*/
+.centered {/* Schrift mit Schatten, versetzt*/
     position: absolute;
     top: 70%;
     left: 50%;
@@ -358,8 +326,6 @@ a:link {
     font: 14px Arial, Helvetica, sans-serif;
     background: white;
     background: rgba(255, 255, 255, 0.8);
-    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
-    /*border-radius: 5px;*/
     line-height: 24px;
     color: #555;
 }
@@ -391,8 +357,7 @@ a:link {
     width: 25px;
 }
 
-#textlegend {
-    /*Legendenbeschriftung mittig */
+#textlegend { /*Legendenbeschriftung mittig */
     top: -7.5px;
 }
 
@@ -538,16 +503,12 @@ input[type=submit]:hover {
     }
     /*Dropdownmenu*/
     .dropbtn {
-        display: block;
-        /*Quellenbox mittig */
+        display: block;/*Quellenbox mittig */
     }
-
     .dropdown-content {
-        left: 0;
-        /*damit es nicht mehr über den bildschirmrand hinausgeht. */
+        left: 0;/*damit es nicht mehr über den bildschirmrand hinausgeht. */
         right: 0;
     }
-
     #myDropdown a:link,
     #myDropdown a:visited {
         left: 0;
@@ -592,12 +553,10 @@ input[type=submit]:hover {
         width: 75%;
         margin: auto;
     }
-
     p {
         width: 80%;
         margin: auto;
     }
-
     h3,
     h4 {
         width: 85%;
