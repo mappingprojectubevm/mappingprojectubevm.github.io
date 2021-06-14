@@ -62,9 +62,8 @@ let icons = {
 }
 
 console.log(COMMENTS) //Schauen ob die Verknüpfung funktioniert und etwas in der Console gelogged wird
-for (let entry of COMMENTS) { //Marker müssen noch an ID angepasst werden. "entry" wird hier als Begriff für die einzelnen Variablen bzw Keys in COMMENTS definiert  
-  //console.log(entry);
-  //wählen wann welches Icon zum Einsatz kommt:
+for (let entry of COMMENTS) { //"entry" wird hier als Begriff für die einzelnen Variablen bzw Keys in COMMENTS definiert  
+//wählen wann welches Icon zum Einsatz kommt:
   if (icons[entry.id == "Entwickelt"]) {}
   if (icons[entry.id == "Entwicklungsbedarf"]) {}
   if (icons[entry.id == "Vorteil"]) {}
