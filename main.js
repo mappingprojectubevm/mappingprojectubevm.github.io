@@ -1,3 +1,4 @@
+//KARTE ERSTELLEN
 // Siehe Anleitung: https://leafletjs.com/
 const map = L.map('map', { //muss Map heißen, weil das DIV-Element dazu im Index.html so definiert ist.
   center: [46.7159,10.2526],
@@ -84,6 +85,7 @@ for (let entry of COMMENTS) { //"entry" wird hier als Begriff für die einzelnen
       `);
 }
 
+//PLUGINS
 //Maßstab siehe: https://leafletjs.com/reference-1.7.1.html#control-scale
 L.control.scale({
   imperial: false

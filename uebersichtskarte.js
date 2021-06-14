@@ -1,3 +1,4 @@
+//KARTE ERSTELLEN
 // Kartenhintergründe definieren, provider ist leaflet: http://leaflet-extras.github.io/leaflet-providers/preview/
 let baselayers = {
   standard: L.tileLayer.provider("OpenStreetMap.Mapnik"),
@@ -76,6 +77,7 @@ let drawGeometry = (geojsonData) => {
   }).addTo(overlays.geometry)
 }
 
+//PLUGINS
 // Plugin hash
 L.hash(map);
 
@@ -89,6 +91,32 @@ var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.
 L.control.scale({
   imperial: false, //löscht Meilen raus
 }).addTo(map)
+
+/*Nordpfeil einfügen: https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map Skript, */
+var north = L.control({position: "bottomleft"});
+north.onAdd = function(map) {
+    var div = L.DomUtil.create("div", "info legend");
+    div.innerHTML = '<img src="images/arrowkl.png">';
+    return div;
+}
+north.addTo(map);   
+
+//Legende:
+var legend = L.control({ 
+  position: "bottomleft",
+  collapsed: true,
+});
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML += "<h4>Zonierung</h4>";
+  div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
+  div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
+  div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';  
+    return div;
+};
+legend.addTo(map);
+
 
 /* DROPDOWN für Quellenangaben - über Klick öffnen*/
 function myFunction() {
@@ -107,30 +135,4 @@ window.onclick = function (e) {
     }
   }
 }
-
-/*Nordpfeil einfügen: https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map Skript, */
-var north = L.control({position: "bottomleft"});
-north.onAdd = function(map) {
-    var div = L.DomUtil.create("div", "info legend");
-    div.innerHTML = '<img src="images/arrowkl.png">';
-    return div;
-}
-north.addTo(map);   
-
-
-//Legende:
-var legend = L.control({ 
-  position: "bottomleft",
-  collapsed: true,
-});
-
-legend.onAdd = function(map) {
-  var div = L.DomUtil.create("div", "legend");
-  div.innerHTML += "<h4>Zonierung</h4>";
-  div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
-  div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
-  div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';  
-    return div;
-};
-legend.addTo(map);
 
