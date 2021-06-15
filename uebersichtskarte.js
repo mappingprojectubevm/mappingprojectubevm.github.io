@@ -112,7 +112,7 @@ legend.onAdd = function(map) {
   div.innerHTML += "<h4>Zonierung</h4>";
   div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
   div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
-  div.innerHTML += '<i style="background: orange"></i><span>UEBVM</span><br>';  
+  div.innerHTML += '<i style="background: orange"></i><span>UBEVM</span><br>';  
     return div;
 };
 legend.addTo(map);
