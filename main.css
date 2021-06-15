@@ -11,10 +11,9 @@ h3 {
 }
 
 h4 {
-
+    padding-left: 60px;
     color: #533627;
     font-size: 16pt;
-    text-align: center;
 }
 
 p,/*damit übernimmt es die Formatierung für alle Textparts auf allen drei HTML-Seiten */
@@ -211,12 +210,13 @@ a:visited {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 60px;
+    font-size: 50px;
     line-height: 80px;
     color: whitesmoke;
     text-shadow: 0 11.36px 8.896px #b7c4b8, 0 -1px 1px;
     letter-spacing: -4px;
     background-color: transparent;
+    white-space: nowrap;
 }
 
 /*Legende: Tutorial: https://codepen.io/haakseth/pen/KQbjdO*/
@@ -320,6 +320,7 @@ input[type=submit]:hover {
         flex-wrap: wrap;
         line-height: 1;
         top: 50%;
+        white-space:unset;
     }
 
     .bottom-right {
