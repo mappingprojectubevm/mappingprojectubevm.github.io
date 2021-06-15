@@ -11,9 +11,10 @@ h3 {
 }
 
 h4 {
-    padding-left: 60px;
+
     color: #533627;
     font-size: 16pt;
+    text-align: center;
 }
 
 p,/*damit übernimmt es die Formatierung für alle Textparts auf allen drei HTML-Seiten */
