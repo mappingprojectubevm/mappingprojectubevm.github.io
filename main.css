@@ -64,7 +64,7 @@ body {
     margin-bottom: 1em;
     vertical-align: auto;
     background-color: #576b59;/*gleiche wie bei banner quelle */
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 1em;
     padding-top: 1em;/*größe der grünen box mit padding */
 }
