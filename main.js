@@ -42,7 +42,7 @@ let drawGeometry = (geojsonData) => {
         color: col,
         fillOpacity: 0.2,
       }
-    }, //Popups einbinden und beschriften, damit man auf die Zone klicken kann, wenn wir das wollen
+    }, //Popups einbinden und beschriften, damit man auf die Zone klicken kann
     onEachFeature: (features, layer) => {
       layer.bindPopup(`<strong>Zonierung des UBEVM</strong>
       <hr>
