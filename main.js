@@ -15,7 +15,7 @@ const ZONE = [{
   data: "data/UBEVM_Zonierung_Perimeter.json",
 }]
 
-//eine Variable erstellen in der die Zonierungen unterschiedliche Farben bekommen (kann hier angepasst werden). Braucht kein eigenes skript, weil nur wenig Inhalt
+//eine Variable erstellen in der die Zonierungen unterschiedliche Farben bekommen (kann hier angepasst werden). Braucht kein eigenes Skript, weil nur wenig Inhalt
 const COLORS = {
   "Kernzone": "darkred",
   "Pflegezone": "green",
@@ -37,7 +37,7 @@ let drawGeometry = (geojsonData) => {
   //console.log("Geometry", geojsonData);
   L.geoJson(geojsonData, {
     style: (feature) => {
-      let col = COLORS[feature.properties.Zone]; //Eckige Klammern weil ich in einem Objekt auf einen Wert/Schlüssel zureifen will, der ein Leerzeichen hat
+      let col = COLORS[feature.properties.Zone];
       return {
         color: col,
         fillOpacity: 0.2,
@@ -69,7 +69,7 @@ for (let entry of COMMENTS) { //"entry" wird hier als Begriff für die einzelnen
   if (icons[entry.id == "Entwicklungsbedarf"]) {}
   if (icons[entry.id == "Vorteil"]) {}
   if (icons[entry.id == "Nachteil"]) {}
-  if (icons[entry.id == "keineZuordnung"]) {} //In die Legende einbauen (als Kommentar)
+  if (icons[entry.id == "keineZuordnung"]) {}
 
   //Icons einsetzen:
   let mrk = L.marker([entry.lat, entry.lng], {
@@ -91,8 +91,8 @@ L.control.scale({
   imperial: false
 }).addTo(map)
 
-// hash: zeigt in der URL-Leiste die Koordinaten und den #Zoom des Kartenausschnittes an 
-var hash = new L.Hash(map); //var hash steht hier nur weil man eine neue Var erstellt, falls man sie später noch mal braucht. new  --> nach L muss großbuchstabe sein.
+// hash: zeigt in der URL-Leiste die Koordinaten und das #Zoom des Kartenausschnittes an 
+var hash = new L.Hash(map); //var hash steht hier nur weil man eine neue Variable erstellt, falls man sie später noch mal braucht.
 
 //Minimap
 var miniMap = new L.Control.MiniMap(L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"), {
