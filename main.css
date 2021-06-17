@@ -442,4 +442,9 @@ input[type=submit]:hover {
         width: 85%;
         margin: auto
     }
+    /*Fotoboxen bei großen Bildschirmen nicht so auseinander ziehen */
+    .flex { 
+        margin: auto;
+        width: 70%;
+    }
 }
