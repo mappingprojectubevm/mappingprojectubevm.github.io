@@ -1,7 +1,7 @@
 const COMMENTS = [{
     nr: 1,
     ort: "Skigebiet Scuol", //Könnte man ev. als Titel der Popups verwenden
-    txt: "Mithilfe des UBEVM könnte man das Skigebiet in ein nachhaltiges Skigebiet wandlen und es als 'das nachhaltigste Skigebiet der Welt' vermarkten.",
+    txt: "Mithilfe des UBEVM könnte man das Skigebiet in ein nachhaltiges Skigebiet wandeln und es als 'das nachhaltigste Skigebiet der Welt' vermarkten.",
     lat:46.8289,
     lng:10.2743,
     id: "Vorteil", //ID, um dann die Icons festzulegen
@@ -43,7 +43,7 @@ const COMMENTS = [{
 }, {
     nr: 7,
     ort: "Ganze Region",
-    txt: "In der ganzen Region Engiadina Bassa - Val Müstair ist der Landwirtschaftssektor sehr gut entwickelt.",
+    txt: "In der ganzen Region Engiadina Bassa Val Müstair ist der Landwirtschaftssektor sehr gut entwickelt.",
     lat: 46.7699,
     lng: 10.1444,
     id:"Entwickelt", 
@@ -65,8 +65,8 @@ const COMMENTS = [{
     nr: 10,
     ort: "Schweizerischer Nationalpark",
     txt: "Der Schweizerische Nationalpark ist als Trennung und zugleich auch als Verbindung zwischen den Tälern zu sehen. Damit stellt er einen Vorteil und zugleich auch einen Nachteil dar.",
-    lat: 46.667,
-    lng: 10.2216,
+    lat: 46.6431,
+    lng: 10.1080,
     id:"keineZuordnung", //Vorteil und nachteil zugleich, kann keiner anderen ID zugeordnet werden und wird als "Kommentar" deklariert 
 }, {
     nr: 11,
@@ -92,7 +92,7 @@ const COMMENTS = [{
 }, {
     nr: 14,
     ort: "Außerhalb des bestehenden Siedlungsraums",
-    txt: "Das UBEVM bringt Einschränkungen beim Bau und Ausbau von touristischen Infrastrukturen außerhalb des Siedlugnsraumes.",
+    txt: "Das UBEVM bringt Einschränkungen beim Bau und Ausbau von touristischen Infrastrukturen außerhalb des Siedlungsraumes.",
     lat: 46.6006,
     lng: 10.3276,
     id:"Nachteil", 
@@ -119,8 +119,8 @@ const COMMENTS = [{
     id:"Entwickelt", 
 }, {
     nr: 17,
-    ort: "Gesamtes bestehendes Biosphärenparkgebiet",
-    txt: "Das gesamte bisherige Gebiet wird als gut entwickelt angesehen, wobei keine Einschränkungen zu finden sind, sondern lediglich Vortiele im Gebiet zu erreichen sind. Besonders die aktuelle Größe des Gebietes ist vorteilhaft, da in dieser Größenordung Kommunikaton gut möglich ist. Auf der anderen Seite wird gesagt, dass die räumliche Trennung der zwei Täler sich auch in Schwierigkeiten der Kommunikation niederschlägt. Hier würde noch Entwicklungsdarf herrschen.",
+    ort: "Gesamtes bestehendes Biosphärenreservatsgebiet",
+    txt: "Das gesamte bisherige Gebiet wird als gut entwickelt angesehen, wobei keine Einschränkungen zu finden sind, sondern lediglich Vorteile im Gebiet zu erreichen sind. Besonders die aktuelle Größe des Gebietes ist vorteilhaft, da in dieser Größenordung Kommunikaton gut möglich ist. Auf der anderen Seite wird gesagt, dass die räumliche Trennung der zwei Täler sich auch in Schwierigkeiten der Kommunikation niederschlägt. Hier würde noch Entwicklungsdarf herrschen.",
     lat: 46.6729,
     lng: 10.2850,
     id:"keineZuordnung", 

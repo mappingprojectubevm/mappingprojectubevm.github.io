@@ -1,5 +1,5 @@
 //KARTE ERSTELLEN
-// Kartenhintergründe definieren, provider ist leaflet: http://leaflet-extras.github.io/leaflet-providers/preview/
+// Kartenhintergründe definieren, der Provider ist Leaflet: http://leaflet-extras.github.io/leaflet-providers/preview/
 let baselayers = {
   standard: L.tileLayer.provider("OpenStreetMap.Mapnik"),
   topographie: L.tileLayer.provider("OpenTopoMap"),
@@ -9,7 +9,7 @@ let baselayers = {
 //Variable "map" erstellen und Einstellungen für die Map hinzufügen:
 let map = L.map('overviewmap', { //muss Overviewmap heißen, weil das Div-Element dazu im index.html so definiert ist. Die ID der Ergebniskarte heißt "map"!
   center: [46.5916, 10.2611], //welcher Kartenausschnitt gezeigt werden soll
-  zoom: 10,//welcher Zoom
+  zoom: 10,// Zoomeinstellung bei Start
   fullscreenControl: true, //Fullscreen Plugin
   layers: [baselayers.standard]
 })
@@ -28,7 +28,7 @@ let layerControl = L.control.layers({
     "Topographie": baselayers.topographie,
     "Bildkarte": baselayers.imagery,
   },
-  { //Klammer erneut innerhalb der runden klammer öffnen, damit es eine visuelle Abtrennung gibt zwischen den verschiedenen Overlays 
+  { //Klammer erneut innerhalb der runden Klammer öffnen, damit es eine visuelle Abtrennung gibt zwischen den verschiedenen Overlays 
     "Zonierung des Biosphärenreservates": overlays.geometry,
   }).addTo(map);
 
@@ -46,7 +46,7 @@ const COLORS = {
   "Pflegezone": "green",
   "Entwicklungszone": "orange"
 }
-//For-Schleife machen, die über die ganzen Geojson-Daten Läuft
+//For-Schleife machen, die über die ganzen GeoJSON-Daten Läuft
 for (let config of ZONE) {
   fetch(config.data)
     .then(response => response.json()) //innere runde Klammer: Funktionsaufruf, damit es gestartet/ausgeführt wird 
@@ -61,7 +61,7 @@ let drawGeometry = (geojsonData) => {
   //console.log("Geometry", geojsonData); //schauen ob es bisher geklappt hat
   L.geoJson(geojsonData, {
     style: (feature) => {
-      let col = COLORS[feature.properties.Zone]; //Eckige Klammern weil ich in einem Objekt auf einen Wert/Schlüssel zureifen will, der ein Leerzeichen hat
+      let col = COLORS[feature.properties.Zone];
       return {
           color: col,
           fillOpacity: 0.2,      
@@ -92,7 +92,7 @@ L.control.scale({
   imperial: false, //löscht Meilen raus
 }).addTo(map)
 
-/*Nordpfeil einfügen: https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map Skript, */
+/*Nordpfeil einfügen: https://stackoverflow.com/questions/22325460/how-can-i-add-a-north-arrow-to-a-leaflet-js-map  */
 var north = L.control({position: "bottomleft"});
 north.onAdd = function(map) {
     var div = L.DomUtil.create("div", "info legend");
