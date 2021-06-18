@@ -54,20 +54,36 @@ body {
     color: whitesmoke;
 }
 
-/*Text in der Menüleisteim Header und Footer mit der ID, damit es nur dafür verwendet wird*/
+/*Text in der Menüleisteim Header und Footer mit der ID, damit es nur dafür verwendet wird, Anleitung: https://stackoverflow.com/questions/32378953/keep-the-middle-item-centered-when-side-items-have-different-widths*/
 #textmenu {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 20px;
-    display: flex;
+    font-size: 20px;  
     margin-top: 0em;
     margin-bottom: 1em;
-    vertical-align: auto;
     background-color: #576b59;/*gleiche wie bei banner quelle */
-    justify-content: space-evenly;
-    padding-bottom: 1em;
     padding-top: 1em;/*größe der grünen Box mit padding */
+    padding-bottom: 1em;
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    justify-content: space-evenly;  
+    text-align: center;
 }
+
+#textmenufooter {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;  
+    margin-top: 0em;
+    margin-bottom: 1em;
+    background-color: #576b59;/*gleiche wie bei banner quelle */
+    padding-top: 1em;/*größe der grünen Box mit padding */
+    padding-bottom: 1em;
+    display: grid;
+    grid-template-columns: 380px 380px;
+    justify-content: space-evenly; 
+}
+
 
 /*Farbe für Links zu den anderen Seiten & Quellen*/
 p a:link,
@@ -309,6 +325,16 @@ input[type=submit]:hover {
 
 /* ******* ******** ********* *********** ******** ************** */
 /*Bildschirmeinstellung Responsive */
+@media screen and (max-width: 1000px) {
+    #textmenufooter, #textmenu {
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+        display:block;
+        grid-template-columns: none;
+        margin: 0 0 0 0;
+    }
+}
 @media screen and (max-width:900px) {
 
     /*HEADER Texte*/
@@ -342,11 +368,11 @@ input[type=submit]:hover {
         margin: auto;
         width: 90%;
     }
-    #textmenu {
+  /*  #textfootermenu {
         flex-wrap: wrap;
         text-align: center;
         width: 100%;
-    }
+    } */
 
     /*Titel und Text*/
     h4,
@@ -447,4 +473,5 @@ input[type=submit]:hover {
         margin: auto;
         width: 70%;
     }
+
 }
