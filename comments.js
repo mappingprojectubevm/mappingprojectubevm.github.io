@@ -22,7 +22,7 @@ const COMMENTS = [{
 },   {
     nr: 4,
     ort: "Gemeindegebiet Scuol",
-    txt: "Dort wo in unserer Gemeinde noch kein UBEVM ist, könnte es noch Entwicklungspotenzial geben.",
+    txt: "Dort wo in der Gemeinde Scuol noch kein UBEVM ist, könnte es noch Entwicklungspotenzial geben.",
     lat: 46.7987,
     lng: 10.3092,
     id:"Entwicklungsbedarf", 
