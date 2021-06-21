@@ -15,7 +15,7 @@ const COMMENTS = [{
 },  {
     nr: 3,
     ort: "Gemeinde Valsot",
-    txt: "Dort wo noch kein UBEVM ist, wäre Entwicklungspotenzial vorhanden.",
+    txt: "Dort wo noch kein Schutzgebiet ist, wäre Entwicklungspotenzial vorhanden.",
     lat: 46.8643,
     lng: 10.4207,
     id:"Entwicklungsbedarf", 
