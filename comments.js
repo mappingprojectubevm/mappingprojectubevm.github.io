@@ -8,7 +8,7 @@ const COMMENTS = [{
 }, {
     nr: 2, //nur zur Übersicht, brauchen wir nicht unbedingt zum einbinden
     ort: "Skigebiet Scuol",
-    txt: "Skigebiete fühlen sich bei ihren touristischen Angebotsmöglichkeiten eingeschränkt, wenn sie sich  mit dem Leitbild des UBEVM nicht identifizieren können.",
+    txt: "Bergbahnenbetreiber*innen fühlen sich bei ihren touristischen Angebotsmöglichkeiten eingeschränkt, wenn sie sich  mit dem Leitbild des UBEVM nicht identifizieren können.",
     lat: 46.8289, 
     lng: 10.2993,
     id:"Nachteil", 
@@ -92,7 +92,7 @@ const COMMENTS = [{
 }, {
     nr: 14,
     ort: "Außerhalb des bestehenden Siedlungsraums",
-    txt: "Das UBEVM bringt Einschränkungen beim Bau und Ausbau von touristischen Infrastrukturen außerhalb des Siedlungsraumes.",
+    txt: "Das UBEVM könnte Einschränkungen beim Bau und Ausbau von touristischen Infrastrukturen außerhalb des Siedlungsraumes bringen.",
     lat: 46.6006,
     lng: 10.3276,
     id:"Nachteil", 

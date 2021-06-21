@@ -124,9 +124,9 @@ legend.onAdd = function (map) {
   div.innerHTML += '<img src=icons/entwickelt.png class="imglegend mr-L"><span id=textlegend>Sehr gut entwickelt</span><br>';
   div.innerHTML += '<img src=icons/entwicklungsbedarf.png class="imglegend mr-L"><span id=textlegend>Entwicklungspotenzial</span><br>';
   div.innerHTML += '<img src=icons/comment-map-icon.png class="imglegend mr-L"><span id=textlegend>Kommentare</span><br>';
-  div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
-  div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
-  div.innerHTML += '<i style="background: orange"></i><span>UBEVM</span><br>';
+  div.innerHTML += '<i style="background: darkgreen"></i><span>Pflegezone</span><br>';
+  div.innerHTML += '<i style="background: darkred"></i><span>Kernzone</span><br>';
+  div.innerHTML += '<i style="background: orange"></i><span>Entwicklungszone</span><br>';
 
   return div;
 };
