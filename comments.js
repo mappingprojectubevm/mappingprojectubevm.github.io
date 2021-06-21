@@ -8,7 +8,7 @@ const COMMENTS = [{
 }, {
     nr: 2, //nur zur Übersicht, brauchen wir nicht unbedingt zum einbinden
     ort: "Skigebiet Scuol",
-    txt: "Skigebiete fühlen sich bei ihren touristischen Angebotsmöglichkeiten eingeschränkt, wenn sie sich  mit dem Leitbild des UBEVM nicht identifizieren können.",
+    txt: "Bergbahnenbetreiber*innen fühlen sich bei ihren touristischen Angebotsmöglichkeiten eingeschränkt, wenn sie sich  mit dem Leitbild des UBEVM nicht identifizieren können.",
     lat: 46.8289, 
     lng: 10.2993,
     id:"Nachteil", 
@@ -36,14 +36,14 @@ const COMMENTS = [{
 },  {
     nr: 6,
     ort: "Pflegezone",
-    txt: "Das Gebiet der Pflegezone kann als solche vom UBEVM profitieren und sich entwickeln.",
+    txt: "Das Gebiet der Pflegezone könnte als solche vom UBEVM profitieren und sich entwickeln.",
     lat: 46.7187,
     lng: 10.2100,
     id:"Vorteil", 
 }, {
     nr: 7,
     ort: "Ganze Region",
-    txt: "In der ganzen Region Engiadina Bassa Val Müstair ist der Landwirtschaftssektor sehr gut entwickelt.",
+    txt: "In der ganzen Region Engiadina Bassa Val Müstair wird der Landwirtschaftssektor als sehr gut entwickelt angesehen.",
     lat: 46.7699,
     lng: 10.1444,
     id:"Entwickelt", 
@@ -64,21 +64,21 @@ const COMMENTS = [{
 }, {
     nr: 10,
     ort: "Schweizerischer Nationalpark",
-    txt: "Der Schweizerische Nationalpark ist als Trennung und zugleich auch als Verbindung zwischen den Tälern zu sehen. Damit stellt er einen Vorteil und zugleich auch einen Nachteil dar.",
+    txt: "Der Schweizerische Nationalpark wird als Trennung und zugleich auch als Verbindung zwischen den Tälern gesehen. In diesem Sinne stellt er einen Vorteil und zugleich auch einen Nachteil dar.",
     lat: 46.6431,
     lng: 10.1080,
     id:"keineZuordnung", //Vorteil und nachteil zugleich, kann keiner anderen ID zugeordnet werden und wird als "Kommentar" deklariert 
 }, {
     nr: 11,
     ort: "Kernzone",
-    txt: "Der Schweizerische Nationalpark als Kernzone ist hervorragend aufgestellt und etabliert.",
+    txt: "Der Schweizerische Nationalpark als Kernzone wird als hervorragend aufgestellt und etabliert gesehen.",
     lat: 46.6531,
     lng: 10.1680,
     id:"Entwickelt",
 }, {
     nr: 12,
     ort: "Skigebiet Val Müstair",
-    txt: "Naturschutzorganisationen verhindern eine Erweiterung und Ausbau des Skigebietes und schränken dieses damit in ihren Handlungsmöglichkeiten ein.",
+    txt: "Naturschutzorganisationen werden als Hindernis für eine Erweiterung und einem Ausbau des Skigebietes gesehen und schränken dieses damit in ihren Handlungsmöglichkeiten ein.",
     lat: 46.6464,
     lng: 10.3202,
     id:"Nachteil", 
@@ -92,28 +92,28 @@ const COMMENTS = [{
 }, {
     nr: 14,
     ort: "Außerhalb des bestehenden Siedlungsraums",
-    txt: "Das UBEVM bringt Einschränkungen beim Bau und Ausbau von touristischen Infrastrukturen außerhalb des Siedlungsraumes.",
+    txt: "Das UBEVM könnte Einschränkungen beim Bau und Ausbau von touristischen Infrastrukturen außerhalb des Siedlungsraumes bringen.",
     lat: 46.6006,
     lng: 10.3276,
     id:"Nachteil", 
 },  {
     nr: 15,
     ort: "Val Müstair",
-    txt: "Durch das Biosphärenreservat erlangt das Münstertal wirtschaftliche Vorteile und ist damit wirtschafltich gut entwickelt.",
+    txt: "Das Münstertal wird als wirtschaftlich gut entwickelt angesehen, da wirtschaftliche Vorteile durch das Biosphärenreservat gesehen werden.",
     lat: 46.6120,
     lng: 10.3937,
     id:"Entwickelt", 
 }, {
     nr: 15,
     ort: "Entwicklungszone",
-    txt: "Das Biosphärenreservat bringt positive Effekte für das Gebiet der Entwicklungszone. Das Tal und insbesondere der Siedlungsraum Val Müstair können vom Biosphärenreservat profitieren.",
+    txt: "Es werden positive Effekte für das Gebiet der Entwicklungszone durch das Biosphärenreservat gesehen. Das Tal und insbesondere der Siedlungsraum Val Müstair können somit vom Biosphärenreservat profitieren.",
     lat: 46.5940,
     lng: 10.4431,
     id:"Vorteil", 
 },  {
     nr: 16,
     ort: "Entwicklungszone",
-    txt: "Die Entwicklungszone des UBEVM ist bereits sehr gut entwickelt.",
+    txt: "Die Entwicklungszone des UBEVM wird bereits als sehr gut entwickelt angesehen.",
     lat: 46.6164,
     lng: 10.4431,
     id:"Entwickelt", 

@@ -110,9 +110,9 @@ var legend = L.control({
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Zonierung</h4>";
-  div.innerHTML += '<i style="background: darkgreen"></i><span>RNP</span><br>';
-  div.innerHTML += '<i style="background: darkred"></i><span>SNP</span><br>';
-  div.innerHTML += '<i style="background: orange"></i><span>UBEVM</span><br>';  
+  div.innerHTML += '<i style="background: darkred"></i><span>Kernzone</span><br>';
+  div.innerHTML += '<i style="background: darkgreen"></i><span>Pflegezone</span><br>';
+  div.innerHTML += '<i style="background: orange"></i><span>Entwicklungszone</span><br>';  
     return div;
 };
 legend.addTo(map);
