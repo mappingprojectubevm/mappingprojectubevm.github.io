@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\jbaumgartner1983.github.io-2"
+		},
+		{
+			"name": "mappingprojectuebvm.github.io",
+			"path": "..\\mappingprojectuebvm.github.io"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mappingprojectuebvm.github.io"
+	}
+}
