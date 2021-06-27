@@ -1,14 +1,14 @@
 const COMMENTS = [{
     nr: 1,
     ort: "Skigebiet Scuol", //Könnte man ev. als Titel der Popups verwenden
-    txt: "Mithilfe des UBEVM könnte man das Skigebiet in ein nachhaltiges Skigebiet umwandeln und es als 'das nachhaltigste Skigebiet der Welt' vermarkten.",
+    txt: "Mithilfe des UBEVM könnte speziell im Wintertourismus das Leitbild der nachhaltigen Entwicklung noch stärker etabliert werden. Das Skigebiet könnte als 'das nachhaltigste Skigebiet der Welt' vermarktet werden.",
     lat:46.8289,
     lng:10.2743,
     id: "Vorteil", //ID, um dann die Icons festzulegen
 }, {
     nr: 2, //nur zur Übersicht, brauchen wir nicht unbedingt zum einbinden
     ort: "Skigebiet Scuol",
-    txt: "Bergbahnenbetreiber*innen fühlen sich in ihren touristischen Angebotsmöglichkeiten eingeschränkt, wenn sie sich mit dem Leitbild des UBEVM nicht identifizieren können.",
+    txt: "Nicht alle Bergbahnenbetreiber*innen können sich mit dem Nachhaltigkeitsgedanken identifizieren und fühlen sich daher in ihren touristischen Angebotsmöglichkeiten eingeschränkt.",
     lat: 46.8289, 
     lng: 10.2993,
     id:"Nachteil", 
@@ -36,7 +36,7 @@ const COMMENTS = [{
 },  {
     nr: 6,
     ort: "Pflegezone",
-    txt: "Das Gebiet der Pflegezone könnte als solche vom UBEVM profitieren und sich weiterentwickeln.",
+    txt: "Im Gebiet der Pflegezone werden postivie Entwicklungen durch das UBEVM gesehen.",
     lat: 46.7187,
     lng: 10.2100,
     id:"Vorteil", 
@@ -50,7 +50,7 @@ const COMMENTS = [{
 },  {
     nr: 8,
     ort: "Unterengadin",
-    txt: "Das Unterengadin könnte von einer Vermarktung über das UBEVM profitieren und die Wertschöpfung landwirtschaftlicher Produkte steigern.",
+    txt: "Das Unterengadin könnte von einer Vermarktung über das UBEVM profitieren und u. a. die Wertschöpfung landwirtschaftlicher Produkte steigern.",
     lat: 46.7800,
     lng: 10.2114,
     id:"Vorteil", 
@@ -92,14 +92,14 @@ const COMMENTS = [{
 }, {
     nr: 14,
     ort: "Außerhalb des bestehenden Siedlungsraums",
-    txt: "Das UBEVM könnte Einschränkungen beim Bau bzw. Ausbau von touristischen Infrastrukturen außerhalb des Siedlungsraumes bringen.",
+    txt: "Es werden mögliche Einschränkungen durch das UBEVM beim Bau bzw. Ausbau von touristischen Infrastrukturen außerhalb des Siedlungsraumes gesehen.",
     lat: 46.6006,
     lng: 10.3276,
     id:"Nachteil", 
 },  {
     nr: 15,
     ort: "Val Müstair",
-    txt: "Das Münstertal wird als wirtschaftlich gut entwickelt betrachtet, auch durch wirtschaftliche Vorteile durch das Biosphärenreservat.",
+    txt: "Das Münstertal wird als wirtschaftlich gut entwickelt betrachtet, auch aufgrund von wirtschaftlichen Vorteilen durch das Biosphärenreservat.",
     lat: 46.6120,
     lng: 10.3937,
     id:"Entwickelt", 
