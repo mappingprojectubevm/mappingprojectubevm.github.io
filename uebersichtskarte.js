@@ -19,7 +19,7 @@ let overlays = {
 
 //Zusätzliche Quellenangaben für die Karte über attribution von L.tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '<a target="_blank" href= "https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c212a19c-6e06-4ca4-bdee-3ec62ccd7b1e/tab/complete">Zonierung<a/>, <a target="_blank" href="https://pixabay.com/vectors/arrow-map-north-orienteering-152596/">Nordpfeil</a>'
+  alt="Um die Inhalte der Karte korrekt anzeigen zu können aktualisieren Sie Ihr Endgerät bitte auf die neueste Version oder versuchen Sie die Seite auf einem anderem Endgerät oder Internetbrowser zu öffnen.",attribution: '<a target="_blank" href= "https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c212a19c-6e06-4ca4-bdee-3ec62ccd7b1e/tab/complete">Zonierung<a/>, <a target="_blank" href="https://pixabay.com/vectors/arrow-map-north-orienteering-152596/">Nordpfeil</a>'
 }).addTo(map);
 
 //Kartenhintergründe und Overlays zur Layer-Control hinzufügen
