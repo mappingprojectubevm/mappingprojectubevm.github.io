@@ -86,7 +86,7 @@ const COMMENTS = [{
     nr: 13,
     ort: "Skigebiet Val Müstair",
     txt: "Durch einen guten Austausch zwischen den Naturschutzorganisationen und dem Skigebiet könnten Vorteile für beide Seiten entstehen.",
-    lat: 46.645,
+    lat: 46.6464,
     lng: 10.3459,
     id:"Vorteil", 
 }, {
