@@ -67,7 +67,7 @@ const COMMENTS = [{
     txt: "Die räumliche Trennung der zwei Täler wird als Hindernis für eine gute Zusammenarbeit der Gemeinden gesehen und schlägt sich in Schwierigkeiten der Kommunikation nieder. Hier würde noch Entwicklungsdarf herrschen.",
     lat: 46.6729,
     lng: 10.26310,
-    id:"Nachteil", 
+    id:"Entwicklungsbedarf", 
 }, {
     nr: 11,
     ort: "Kernzone",
