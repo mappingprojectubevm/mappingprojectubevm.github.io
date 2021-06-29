@@ -59,15 +59,15 @@ const COMMENTS = [{
     ort: "Siedlungsgebiet Unterengadin",
     txt: "Das Unterengadin könnte vom UBEVM profitieren.",
     lat: 46.8190,
-    lng: 10.3590,
+    lng: 10.3826,
     id:"Vorteil", 
 }, {
     nr: 10,
-    ort: "Schweizerischer Nationalpark",
-    txt: "Der Schweizerische Nationalpark wird als Trennung und zugleich auch als Verbindung zwischen den Tälern gesehen. In diesem Sinne stellt er einen Vorteil und zugleich auch einen Nachteil dar.",
-    lat: 46.6431,
-    lng: 10.1080,
-    id:"keineZuordnung", //Vorteil und nachteil zugleich, kann keiner anderen ID zugeordnet werden und wird als "Kommentar" deklariert 
+    ort: "Kernzone",
+    txt: "Die räumliche Trennung der zwei Täler wird als Hindernis für eine gute Zusammenarbeit der Gemeinden gesehen und schlägt sich in Schwierigkeiten der Kommunikation nieder. Hier würde noch Entwicklungsdarf herrschen.",
+    lat: 46.6729,
+    lng: 10.26310,
+    id:"Nachteil", 
 }, {
     nr: 11,
     ort: "Kernzone",
@@ -108,7 +108,7 @@ const COMMENTS = [{
     ort: "Entwicklungszone",
     txt: "Es werden positive Effekte für das Gebiet der Entwicklungszone durch das Biosphärenreservat gesehen. Das Tal und insbesondere der Siedlungsraum Val Müstair können somit vom Biosphärenreservat profitieren.",
     lat: 46.5940,
-    lng: 10.4431,
+    lng: 10.4331,
     id:"Vorteil", 
 },  {
     nr: 16,
@@ -119,11 +119,17 @@ const COMMENTS = [{
     id:"Entwickelt", 
 }, {
     nr: 17,
-    ort: "Gesamtes bestehendes Biosphärenreservatsgebiet",
-    txt: "Das gesamte bisherige Gebiet wird als gut entwickelt angesehen, wobei keine Einschränkungen zu finden sind, sondern lediglich Vorteile im Gebiet zu erreichen sind. Besonders die aktuelle Größe des Gebietes ist vorteilhaft, da in dieser Größenordung Kommunikaton gut möglich ist. Auf der anderen Seite wird gesagt, dass die räumliche Trennung der zwei Täler sich auch in Schwierigkeiten der Kommunikation niederschlägt. Hier würde noch Entwicklungsdarf herrschen.",
+    ort: "Das UBEVM",
+    txt: "Das UBEVM wird insbesondere in der aktuellen Größe als vorteilhaft angesehen, da in dieser Größenordung Kommunikaton gut möglich ist. Zudem schafft das UBEVM durch die administrative Vereinigung der beiden Täler ein Zusammengehörigkeitsgefühl.",
     lat: 46.6729,
-    lng: 10.2850,
-    id:"keineZuordnung", 
+    lng: 10.2950,
+    id:"Vorteil", 
+},  {
+    nr: 18,
+    ort: "Gesamtes bestehendes Biosphärenreservatsgebiet",
+    txt: "Das gesamte bisherige Gebiet des UBEVM wird als gut entwickelt angesehen, wobei es durch die Auszeichnung als UBEVM keine Einschränkungen gibt, sondern lediglich Vorteile im Gebiet zu erreichen sind.",
+    lat: 46.61761,
+    lng: 10.22342,
+    id:"Entwickelt", 
 },
-
 ]
